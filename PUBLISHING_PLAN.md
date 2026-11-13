@@ -1,6 +1,6 @@
 # Plan: GenerateDynamicalNetworks.jl as a publishable package
 
-Status 2026-11-13: all decisions made. Step 1 (scaffold) is done in place: the prototype now lives in
+Status 2026-11-13: all decisions made. Steps 1 (scaffold) and 2 (core layer) are done; step 2 isn't committed. Step 1 was done in place: the prototype now lives in
 `research/` (`research/benchmarks/`, `research/notebooks/`). Paths below that say `benchmarks/` or
 `notebooks/` mean those.
 
@@ -86,7 +86,7 @@ GenerateDynamicalNetworks.jl/
   Project.toml                 # registered deps only, [compat] for each
   src/
     GenerateDynamicalNetworks.jl   # module, exports
-    spec.jl         # TransitionSpec(P, τ; noise, sample): checks (spec_problems, noise_residual), repair, subdivide, edge_list, successors
+    spec.jl         # TransitionSpec(P, τ; noise, sample), spec_problems, edge_list, successors (repair etc. go with Horchler)
     examples.jl     # ring(n), the fixture graphs, the two-way graphs
     simulate.jl     # one StochasticDiffEq EM + EnsembleThreads frame simulator; per-backend drift, noise, decoder
     measure.jl      # measure, verdict, score, validate (held-out sets, half step), acceptance report
@@ -127,13 +127,31 @@ Each step ends with a checkpoint for you. Runs over 10 minutes are asked about f
      Dependabot; Aqua and JET tests.
    - The prototype moved into `research/`, with relative paths kept, and its suites still load.
    - `git init` and one local commit; nothing pushed.
-2. **Port the core layer:** spec, examples, simulator, measure/verdict, classify.
-   - Merge the duplicate globals and make NamedTuple specs a struct.
-   - Keep `Val`-sized drifts: the 7× slowdown is already noted.
-   - **Differential tests:** while the prototype still exists, run prototype and package on the same
-     seeds and require identical decoded sequences and measurements.
+2. **Port the core layer — done 2026-11-13 (not committed yet).**
+   - `src/`: `spec.jl` (`TransitionSpec`, `spec_problems`, `edge_list`, `successors`), `examples.jl`
+     (`ring`, `example`, `example_names`, `random_network`), `model.jl` (the backend interface,
+     `AbstractNetworkModel`), `simulate.jl`, `measure.jl` (`measure`, `verdict`, `score`, `validate`,
+     `accept`), `classify.jl`.
+   - Depends on Graphs, SciMLBase and StochasticDiffEqLowOrder (just the EM solver), plus stdlibs.
+   - Tests: 152 pass, including Aqua and JET, on Julia 1.13 (1.10 not available locally).
+   - **Differential tests** (`test/differential/run.jl`, local only): 67 comparisons pass. They cover the
+     examples, the random networks, and one model per backend (Horchler u and x, simplex, cylinder,
+     two-population, CTRNN design, synchrony, Hopfield). Each backend's prototype model is wrapped in the
+     new interface; runs, measurements, verdicts, scores, held-out checks and classes are identical to
+     the prototype's. The wrappers are the starting point for step 3.
+   - Changes from the prototype, on purpose:
+     - The classifier counts a noise-free run that starts on an equilibrium as settled (`≤` instead of
+       `<`); before, it came out "irregular".
+     - `validate` defaults to T = 250Στ, as the suites used.
+     - The graph repair and branch-noise rules (`repair`, `subdivide`, `branch_noise`) belong to the
+       Horchler backend, so they move with it in step 3.
+   - Found in the prototype: `classify(::NamedTuple)` always used the u-form drift, even for x-form
+     models. It never met an x-form model, so no result is affected.
 3. **Port the backends one at a time, in order of maturity:** CTRNN design with relays → two-population →
    synchrony with race seed → Hopfield → Horchler (with the inlined passage time) → simplex/cylinder.
+   - Hopfield: the prototype's OSQP design is not always bit-reproducible across processes (seen 2026-11-13: the same
+     fit gave a slightly different J and b in 5 of 16 builds, two variants in all, with visit counts 1–2% apart). The likely cause is OSQP's
+     default adaptive step-size interval, which is set from measured setup time. Fix a fixed `adaptive_rho_interval` in the port.
    Each one gets:
    - differential tests against the prototype
    - deterministic checks (design invariants, below)
