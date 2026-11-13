@@ -1,0 +1,7 @@
+flip-flop, held-out set 1      dwell 0.996 0.302  err% -0.4 +0.8  rms  0.66%  off  0.00%  dwell ok branch ok PASS
+flip-flop, held-out set 2      dwell 0.999 0.302  err% -0.1 +0.5  rms  0.36%  off  0.00%  dwell ok branch ok PASS
+flip-flop, set 1 at half the step dwell 1.002 0.301  err% +0.2 +0.5  rms  0.35%  off  0.00%  dwell ok branch ok PASS
+  bout CV [0.67, 0.14]
+  class excitable: stable stable stable stable stable
+  relay for 2→1: 91 switches, 91 with the relay on just before, 91 relay firings
+  pass on all three: true

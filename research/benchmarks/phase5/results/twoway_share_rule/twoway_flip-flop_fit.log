@@ -1,0 +1,18 @@
+flip-flop: 2 states, relays [(2, 1)], cell τ [0.075, 0.075, 0.075]
+  pass 1  f 0.1737  dwell [1.08, 0.4519]  off 0.0000
+    dwell response β [1.0, 1.0], share response γ [1.0, 1.0], largest branch miss 0.0
+  pass 2  f 0.0758  dwell [1.018, 0.3949]  off 0.0000
+    dwell response β [0.88, 0.66], share response γ [1.0, 1.0], largest branch miss 0.0
+  pass 3  f 0.0212  dwell [0.9981, 0.347]  off 0.0000
+    dwell response β [0.88, 0.49], share response γ [1.0, 1.0], largest branch miss 0.0
+  pass 4  f 0.0006  dwell [1.012, 0.3064]  off 0.0000
+    dwell response β [0.88, 0.45], share response γ [1.0, 1.0], largest branch miss 0.0
+  pass 5  f 0.0001  dwell [0.9937, 0.301]  off 0.0000
+    dwell response β [0.88, 0.42], share response γ [1.0, 1.0], largest branch miss 0.0
+  pass 6  f 0.0002  dwell [0.9874, 0.2989]  off 0.0000
+    dwell response β [0.88, 0.42], share response γ [1.0, 1.0], largest branch miss 0.0
+  pass 7  f 0.0003  dwell [1.016, 0.2998]  off 0.0000
+    dwell response β [0.88, 0.42], share response γ [1.0, 1.0], largest branch miss 0.0
+  pass 8  f 0.0000  dwell [0.9966, 0.3001]  off 0.0000
+    dwell response β [0.88, 0.42], share response γ [1.0, 1.0], largest branch miss 0.0
+  fitted in 40 s, step-rule rate 160

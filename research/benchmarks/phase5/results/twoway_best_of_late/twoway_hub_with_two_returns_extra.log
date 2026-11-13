@@ -1,0 +1,5 @@
+  third held-out set: dwell errors [0.2, 0.1, 0.0]%, off-graph 0.0%, branches 1→2 0.506 ok, 1→3 0.494 ok
+  bout CV [0.55, 0.15, 0.22]
+  class excitable: stable stable stable stable stable
+  relay for 2→1: 54 switches, 54 with the relay on just before, 54 relay firings
+  relay for 3→1: 83 switches, 83 with the relay on just before, 82 relay firings

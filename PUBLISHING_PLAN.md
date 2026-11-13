@@ -1,0 +1,181 @@
+# Plan: GenerateDynamicalNetworks.jl as a publishable package
+
+Status 2026-11-13: all decisions made. Step 1 (scaffold) is done in place: the prototype now lives in
+`research/` (`research/benchmarks/`, `research/notebooks/`). Paths below that say `benchmarks/` or
+`notebooks/` mean those.
+
+## 0. Where things stand
+
+- No `src/`, no git. About 4,600 lines of prototype code in `benchmarks/phase0–7/`, plus 8 Pluto
+  notebooks built from `notebooks/tools/*_cells.jl` (1,300 lines). One environment, `notebooks/Project.toml`.
+- The code is one include chain: phase2/horchler.jl → phase3/optimize.jl → phase4/backends.jl →
+  phase5/backends.jl + classes.jl → phase6/synchrony.jl + seed1d.jl → phase7/hopfield.jl. Several later
+  files redefine earlier names: `simulate_frames` per backend (fine as methods), `classify` in three files,
+  `const OUT` in two.
+- **The two unregistered path dependencies (checked 2026-11-13):**
+  - **SHCTools:** the code that becomes the package calls exactly one function from it, `passagetime`
+    (horchler.jl:122). That is the one-line closed-form Stone–Holmes leading-order mean:
+    `(2(log δ − log ε) + log 4λu − log1p(λu/λs) + γ) / 2λu`. Everything else that uses SHCTools is
+    research only: `phase0/` (`createcycle`, `lv_params`, `lv_integrate`) and `phase2/reference.jl` (the
+    SHCTools notebook used as a reference).
+  - **CTRNNs:** used only by `phase5/to_ctrnns.jl`, a one-off check that a fitted CTRNN behaves the same
+    in CTRNNs.jl. No fit or backend needs it.
+- **Hard-coded outside paths:** `phase2/reference.jl` and `phase5/worm_data.jl` (RobertsTracks). Both are
+  research only.
+- **Data:** 97 result CSVs (472 KB) and 15 MB of `.jls` checkpoints and run stores. The `.jls` files
+  aren't kept: Serialization isn't stable across Julia versions.
+- **How mature each backend is** (from the stored suites):
+
+  | Backend | Result |
+  |---|---|
+  | CTRNN `:design` with relays | All 6 fixtures and the real worm (one branch on one check) |
+  | Two-population | 10/12 |
+  | Hopfield | 9/13 |
+  | Synchrony oscillators | 8/13 old seed, 6/13 race seed |
+  | Horchler LV (u form) | The only explicit dwell inversion; strong at low noise |
+  | Simplex / cylinder | 13/24 together; cylinder worm ring fails outright |
+  | CTRNN by CMA-ES | 0/6 (superseded by `:design`) |
+
+## 1. Decisions
+
+1. **Dependencies — decided:** neither is needed.
+   - Inline `passagetime` into the Horchler backend, with a docstring citing Stone & Holmes (1990) and
+     SHCTools.jl.
+   - Drop the CTRNNs.jl conversion from v0.1. If interop is wanted later, add it as a package extension
+     once CTRNNs.jl is registered.
+   - Then GDN depends only on registered packages, and SHCTools.jl stays separate (as decided
+     2026-11-06), just not a dependency.
+   - The Phase 2 check that "the x form reproduces the SHCTools notebook" becomes a test against stored
+     reference numbers.
+2. **Backends — decided:** all ship in v0.1, each marked *stable* or *experimental* by its suite result.
+3. **Lab notebooks — decided:** the prototype tree is frozen in `research/`, with the notebooks exported
+   to static HTML. New docs and tutorials are written against the package.
+4. **Data — decided: no real data.**
+   - The package ships example networks only:
+     - `ring(n)`
+     - the six fixture graphs: foraging, figure-eight, Δ-clique, shared-solvable, shared-conflicting and
+       the worm-shaped ring
+     - the made-up two-way graphs: flip-flop, two-way-and-exit, worm-with-return, hub-with-two-returns
+   - These go in `src/examples.jl` and are used by the tests and tutorials.
+   - `research/` leaves out the worm-derived files (decided): `worm_data.csv`, `worm_data.jl` and the
+     worm run stores (all `.jls` files are ignored anyway). Written: `research/DATA.md`. A `research/DATA.md` says how to get the data back:
+     - **Source:** Roberts et al. (2016), "A stochastic neuronal model predicts random search behaviors
+       at multiple spatial scales in C. elegans", eLife. Data on Dryad,
+       [doi:10.5061/dryad.35qv6](https://doi.org/10.5061/dryad.35qv6) (listed as CC0).
+     - **Files used:** `IBW files/C<n>_Viterbi.ibw` (the Viterbi-decoded HMM states) and
+       `Wild type/C<n>/worm.ibw` (the frames per worm), for the wild-type cohorts C15, C21, C57, C162 and
+       C186 (Table 1).
+     - **How the graph was made:** states ordered Forward, Pause 1, Reverse, Pause 2 (Viterbi codes
+       2, 0, 1, 3). A bout is an unbroken run of one state; each worm's first and last bouts are left out
+       of the mean bout lengths; transitions are counted between consecutive bouts of the same worm.
+       2 frames are dropped at each end of a worm, as in Roberts' `wormtracks.ipf`.
+     - **Reader:** the prototype read the IBW files with a separate RobertsTracks.jl, which isn't part of
+       this repo. The Table 1 means used for the Phase 3–4 worm ring are printed in the paper.
+5. **Metadata — decided.**
+   - Name `GenerateDynamicalNetworks` (repo `GenerateDynamicalNetworks.jl`), MIT licence.
+   - `authors = ["denizhanpak <denpak@iu.edu>"]`, as in SHCTools.jl and CTRNNs.jl. The global git
+     identity matches.
+   - GitHub account `denizhanpak`; the repo and docs are public.
+   - Not yet decided: CITATION.cff and a Zenodo DOI (default: CITATION.cff yes, Zenodo at the first
+     release).
+
+## 2. Target layout
+
+```
+GenerateDynamicalNetworks.jl/
+  Project.toml                 # registered deps only, [compat] for each
+  src/
+    GenerateDynamicalNetworks.jl   # module, exports
+    spec.jl         # TransitionSpec(P, τ; noise, sample): checks (spec_problems, noise_residual), repair, subdivide, edge_list, successors
+    examples.jl     # ring(n), the fixture graphs, the two-way graphs
+    simulate.jl     # one StochasticDiffEq EM + EnsembleThreads frame simulator; per-backend drift, noise, decoder
+    measure.jl      # measure, verdict, score, validate (held-out sets, half step), acceptance report
+    classify.jl     # one classify(model; ...) with backend methods; GHOST_RATIO etc. as keyword defaults
+    fit/
+      correct.jl    # per-state Broyden correction (one implementation for CTRNN, sync and Hopfield)
+      seed.jl       # rough_rates, 1-D exit time, race seed (seed1d.jl), Stone–Holmes passage time
+      search.jl     # CMA-ES search, polish (phase 3)
+      batch.jl      # checkpoint / deadline / OutOfTime, chunked runs
+    backends/
+      horchler.jl  simplex.jl  cylinder.jl  twopop.jl  ctrnn.jl  sync.jl  hopfield.jl
+  test/             # fast; see section 4
+  benchmarks/       # the acceptance suites on the example networks as scripts on the package; results CSVs
+  docs/             # Documenter + Literate: theory per backend, acceptance rule, tutorials, API, results
+  research/         # frozen prototype tree (own environment, path deps allowed there), notebook HTML
+  .github/workflows # CI (tests on 1.10 LTS + current), Documenter, CompatHelper, TagBot
+```
+
+The user-facing API, roughly:
+
+```julia
+spec  = TransitionSpec(P, τ; noise=0.1)   # or example(:foraging; noise=0.1)
+model = fit(spec, CTRNNDesign())          # or TwoPopulation(), Synchrony(), Hopfield(), Horchler(:u), Simplex(), Cylinder()
+report = validate(model, spec)            # dwell errors, branch CIs, off-graph, pass/fail on the agreed rule
+classify(model, spec)                     # heteroclinic / excitable / ghost / limit cycle / unknown
+simulate(model; T, seed)                  # decoded state sequence
+```
+
+Each backend is a struct holding its options. `fit` dispatches on it, and the model types are the existing
+`CTRNNModel`, `SyncModel`, `HopModel`, …
+
+## 3. Execution order
+
+Each step ends with a checkpoint for you. Runs over 10 minutes are asked about first, as usual.
+
+1. **Scaffold — done 2026-11-13.**
+   - Generated with PkgTemplates in place: MIT; CI on 1.10, 1 and pre; Documenter; CompatHelper; TagBot;
+     Dependabot; Aqua and JET tests.
+   - The prototype moved into `research/`, with relative paths kept, and its suites still load.
+   - `git init` and one local commit; nothing pushed.
+2. **Port the core layer:** spec, examples, simulator, measure/verdict, classify.
+   - Merge the duplicate globals and make NamedTuple specs a struct.
+   - Keep `Val`-sized drifts: the 7× slowdown is already noted.
+   - **Differential tests:** while the prototype still exists, run prototype and package on the same
+     seeds and require identical decoded sequences and measurements.
+3. **Port the backends one at a time, in order of maturity:** CTRNN design with relays → two-population →
+   synchrony with race seed → Hopfield → Horchler (with the inlined passage time) → simplex/cylinder.
+   Each one gets:
+   - differential tests against the prototype
+   - deterministic checks (design invariants, below)
+   - regression tests that rebuild every stored fixture fit from the result CSVs and compare its design
+     numbers
+4. **Benchmarks.** Port the suite drivers, run on the example networks only, with results written as CSV.
+   Rerun a reproduction subset (the pilot and one branching graph per backend) and compare against the
+   stored tables. Exact equality is expected only where the RNG path is unchanged; elsewhere, agreement
+   within the CIs. The run time gets measured and you're asked before the long part.
+5. **Docs.**
+   - Theory page per backend (equations, design, what fails and why), the acceptance rule and the
+     held-out protocol.
+   - Tutorials: 3-ring, a branching graph, a two-way graph with relays.
+   - Results tables from the CSVs; API reference built from the docstrings, which mostly exist already.
+   - The research notebooks as static HTML.
+6. **Release.**
+   - Aqua and JET clean; `[compat]` bounds taken from the working Manifest.
+   - README with a minimal example and a backend-status table; CITATION.cff if wanted.
+   - Push to GitHub, CI green, docs deployed, then register (`@JuliaRegistrator register`); Zenodo if
+     wanted.
+   - Every push and registration happens only when you ask.
+
+## 4. Tests (fast enough for CI)
+
+- **Spec checks:** the known-bad graphs from phase 1/2 are rejected or repaired as before.
+- **`rough_rates` and the seeds:** values on the fixture graphs equal the stored contractions. All 13
+  match today; checked 2026-11-13.
+- **Design invariants, deterministic:**
+  - Hopfield: every vertex's Jacobian eigenvalues equal the designed rates (the pilot's vertex check).
+  - Synchrony: corner rates are as set.
+  - CTRNN: the relay layout is right.
+  - Horchler: the x/u design matches stored reference numbers from the SHCTools notebook.
+- **1-D exit time and Stone–Holmes passage time:** against a small Monte Carlo, within its CI.
+- **Decoders:** synthetic trajectories decode to the expected state sequences.
+- **Fallbacks:** `NoDesign` handling (pass-1 error, keep the last pass) and resuming from a checkpoint,
+  from `benchmarks/phase7/test_fallback.jl`.
+- **One tiny end-to-end fit per stable backend** (3-ring, shortened T), checked loosely. The full
+  acceptance stays in `benchmarks/`, not CI.
+
+## 5. Known open research items (documented, not blockers)
+
+- The acceptance rule (separate 95% CIs per branch, three checks) fails exact models by chance at the
+  1-point level. That explains much of the 6–9/13 for sync and Hopfield, and is left as agreed.
+- Hopfield shared-solvable at 0.1: state 6 is 22% long. Cylinder on the worm-shaped ring: undiagnosed.
+- CTRNN by CMA-ES: 0/6, superseded by `:design`. Ship it as experimental, or drop it.

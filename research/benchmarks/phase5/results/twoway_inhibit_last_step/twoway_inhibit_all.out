@@ -1,0 +1,9 @@
+two-way and exit fit exit 0
+two-way and exit check exit 0
+hub with two returns fit exit 0
+hub with two returns check exit 0
+flip-flop fit exit 0
+flip-flop check exit 0
+worm with return fit exit 0
+bash: line 1: 128950 Killed                     timeout -s KILL 580 julia --project=. -t 8 ../benchmarks/phase5/ctrnn_twoway.jl $m "$c" > $R/twoway_$(echo $c | tr " " "_")_$m.log 2>&1
+worm with return check exit 137

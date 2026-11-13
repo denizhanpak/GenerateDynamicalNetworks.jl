@@ -1,0 +1,119 @@
+batch exit 137
+batch exit 137
+batch exit 137
+batch exit 137
+batch exit 137
+batch exit 137
+batch exit 137
+batch exit 137
+batch exit 137
+batch exit 137
+batch exit 137
+batch exit 137
+two/default foraging ε=0.001 [search] dwell 2.010 1.002 0.500 1.502 0.999  err% +0.5 +0.2 -0.0 +0.1 -0.1  rms  0.25%  off  0.00%  dwell ok branch ok PASS
+    branch 2→3 designed 0.70 measured 0.695 ok, repeat 0.699 ok
+    branch 2→4 designed 0.30 measured 0.305 ok, repeat 0.301 ok
+    dim 7, evaluations 144, failed runs 0, held-out score 0.0001, 214 s
+batch time used; rerun to continue
+finished: 1 of 18
+batch exit 0
+two/default worm ring ε=0.001 [correction] dwell 5.340 0.443 1.949 0.208  err% +0.2 +0.4 +0.2 -0.2  rms  0.27%  off  0.00%  dwell ok branch ok PASS
+    dim 5, evaluations 0, failed runs 0, held-out score 0.0000, 66 s
+two/default figure-eight ε=0.001 [search] dwell 0.999 0.598 1.399 1.987 0.799  err% -0.1 -0.3 -0.1 -0.7 -0.1  rms  0.33%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.75 measured 0.750 ok, repeat 0.753 ok
+    branch 1→4 designed 0.25 measured 0.250 ok, repeat 0.247 ok
+    dim 7, evaluations 288, failed runs 0, held-out score 0.0002, 171 s
+batch time used; rerun to continue
+finished: 3 of 18
+batch exit 0
+two/default Δ-clique ε=0.001 [search] dwell 1.500 0.998 0.799 1.997  err% -0.0 -0.2 -0.1 -0.2  rms  0.13%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.40 measured 0.399 ok, repeat 0.413 outside CI
+    branch 1→3 designed 0.60 measured 0.601 ok, repeat 0.587 outside CI
+    dim 6, evaluations 276, failed runs 0, held-out score 0.0017, 175 s
+two/default shared, solvable ε=0.001 [search] dwell 1.500 0.999 0.799 1.202 0.999 0.697  err% -0.0 -0.1 -0.2 +0.1 -0.1 -0.4  rms  0.18%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.70 measured 0.704 ok, repeat 0.699 ok
+    branch 1→3 designed 0.30 measured 0.296 ok, repeat 0.301 ok
+    branch 4→3 designed 0.60 measured 0.601 ok, repeat 0.606 ok
+    branch 4→6 designed 0.40 measured 0.399 ok, repeat 0.394 ok
+    dim 9, evaluations 144, failed runs 0, held-out score 0.0002, 200 s
+batch time used; rerun to continue
+finished: 5 of 18
+batch exit 0
+two/default shared, conflicting ε=0.001 [search] dwell 1.509 1.002 0.798 1.206 1.001 0.701  err% +0.6 +0.2 -0.3 +0.5 +0.1 +0.1  rms  0.36%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.70 measured 0.707 ok, repeat 0.717 outside CI
+    branch 1→3 designed 0.30 measured 0.293 ok, repeat 0.283 outside CI
+    branch 4→2 designed 0.40 measured 0.402 ok, repeat 0.396 ok
+    branch 4→3 designed 0.60 measured 0.598 ok, repeat 0.604 ok
+    dim 9, evaluations 168, failed runs 0, held-out score 0.0007, 198 s
+two/default foraging ε=0.1 [search] dwell 2.000 0.991 0.499 1.495 1.000  err% -0.0 -0.9 -0.2 -0.4 -0.0  rms  0.45%  off  0.00%  dwell ok branch NO fail
+    branch 2→3 designed 0.70 measured 0.716 outside CI, repeat 0.704 ok
+    branch 2→4 designed 0.30 measured 0.284 outside CI, repeat 0.296 ok
+    dim 7, evaluations 300, failed runs 0, held-out score 0.0003, 157 s
+batch time used; rerun to continue
+finished: 7 of 18
+batch exit 0
+two/default worm ring ε=0.1 [search] dwell 5.358 0.444 2.032 0.214  err% +0.5 +0.7 +4.5 +3.0  rms  2.67%  off  0.01%  dwell ok branch ok PASS
+    dim 5, evaluations 168, failed runs 0, held-out score 0.0032, 163 s
+two/default figure-eight ε=0.1 [search] dwell 0.998 0.603 1.401 2.000 0.794  err% -0.2 +0.5 +0.1 -0.0 -0.7  rms  0.39%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.75 measured 0.747 ok, repeat 0.744 outside CI
+    branch 1→4 designed 0.25 measured 0.253 ok, repeat 0.256 outside CI
+    dim 7, evaluations 408, failed runs 0, held-out score 0.0003, 151 s
+batch time used; rerun to continue
+finished: 9 of 18
+batch exit 0
+two/default Δ-clique ε=0.1 [correction] dwell 1.546 1.017 0.808 2.046  err% +3.1 +1.7 +1.0 +2.3  rms  2.13%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.40 measured 0.398 ok, repeat 0.397 ok
+    branch 1→3 designed 0.60 measured 0.602 ok, repeat 0.603 ok
+    dim 6, evaluations 0, failed runs 0, held-out score 0.0021, 14 s
+two/default shared, solvable ε=0.1 [search] dwell 1.510 0.997 0.799 1.205 1.001 0.700  err% +0.7 -0.3 -0.1 +0.4 +0.1 -0.0  rms  0.34%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.70 measured 0.697 ok, repeat 0.696 ok
+    branch 1→3 designed 0.30 measured 0.303 ok, repeat 0.304 ok
+    branch 4→3 designed 0.60 measured 0.606 ok, repeat 0.599 ok
+    branch 4→6 designed 0.40 measured 0.394 ok, repeat 0.401 ok
+    dim 9, evaluations 372, failed runs 0, held-out score 0.0002, 155 s
+two/default shared, conflicting ε=0.1 [search] dwell 1.498 1.001 0.800 1.198 1.002 0.698  err% -0.1 +0.1 -0.0 -0.2 +0.2 -0.3  rms  0.17%  off  0.00%  dwell ok branch NO fail
+    branch 1→2 designed 0.70 measured 0.702 ok, repeat 0.696 ok
+    branch 1→3 designed 0.30 measured 0.298 ok, repeat 0.304 ok
+    branch 4→2 designed 0.40 measured 0.422 outside CI, repeat 0.419 outside CI
+    branch 4→3 designed 0.60 measured 0.578 outside CI, repeat 0.581 outside CI
+    dim 9, evaluations 384, failed runs 0, held-out score 0.0038, 153 s
+batch time used; rerun to continue
+finished: 12 of 18
+batch exit 0
+ctrnn/excitable worm ring ε=0.1 [search] dwell 4.551 0.444 1.831 0.217  err% -14.6 +0.8 -5.9 +4.5  rms  8.74%  off 77.74%  dwell NO branch ok fail
+    dim 25, evaluations 462, failed runs 0, held-out score 3.9905, 354 s
+batch time used; rerun to continue
+finished: 13 of 18
+batch exit 0
+ctrnn/oscillator worm ring ε=0.1 [search] dwell 1.659 0.755 1.216 0.173  err% -68.9 +71.2 -37.5 -16.9  rms 69.01%  off 22.80%  dwell NO branch ok fail
+    dim 25, evaluations 504, failed runs 0, held-out score 3.0633, 213 s
+batch time used; rerun to continue
+finished: 14 of 18
+batch exit 0
+batch exit 137
+no progress in last batch, stopping
+ctrnn/fold worm ring ε=0.1 [search] dwell 2.620 0.334 0.642 0.869  err% -50.8 -24.2 -67.0 +317.5  rms 98.13%  off  0.00%  dwell NO branch ok fail
+    dim 25, evaluations 266, failed runs 0, held-out score 3.8517, 210 s
+batch time used; rerun to continue
+finished: 15 of 18
+batch exit 0
+ctrnn/excitable foraging ε=0.1 [search] dwell 0.346 0.624 0.171 0.149 0.610  err% -82.7 -37.6 -65.7 -90.1 -39.0  rms 141.60%  off 20.80%  dwell NO branch NO fail
+    branch 2→3 designed 0.70 measured 0.575 outside CI, repeat 0.556 outside CI
+    branch 2→4 designed 0.30 measured 0.421 outside CI, repeat 0.444 outside CI
+    dim 36, evaluations 308, failed runs 0, held-out score 10.7975, 214 s
+batch time used; rerun to continue
+finished: 16 of 18
+batch exit 0
+ctrnn/oscillator foraging ε=0.1 [search] dwell 0.497 1.311 0.362 0.659 1.205  err% -75.1 +31.1 -27.6 -56.0 +20.5  rms 75.17%  off 14.13%  dwell NO branch NO fail
+    branch 2→3 designed 0.70 measured 0.793 outside CI, repeat 0.794 outside CI
+    branch 2→4 designed 0.30 measured 0.207 outside CI, repeat 0.206 outside CI
+    dim 36, evaluations 504, failed runs 0, held-out score 4.1586, 189 s
+batch time used; rerun to continue
+finished: 17 of 18
+batch exit 0
+ctrnn/fold foraging ε=0.1 [search] dwell 0.822 0.777 0.164 0.422 3.437  err% -58.9 -22.3 -67.2 -71.8 +243.7  rms 102.27%  off 50.47%  dwell NO branch NO fail
+    branch 2→3 designed 0.70 measured 0.090 outside CI, repeat 0.133 outside CI
+    branch 2→4 designed 0.30 measured 0.003 outside CI, repeat 0.009 outside CI
+    dim 36, evaluations 420, failed runs 0, held-out score 18.1984, 233 s
+finished: 18 of 18
+batch exit 0

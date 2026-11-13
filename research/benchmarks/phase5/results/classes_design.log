@@ -1,0 +1,7 @@
+fit       ctrnn/design foraging 0.1                      expected –             got excitable     stable stable stable stable stable
+fit       ctrnn/design worm ring 0.1                     expected –             got excitable     stable stable stable stable stable
+fit       ctrnn/design figure-eight 0.1                  expected –             got unknown       stable periodic(240.0) periodic(240.0) periodic(240.0) periodic(240.0)
+fit       ctrnn/design Δ-clique 0.1                      expected –             got excitable     stable stable stable stable stable
+fit       ctrnn/design shared, solvable 0.1              expected –             got ghost         periodic(110.0) periodic(110.0) periodic(110.0) periodic(110.0) periodic(110.0)
+fit       ctrnn/design shared, conflicting 0.1           expected –             got ghost         periodic(115.0) periodic(115.0) periodic(115.0) periodic(115.0) periodic(115.0)
+all classified

@@ -1,0 +1,17 @@
+
+foraging at noise 0.1
+  pass 1  f 0.9752  dwell [2.331, 1.457, 0.7513, 1.804, 1.315]  off 0.0000
+  pass 2  f 0.1605  dwell [2.098, 1.215, 0.6668, 1.607, 1.196]  off 0.0000
+  pass 3  f 0.0909  dwell [2.046, 1.121, 0.6085, 1.54, 1.134]  off 0.0000
+  pass 4  f 0.0319  dwell [2.039, 1.076, 0.5684, 1.5, 1.089]  off 0.0000
+  pass 5  f 0.0144  dwell [2.009, 1.044, 0.5384, 1.489, 1.072]  off 0.0000
+  pass 6  f 0.0044  dwell [1.995, 1.033, 0.521, 1.499, 1.041]  off 0.0000
+  pass 7  f 0.0022  dwell [2.008, 1.016, 0.5105, 1.534, 1.031]  off 0.0000
+  pass 8  f 0.0015  dwell [2.006, 1.012, 0.5061, 1.493, 1.019]  off 0.0000
+  cell τ [0.25, 0.25, 0.125, 0.25, 0.125], gain 80, step-rule rate 102
+  edge offsets, in noise SDs of the receiving cell: [1.83, 2.05, 0.93, -0.55, 2.46, 0.29]
+ctrnn design foraging ε=0.1    dwell 1.997 1.006 0.502 1.477 1.012  err% -0.2 +0.6 +0.4 -1.5 +1.2  rms  0.93%  off  0.00%  dwell ok branch ok PASS
+    branch 2→3 designed 0.70 measured 0.699 ok, repeat 0.702 ok
+    branch 2→4 designed 0.30 measured 0.301 ok, repeat 0.298 ok
+  bout CV [0.49, 0.28, 0.15, 0.5, 0.23]   repeat dwell errors [-0.006, 0.005, 0.006, 0.006, 0.01]  repeat pass true, failed runs 0
+  199 s

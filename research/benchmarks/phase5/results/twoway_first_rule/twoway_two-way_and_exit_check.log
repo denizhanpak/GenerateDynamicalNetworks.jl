@@ -1,0 +1,9 @@
+two-way and exit, held-out set 1 dwell 2.001 0.508 1.182  err% +0.0 +1.7 -1.5  rms  1.32%  off  0.00%  dwell ok branch NO fail
+two-way and exit, held-out set 2 dwell 2.014 0.508 1.167  err% +0.7 +1.7 -2.8  rms  1.92%  off  0.00%  dwell ok branch ok PASS
+two-way and exit, set 1 at half the step dwell 2.013 0.509 1.188  err% +0.6 +1.7 -1.0  rms  1.22%  off  0.00%  dwell ok branch NO fail
+    branch 2→1 designed 0.40 measured 0.410 outside CI, set 2 0.405 ok, half step 0.411 outside CI
+    branch 2→3 designed 0.60 measured 0.590 outside CI, set 2 0.595 ok, half step 0.589 outside CI
+  bout CV [0.7, 0.16, 0.84]
+  class excitable: stable stable stable stable stable
+  relay for 2→1: 42 switches, 42 with the relay on just before, 66 relay firings
+  pass on all three: false

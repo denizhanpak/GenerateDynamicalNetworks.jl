@@ -1,0 +1,34 @@
+Design formula, before any search: dwell error [-36.1, 2.2, -16.1, -1.3]% f=0.2318
+
+lv_ring_5d, budget 1500, 6 repeats
+method                    evals   search f  heldout f  worst err  success      off
+seeded CES                 1500  2.564e-10    0.00365       4.5%     3/6     0.0%
+seeded CES noise           1500  4.329e-09   0.003852       5.2%     3/6     0.0%
+seeded CES fresh           1500  4.279e-05  0.0007108       2.0%     6/6     0.0%
+seeded CES noise fresh     1500  0.0001761   0.002215       3.8%     4/6     0.0%
+seeded EvoCMA              1497  5.297e-10   0.005907       5.6%     2/6     0.0%
+random CES                 1500  1.237e-10   0.004055       5.7%     1/6     0.0%
+random BBO DE              1500   0.009668    0.01388       8.6%     0/6     0.0%
+random BBO xNES            1500     0.1129     0.1166      25.5%     0/6     0.0%
+random SHADE               1500     0.0175    0.01188       8.5%     1/6     0.0%
+417.425014 seconds (58.69 M allocations: 3.282 GiB, 0.18% gc time, 16.16% compilation time: <1% of which was recompilation)
+
+ctrnn_24d, budget 20000, 6 repeats
+method                    evals   search f  heldout f  worst err  success      off
+random CES                12122      2.469      2.773      38.8%     0/6    51.6%
+random CES noise          20000      4.597      5.433      87.9%     1/6    64.8%
+random EvoCMA             19993      1.499        3.3      49.9%     2/6    38.7%
+random BBO DE             20000     0.1531     0.2933      21.6%     1/6     2.5%
+random BBO xNES           20000      3.105      4.207      90.9%     0/6    37.4%
+random SHADE              20000      1.586      1.779     107.0%     0/6     5.2%
+281.436151 seconds (138.95 M allocations: 11.332 GiB, 0.76% gc time, 6.86% compilation time)
+
+Library overhead, noisy 5-D sphere, about 20000 evaluations
+CMAEvolutionStrategy     0.02 s   20008 calls    1.1 µs per evaluation
+Evolutionary CMAES       0.03 s   20001 calls    1.6 µs per evaluation
+BlackBoxOptim DE         0.01 s   20002 calls    0.5 µs per evaluation
+Metaheuristics SHADE     0.03 s   20000 calls    1.7 µs per evaluation
+
+Threading inside a generation, Problem A, 16 per generation, 96 evaluations
+multi_threading=false   3.81 s
+multi_threading=true    0.57 s

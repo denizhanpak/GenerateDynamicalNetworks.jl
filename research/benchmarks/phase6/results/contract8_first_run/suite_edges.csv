@@ -1,0 +1,3 @@
+case,noise,from,to,designed,set1,set1_ok,set2,set2_ok,half_step,half_step_ok
+"foraging",0.001,2,3,0.7,0.6967635435946176,true,0.6989742306730048,true,0.7019831160397623,true
+"foraging",0.001,2,4,0.3,0.30323645640538244,true,0.30102576932699526,true,0.2980168839602378,true

@@ -1,0 +1,2 @@
+case,noise,pairs,oscillators,transits,worst_err,rms,off,dwell_ok,branches_ok,set2_pass,half_pass,pass,class,outcomes,seconds
+"worm data",0.1,6,12,11,0.2356079536477067,0.1059921996163266,0.0,false,false,false,false,false,excitable,"stable stable stable stable stable",1363.5431010723114

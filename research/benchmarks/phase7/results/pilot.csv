@@ -1,0 +1,3 @@
+noise,neurons,worst_err,rms,off,set1_pass,set2_pass,half_pass,third_pass,class,seconds
+0.1,2,0.005512008384272793,0.003397600639136209,0.0,true,true,true,true,heteroclinic,224.76089906692505
+0.001,2,0.003985807291586374,0.0023994475004563147,0.0,true,true,true,true,heteroclinic,239.09623503684998

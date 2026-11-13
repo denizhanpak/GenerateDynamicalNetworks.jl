@@ -1,0 +1,22 @@
+── 1. Horchler with shared α against simplex with speed α
+  foraging              n = 5  max |ρ difference| = 3.552713678800501e-15
+  worm ring             n = 4  max |ρ difference| = 1.4210854715202004e-14
+  figure-eight          n = 5  max |ρ difference| = 1.7763568394002505e-15
+  Δ-clique              n = 5  max |ρ difference| = 3.552713678800501e-15
+  shared, solvable      n = 6  max |ρ difference| = 1.7763568394002505e-15
+  shared, conflicting   n = 7  max |ρ difference| = 1.7763568394002505e-15
+
+── 2. Simplex, decision graph, section 5.1 parameters
+  ζ 1e-05  4 s  visits to ξ₁ 12239  failed 0  off-graph 0.0008  mean dwell 6.47 6.41 6.57 6.68 6.60 6.64 6.60 6.60
+     log₁₀ proportion: ξ₄ -0.585  ξ₆ -0.596  ξ₈ -0.584   (their Figure 12, read by eye: about -0.59)
+  ζ 1e-08  1 s  visits to ξ₁ 7948  failed 0  off-graph 0.0005  mean dwell 9.97 9.96 10.08 10.24 10.11 10.14 10.09 10.09
+     log₁₀ proportion: ξ₄ -0.789  ξ₆ -0.749  ξ₈ -0.771   (their Figure 12, read by eye: about -0.80)
+
+── 3. Cylinder, Petersen graph (undirected, so 30 directed edges and 31 dimensions)
+  paper, kω = 0.4705: expanding eigenvalue for an edge of length 1, 2, 4, 5 along p: [-0.387, 0.158, 0.737, 0.82]
+    9 s  failed 0  transitions 2346  off-graph 1.0000  edges used 0 of 30  mean dwell NaN 20.3 NaN 20.3 20.0 20.2 NaN 20.3 20.0 NaN
+    unused edges: [(1, 2), (1, 5), (1, 6), (2, 1), (2, 3), (2, 7), (3, 2), (3, 4), (3, 8), (4, 3), (4, 5), (4, 9), (5, 1), (5, 4), (5, 10), (6, 1), (6, 8), (6, 9), (7, 2), (7, 9), (7, 10), (8, 3), (8, 6), (8, 10), (9, 4), (9, 6), (9, 7), (10, 5), (10, 7), (10, 8)]
+  narrower, kω = 2.017: expanding eigenvalue for an edge of length 1, 2, 4, 5 along p: [0.768, 0.873, 0.875, 0.875]
+    4 s  failed 0  transitions 1412  off-graph 0.0000  edges used 30 of 30  mean dwell 18.9 19.5 19.3 19.2 19.0 18.2 18.0 18.0 18.2 18.0
+    unused edges: Tuple{Int64, Int64}[]
+exit 0

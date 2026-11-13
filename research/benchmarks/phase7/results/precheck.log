@@ -1,0 +1,19 @@
+┌ Warning: Assignment to `L` in soft scope is ambiguous because a global variable by the same name exists: `L` will be treated as a new local. Disambiguate by using `local L` to suppress this warning or `global L` to assign to the existing global variable.
+└ @ timing.jl:463
+┌ Warning: Assignment to `c` in soft scope is ambiguous because a global variable by the same name exists: `c` will be treated as a new local. Disambiguate by using `local c` to suppress this warning or `global c` to assign to the existing global variable.
+└ @ benchmarks/phase7/precheck.jl:34
+3-ring: 2 neurons, design violation 9.6e-15, largest gap Jacobian vs design rates 1.5e-09
+  rates at used vertices along their path step: [("SD", 1, 2.3), ("DD", 2, 9.21), ("DS", 1, 0.768), ("SS", 2, 0.23)]
+foraging               ε=0.001  3 neurons, 2 transits, violation at rule-of-thumb ok, at race seed 3.1e-14, seed [2.22, 4.4, 3.48, 10.4, 3.07, 4.84] (2 s)
+worm ring              ε=0.001  2 neurons, 0 transits, violation at rule-of-thumb ok, at race seed 4.8e-14, seed [0.626, 10.9, 2.02, 25.0] (0 s)
+figure-eight           ε=0.001  4 neurons, 2 transits, violation at rule-of-thumb ok, at race seed 3.6e-14, seed [4.59, 3.42, 8.77, 3.4, 2.28, 6.33] (0 s)
+Δ-clique               ε=0.001  3 neurons, 2 transits, violation at rule-of-thumb ok, at race seed 1.9e-14, seed [2.54, 2.83, 5.09, 6.58, 2.36] (0 s)
+shared, solvable       ε=0.001  5 neurons, 7 transits, violation at rule-of-thumb ok, at race seed 6.2e-11, seed [2.91, 2.29, 5.06, 6.41, 3.58, 3.21, 5.06, 7.47] (1 s)
+shared, conflicting    ε=0.001  4 neurons, 2 transits, violation at rule-of-thumb ok, at race seed 2.7e-14, seed [2.91, 2.29, 5.06, 6.48, 3.2, 3.58, 5.02, 7.42] (0 s)
+foraging               ε=0.1    3 neurons, 2 transits, violation at rule-of-thumb ok, at race seed 1.7e-14, seed [1.49, 3.51, 2.64, 9.17, 2.25, 3.91] (0 s)
+worm ring              ε=0.1    2 neurons, 0 transits, violation at rule-of-thumb ok, at race seed 7.4e-15, seed [-0.0467, 9.99, 1.15, 24.4] (0 s)
+figure-eight           ε=0.1    4 neurons, 2 transits, violation at rule-of-thumb ok, at race seed 9.5e-15, seed [3.67, 2.62, 7.81, 2.59, 1.56, 5.31] (0 s)
+Δ-clique               ε=0.1    3 neurons, 2 transits, violation at rule-of-thumb ok, at race seed 1.5e-14, seed [1.78, 2.05, 4.14, 5.65, 1.67] (0 s)
+shared, solvable       ε=0.1    5 neurons, 7 transits, violation at rule-of-thumb ok, at race seed 3.4e-13, seed [2.12, 1.53, 4.18, 5.36, 2.72, 2.41, 4.18, 6.44] (1 s)
+shared, conflicting    ε=0.1    4 neurons, 2 transits, violation at rule-of-thumb ok, at race seed 9.8e-15, seed [2.12, 1.53, 4.18, 5.55, 2.38, 2.74, 4.06, 6.31] (0 s)
+worm data              ε=0.1    no layout up to 9 neurons (11 s)

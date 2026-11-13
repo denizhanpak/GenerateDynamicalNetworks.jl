@@ -1,0 +1,6 @@
+two-way and exit, held-out set 1 dwell 2.004 0.498 1.201  err% +0.2 -0.4 +0.0  rms  0.25%  off  0.00%  dwell ok branch ok PASS
+two-way and exit, held-out set 2 dwell 2.018 0.499 1.194  err% +0.9 -0.2 -0.5  rms  0.60%  off  0.00%  dwell ok branch ok PASS
+two-way and exit, set 1 at half the step dwell 2.003 0.498 1.201  err% +0.1 -0.4 +0.1  rms  0.23%  off  0.00%  dwell ok branch ok PASS
+    branch 2→1 designed 0.40 measured 0.394 ok, set 2 0.397 ok, half step 0.395 ok
+    branch 2→3 designed 0.60 measured 0.606 ok, set 2 0.603 ok, half step 0.605 ok
+  pass on all three: true

@@ -1,0 +1,7 @@
+name = "GenerateDynamicalNetworks"
+uuid = "676d4f7f-27ac-43c2-8176-bb54d175033a"
+authors = ["denizhanpak <denpak@iu.edu>"]
+version = "0.1.0-DEV"
+
+[compat]
+julia = "1.10"

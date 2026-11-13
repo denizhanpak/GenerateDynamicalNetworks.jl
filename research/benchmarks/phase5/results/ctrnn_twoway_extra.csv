@@ -1,0 +1,6 @@
+case,third_pass,third_branches_ok,class,relay_switches,relay_preceded
+"flip-flop",true,true,excitable,91,91
+"two-way and exit",true,true,excitable,51,51
+"hub with two returns",true,true,excitable,136,136
+"worm with return",false,false,excitable,64,64
+"worm data",true,true,excitable,65,65

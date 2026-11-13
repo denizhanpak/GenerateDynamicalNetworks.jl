@@ -1,0 +1,85 @@
+case,form,noise,pass,from,to,designed,measured,departures,within_ci
+"foraging","x",1.0e-5,"first",2,3,0.7,0.7033855482566953,1979,true
+"foraging","x",1.0e-5,"first",2,4,0.3,0.2966144517433047,1979,true
+"foraging","x",1.0e-5,"corrected",2,3,0.7,0.6852970795568983,1986,true
+"foraging","x",1.0e-5,"corrected",2,4,0.3,0.3147029204431017,1986,true
+"foraging","x",1.0e-5,"accept",2,3,0.7,0.6937751004016064,1992,true
+"foraging","x",1.0e-5,"accept",2,4,0.3,0.30622489959839355,1992,true
+"foraging","u",1.0e-5,"first",2,3,0.7,0.697289156626506,1992,true
+"foraging","u",1.0e-5,"first",2,4,0.3,0.30271084337349397,1992,true
+"foraging","u",1.0e-5,"corrected",2,3,0.7,0.6957171314741036,2008,true
+"foraging","u",1.0e-5,"corrected",2,4,0.3,0.3042828685258964,2008,true
+"foraging","u",1.0e-5,"accept",2,3,0.7,0.6998001998001998,2002,true
+"foraging","u",1.0e-5,"accept",2,4,0.3,0.3001998001998002,2002,true
+"figure-eight","x",1.0e-5,"first",1,2,0.75,0.7454350161117078,2793,true
+"figure-eight","x",1.0e-5,"first",1,4,0.25,0.2545649838882922,2793,true
+"figure-eight","x",1.0e-5,"corrected",1,2,0.75,0.7553559087767795,2894,true
+"figure-eight","x",1.0e-5,"corrected",1,4,0.25,0.24464409122322045,2894,true
+"figure-eight","x",1.0e-5,"accept",1,2,0.75,0.7448060941828255,2888,true
+"figure-eight","x",1.0e-5,"accept",1,4,0.25,0.2551939058171745,2888,true
+"figure-eight","u",1.0e-5,"first",1,2,0.75,0.753319357092942,2862,true
+"figure-eight","u",1.0e-5,"first",1,4,0.25,0.246680642907058,2862,true
+"figure-eight","u",1.0e-5,"corrected",1,2,0.75,0.7486168741355463,2892,true
+"figure-eight","u",1.0e-5,"corrected",1,4,0.25,0.25138312586445366,2892,true
+"figure-eight","u",1.0e-5,"accept",1,2,0.75,0.7452405676704742,2889,true
+"figure-eight","u",1.0e-5,"accept",1,4,0.25,0.2547594323295258,2889,true
+"Δ-clique","x",1.0e-5,"first",1,2,0.4,0.39830985915492956,1775,true
+"Δ-clique","x",1.0e-5,"first",1,3,0.6,0.6016901408450704,1775,true
+"Δ-clique","x",1.0e-5,"corrected",1,2,0.4,0.4069506726457399,1784,true
+"Δ-clique","x",1.0e-5,"corrected",1,3,0.6,0.5930493273542601,1784,true
+"Δ-clique","x",1.0e-5,"accept",1,2,0.4,0.4057239057239057,1782,true
+"Δ-clique","x",1.0e-5,"accept",1,3,0.6,0.5942760942760943,1782,true
+"Δ-clique","u",1.0e-5,"first",1,2,0.4,0.38564273789649417,1797,true
+"Δ-clique","u",1.0e-5,"first",1,3,0.6,0.6143572621035058,1797,true
+"Δ-clique","u",1.0e-5,"corrected",1,2,0.4,0.3861111111111111,1800,true
+"Δ-clique","u",1.0e-5,"corrected",1,3,0.6,0.6138888888888889,1800,true
+"Δ-clique","u",1.0e-5,"accept",1,2,0.4,0.4118634583100168,1787,true
+"Δ-clique","u",1.0e-5,"accept",1,3,0.6,0.5881365416899832,1787,true
+"shared, solvable","x",1.0e-5,"first",1,2,0.7,0.7126381547333013,2081,true
+"shared, solvable","x",1.0e-5,"first",1,3,0.3,0.2873618452666987,2081,true
+"shared, solvable","x",1.0e-5,"first",4,3,0.6,0.5959731543624162,1490,true
+"shared, solvable","x",1.0e-5,"first",4,6,0.4,0.4040268456375839,1490,true
+"shared, solvable","x",1.0e-5,"corrected",1,2,0.7,0.6846435100548446,2188,true
+"shared, solvable","x",1.0e-5,"corrected",1,3,0.3,0.3153564899451554,2188,true
+"shared, solvable","x",1.0e-5,"corrected",4,3,0.6,0.59254327563249,1502,true
+"shared, solvable","x",1.0e-5,"corrected",4,6,0.4,0.40745672436750996,1502,true
+"shared, solvable","x",1.0e-5,"accept",1,2,0.7,0.7069361506660542,2177,true
+"shared, solvable","x",1.0e-5,"accept",1,3,0.3,0.2930638493339458,2177,true
+"shared, solvable","x",1.0e-5,"accept",4,3,0.6,0.5958414554905783,1539,true
+"shared, solvable","x",1.0e-5,"accept",4,6,0.4,0.4041585445094217,1539,true
+"shared, solvable","u",1.0e-5,"first",1,2,0.7,0.7090144792153199,2141,true
+"shared, solvable","u",1.0e-5,"first",1,3,0.3,0.29098552078468004,2141,true
+"shared, solvable","u",1.0e-5,"first",4,3,0.6,0.6093237032173342,1523,true
+"shared, solvable","u",1.0e-5,"first",4,6,0.4,0.3906762967826658,1523,true
+"shared, solvable","u",1.0e-5,"corrected",1,2,0.7,0.6952117863720073,2172,true
+"shared, solvable","u",1.0e-5,"corrected",1,3,0.3,0.30478821362799263,2172,true
+"shared, solvable","u",1.0e-5,"corrected",4,3,0.6,0.6247518199867638,1511,false
+"shared, solvable","u",1.0e-5,"corrected",4,6,0.4,0.3752481800132363,1511,false
+"shared, solvable","u",1.0e-5,"accept",1,2,0.7,0.709232889297198,2177,true
+"shared, solvable","u",1.0e-5,"accept",1,3,0.3,0.29076711070280203,2177,true
+"shared, solvable","u",1.0e-5,"accept",4,3,0.6,0.601294498381877,1545,true
+"shared, solvable","u",1.0e-5,"accept",4,6,0.4,0.39870550161812296,1545,true
+"shared, conflicting","x",1.0e-5,"first",1,2,0.7,0.6915954415954416,1404,true
+"shared, conflicting","x",1.0e-5,"first",1,3,0.3,0.3084045584045584,1404,true
+"shared, conflicting","x",1.0e-5,"first",4,2,0.4,0.4111582777440873,1649,true
+"shared, conflicting","x",1.0e-5,"first",4,3,0.6,0.5888417222559127,1649,true
+"shared, conflicting","x",1.0e-5,"corrected",1,2,0.7,0.6787360105332455,1519,true
+"shared, conflicting","x",1.0e-5,"corrected",1,3,0.3,0.32126398946675444,1519,true
+"shared, conflicting","x",1.0e-5,"corrected",4,2,0.4,0.382123575284943,1667,true
+"shared, conflicting","x",1.0e-5,"corrected",4,3,0.6,0.617876424715057,1667,true
+"shared, conflicting","x",1.0e-5,"accept",1,2,0.7,0.6840324763193505,1478,true
+"shared, conflicting","x",1.0e-5,"accept",1,3,0.3,0.3159675236806495,1478,true
+"shared, conflicting","x",1.0e-5,"accept",4,2,0.4,0.41063084112149534,1712,true
+"shared, conflicting","x",1.0e-5,"accept",4,3,0.6,0.5893691588785047,1712,true
+"shared, conflicting","u",1.0e-5,"first",1,2,0.7,0.683288409703504,1484,true
+"shared, conflicting","u",1.0e-5,"first",1,3,0.3,0.316711590296496,1484,true
+"shared, conflicting","u",1.0e-5,"first",4,2,0.4,0.3916167664670659,1670,true
+"shared, conflicting","u",1.0e-5,"first",4,3,0.6,0.6083832335329341,1670,true
+"shared, conflicting","u",1.0e-5,"corrected",1,2,0.7,0.6912983425414365,1448,true
+"shared, conflicting","u",1.0e-5,"corrected",1,3,0.3,0.30870165745856354,1448,true
+"shared, conflicting","u",1.0e-5,"corrected",4,2,0.4,0.4191304347826087,1725,true
+"shared, conflicting","u",1.0e-5,"corrected",4,3,0.6,0.5808695652173913,1725,true
+"shared, conflicting","u",1.0e-5,"accept",1,2,0.7,0.6919463087248322,1490,true
+"shared, conflicting","u",1.0e-5,"accept",1,3,0.3,0.3080536912751678,1490,true
+"shared, conflicting","u",1.0e-5,"accept",4,2,0.4,0.3899408284023669,1690,true
+"shared, conflicting","u",1.0e-5,"accept",4,3,0.6,0.6100591715976331,1690,true

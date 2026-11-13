@@ -1,0 +1,11 @@
+hub with two returns, held-out set 1 dwell 1.005 0.400 0.803  err% +0.5 -0.1 +0.4  rms  0.35%  off  0.00%  dwell ok branch NO fail
+hub with two returns, held-out set 2 dwell 1.001 0.399 0.802  err% +0.1 -0.2 +0.3  rms  0.21%  off  0.00%  dwell ok branch ok PASS
+hub with two returns, set 1 at half the step dwell 1.001 0.400 0.801  err% +0.1 -0.1 +0.1  rms  0.12%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.50 measured 0.513 outside CI, set 2 0.499 ok, half step 0.497 ok
+    branch 1→3 designed 0.50 measured 0.487 outside CI, set 2 0.501 ok, half step 0.503 ok
+  third held-out set (information only): branches 1→2 0.500 ok, 1→3 0.500 ok, dwell errors [-0.1, -0.1, 0.2]%
+  bout CV [0.55, 0.15, 0.23]
+  class excitable: stable stable stable stable stable
+  relay for 2→1: 54 switches, 54 with the relay on just before, 54 relay firings
+  relay for 3→1: 86 switches, 86 with the relay on just before, 85 relay firings
+  pass on all three: false

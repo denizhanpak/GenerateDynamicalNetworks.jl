@@ -1,0 +1,40 @@
+── 1. Two-population 3-ring, noise on y (ηp = 1e-3), argmax of |p|, 16 runs of 20000
+  ν -0.01  ηy 1e-02  9 s  transitions   3556  mean residence 89.7  CV 0.55
+  ν -0.01  ηy 1e-03  6 s  transitions   1078  mean residence 293.8  CV 0.37
+  ν -0.01  ηy 1e-04  6 s  transitions    605  mean residence 523.1  CV 0.21
+  ν +0.01  ηy 1e-02  6 s  transitions   1787  mean residence 178.2  CV 0.70
+  ν +0.01  ηy 1e-03  7 s  transitions      0  mean residence –  CV –
+  ν +0.01  ηy 1e-04  7 s  transitions      0  mean residence –  CV –
+
+── 2. CTRNN excitable network, 2021 default weights, 4-ring, argmax of y, 16 runs of 5000
+  noise 0.00  transitions      0  on the graph –  mean residence –
+  noise 0.05  transitions   6822  on the graph 1.000  mean residence 11.7
+  noise 0.10  transitions  11416  on the graph 0.999  mean residence 7.0
+  noise 0.15  transitions 112699  on the graph 0.323  mean residence 0.7
+  noise 0.20  transitions  78802  on the graph 0.330  mean residence 1.0
+  noise 0.30  transitions  72515  on the graph 0.351  mean residence 1.1
+
+── 3. What a classifier sees on models of known class (noise-free runs)
+your worm fit (u form)             known heteroclinic bouts   11  last durations 13.3 1.76 91.4 11.3 106 13.8 670 84 499
+                                   final speed 9.41e-14  median/min speed (2nd half) 2.08  equilibria 4 (unstable dims [1, 1, 1, 1])  slowest point to nearest equilibrium 2.75e-16
+simplex worm, noise-1e-3 fit       known heteroclinic bouts    3  last durations 4.33 20.5 275
+                                   final speed 2.42e-13  median/min speed (2nd half) 1.06  equilibria 3 (unstable dims [1, 1, 1])  slowest point to nearest equilibrium 1.22e-15
+two-population, ν = -0.01          known heteroclinic bouts    2  last durations 428 7.57e+03
+                                   final speed 5.33e-15  median/min speed (2nd half) 1  equilibria 3 (unstable dims [1, 1, 2])  slowest point to nearest equilibrium 3.46e-18
+two-population, ν = +0.01          known excitable    bouts    1  last durations 8e+03
+                                   final speed 5.33e-15  median/min speed (2nd half) 1  equilibria 1 (unstable dims [0])  slowest point to nearest equilibrium 4.81e-13
+CTRNN 2021, 4-ring                 known excitable    bouts    1  last durations 2e+03
+                                   final speed 8.16e-15  median/min speed (2nd half) 1  equilibria 1 (unstable dims [0])  slowest point to nearest equilibrium 5.66e-15
+your 2-node CTRNN (row 9)          known limit cycle  bouts  149  last durations 5.38 0.435 1.95 0.21 5.38 0.442 1.94 0.21 4.4
+                                   final speed 3.78e-01  median/min speed (2nd half) 3.93  equilibria 1 (unstable dims [2])  slowest point to nearest equilibrium 4.9
+Beer oscillator                    known limit cycle  bouts   51  last durations 1.98 1.98 1.98 1.98 1.98 1.98 1.98 1.98 1.39
+                                   final speed 9.78e-01  median/min speed (2nd half) 1.18  equilibria 1 (unstable dims [2])  slowest point to nearest equilibrium 1.42
+your ring3 (-5, -14) haunted       known ghost        bouts  126  last durations 3.14 3.14 3.14 3.14 3.14 3.15 3.14 3.14 1.88
+                                   final speed 9.61e-01  median/min speed (2nd half) 1.43  equilibria 1 (unstable dims [2])  slowest point to nearest equilibrium 1.54
+your ring3 (-6.9, -15)             known mixed        bouts    1  last durations 400
+                                   final speed 1.81e-13  median/min speed (2nd half) 1  equilibria 1 (unstable dims [0])  slowest point to nearest equilibrium 7.68e-11
+theta neuron, r = 1e-3             known ghost        bouts   30  last durations 137 3.45 137 3.45 137 3.45 137 3.45 30.8
+                                   final speed 2.26e-03  median/min speed (2nd half) 2.05  equilibria 0 (unstable dims Int64[])  slowest point to nearest equilibrium NaN
+theta neuron, r = 1.0              known limit cycle  bouts  111  last durations 1.81 1.82 1.81 1.83 1.8 1.83 1.8 1.82 0.665
+                                   final speed 2.78e+00  median/min speed (2nd half) 1.49  equilibria 1 (unstable dims [2])  slowest point to nearest equilibrium 1
+exit 0

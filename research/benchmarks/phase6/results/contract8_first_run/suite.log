@@ -1,0 +1,167 @@
+
+foraging at noise 0.001: 3 pairs, 2 transit corners, states on ["DDS", "SDS", "DDD", "SSS", "DSS"]
+  pass 1  f 5.3889  dwell [2.074, 1.165, 0.8059, 1.65, 1.142]  off 0.0000  largest branch miss 0.2680
+  pass 2  f 44.4985  dwell [2.016, 0.7147, 0.575, 1.49, 1.019]  off 0.0000  largest branch miss 0.6998
+  pass 3  f 0.0292  dwell [2.002, 1.167, 0.5265, 1.505, 0.9972]  off 0.0000  largest branch miss 0.0142
+  pass 4  f 0.1323  dwell [1.997, 1.046, 0.4928, 1.494, 1.001]  off 0.0000  largest branch miss 0.0867
+  pass 5  f 0.0009  dwell [1.991, 1.025, 0.4985, 1.5, 1.0]  off 0.0000  largest branch miss 0.0045
+  pass 6  f 0.0003  dwell [2.006, 0.9825, 0.5014, 1.497, 1.002]  off 0.0000  largest branch miss 0.0005
+  pass 7  f 0.0007  dwell [2.0, 0.9998, 0.4993, 1.51, 0.9995]  off 0.0000  largest branch miss 0.0071
+  pass 8  f 0.0001  dwell [1.997, 1.003, 0.5, 1.501, 0.9991]  off 0.0000  largest branch miss 0.0025
+  pass 9  f 0.0000  dwell [2.001, 0.9984, 0.5011, 1.503, 0.999]  off 0.0000  largest branch miss 0.0009
+  pass 10  f 0.0000  dwell [2.006, 1.0, 0.4986, 1.498, 1.001]  off 0.0000  largest branch miss 0.0009
+  pass 11  f 0.0001  dwell [1.998, 0.9995, 0.5002, 1.494, 0.9995]  off 0.0000  largest branch miss 0.0021
+
+foraging at noise 0.001: 3 pairs, 2 transit corners, states on ["DDS", "SDS", "DDD", "SSS", "DSS"]
+  pass 1  f 5.3889  dwell [2.074, 1.165, 0.8059, 1.65, 1.142]  off 0.0000  largest branch miss 0.2680
+  pass 2  f 44.4985  dwell [2.016, 0.7147, 0.575, 1.49, 1.019]  off 0.0000  largest branch miss 0.6998
+  pass 3  f 0.0292  dwell [2.002, 1.167, 0.5265, 1.505, 0.9972]  off 0.0000  largest branch miss 0.0142
+  pass 4  f 0.1323  dwell [1.997, 1.046, 0.4928, 1.494, 1.001]  off 0.0000  largest branch miss 0.0867
+  pass 5  f 0.0009  dwell [1.991, 1.025, 0.4985, 1.5, 1.0]  off 0.0000  largest branch miss 0.0045
+  pass 6  f 0.0003  dwell [2.006, 0.9825, 0.5014, 1.497, 1.002]  off 0.0000  largest branch miss 0.0005
+  pass 7  f 0.0007  dwell [2.0, 0.9998, 0.4993, 1.51, 0.9995]  off 0.0000  largest branch miss 0.0071
+  pass 8  f 0.0001  dwell [1.997, 1.003, 0.5, 1.501, 0.9991]  off 0.0000  largest branch miss 0.0025
+  pass 9  f 0.0000  dwell [2.001, 0.9984, 0.5011, 1.503, 0.999]  off 0.0000  largest branch miss 0.0009
+  pass 10  f 0.0000  dwell [2.006, 1.0, 0.4986, 1.498, 1.001]  off 0.0000  largest branch miss 0.0009
+  pass 11  f 0.0001  dwell [1.998, 0.9995, 0.5002, 1.494, 0.9995]  off 0.0000  largest branch miss 0.0021
+  pass 12  f 0.0001  dwell [1.997, 0.9998, 0.4992, 1.502, 0.9994]  off 0.0000  largest branch miss 0.0030
+
+foraging at noise 0.001: 3 pairs, 2 transit corners, states on ["DDS", "SDS", "DDD", "SSS", "DSS"]
+  pass 1  f 5.3889  dwell [2.074, 1.165, 0.8059, 1.65, 1.142]  off 0.0000  largest branch miss 0.2680
+  pass 2  f 44.4985  dwell [2.016, 0.7147, 0.575, 1.49, 1.019]  off 0.0000  largest branch miss 0.6998
+  pass 3  f 0.0292  dwell [2.002, 1.167, 0.5265, 1.505, 0.9972]  off 0.0000  largest branch miss 0.0142
+  pass 4  f 0.1323  dwell [1.997, 1.046, 0.4928, 1.494, 1.001]  off 0.0000  largest branch miss 0.0867
+  pass 5  f 0.0009  dwell [1.991, 1.025, 0.4985, 1.5, 1.0]  off 0.0000  largest branch miss 0.0045
+  pass 6  f 0.0003  dwell [2.006, 0.9825, 0.5014, 1.497, 1.002]  off 0.0000  largest branch miss 0.0005
+  pass 7  f 0.0007  dwell [2.0, 0.9998, 0.4993, 1.51, 0.9995]  off 0.0000  largest branch miss 0.0071
+  pass 8  f 0.0001  dwell [1.997, 1.003, 0.5, 1.501, 0.9991]  off 0.0000  largest branch miss 0.0025
+  pass 9  f 0.0000  dwell [2.001, 0.9984, 0.5011, 1.503, 0.999]  off 0.0000  largest branch miss 0.0009
+  pass 10  f 0.0000  dwell [2.006, 1.0, 0.4986, 1.498, 1.001]  off 0.0000  largest branch miss 0.0009
+  pass 11  f 0.0001  dwell [1.998, 0.9995, 0.5002, 1.494, 0.9995]  off 0.0000  largest branch miss 0.0021
+  pass 12  f 0.0001  dwell [1.997, 0.9998, 0.4992, 1.502, 0.9994]  off 0.0000  largest branch miss 0.0030
+sync foraging ε=0.001, set 1   dwell 2.003 0.999 0.501 1.500 0.998  err% +0.2 -0.1 +0.2 -0.0 -0.2  rms  0.15%  off  0.00%  dwell ok branch ok PASS
+sync foraging ε=0.001, set 2   dwell 2.000 1.000 0.501 1.506 1.003  err% +0.0 +0.0 +0.1 +0.4 +0.3  rms  0.23%  off  0.00%  dwell ok branch ok PASS
+sync foraging ε=0.001, half step dwell 2.000 0.999 0.501 1.500 1.000  err% +0.0 -0.1 +0.2 -0.0 +0.0  rms  0.12%  off  0.00%  dwell ok branch ok PASS
+    branch 2→3 designed 0.70 measured 0.697 ok, set 2 0.699 ok, half step 0.702 ok
+    branch 2→4 designed 0.30 measured 0.303 ok, set 2 0.301 ok, half step 0.298 ok
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [3.61, 9.11, 8.24, 29.5, 5.04, 8.04], pass on all three: true, 361 s
+batch time used; rerun to continue
+finished: 1 of 13
+
+worm ring at noise 0.001: 2 pairs, 0 transit corners, states on ["DS", "SS", "SD", "DD"]
+  pass 1  f 0.1446  dwell [4.391, 0.5278, 1.896, 0.2731]  off 0.0000  largest branch miss 0.0000
+  pass 2  f 0.0025  dwell [5.179, 0.4532, 1.936, 0.2145]  off 0.0000  largest branch miss 0.0000
+  pass 3  f 0.0000  dwell [5.312, 0.4388, 1.944, 0.2082]  off 0.0000  largest branch miss 0.0000
+  pass 4  f 0.0000  dwell [5.319, 0.4408, 1.941, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 5  f 0.0000  dwell [5.346, 0.441, 1.947, 0.208]  off 0.0000  largest branch miss 0.0000
+  pass 6  f 0.0000  dwell [5.321, 0.442, 1.95, 0.2077]  off 0.0000  largest branch miss 0.0000
+  pass 7  f 0.0000  dwell [5.346, 0.4408, 1.941, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 8  f 0.0000  dwell [5.33, 0.4408, 1.953, 0.2085]  off 0.0000  largest branch miss 0.0000
+  pass 9  f 0.0000  dwell [5.305, 0.4397, 1.939, 0.2082]  off 0.0000  largest branch miss 0.0000
+  pass 10  f 0.0000  dwell [5.342, 0.4415, 1.95, 0.2075]  off 0.0000  largest branch miss 0.0000
+  pass 11  f 0.0000  dwell [5.325, 0.4412, 1.942, 0.2081]  off 0.0000  largest branch miss 0.0000
+
+worm ring at noise 0.001: 2 pairs, 0 transit corners, states on ["DS", "SS", "SD", "DD"]
+  pass 1  f 0.1446  dwell [4.391, 0.5278, 1.896, 0.2731]  off 0.0000  largest branch miss 0.0000
+  pass 2  f 0.0025  dwell [5.179, 0.4532, 1.936, 0.2145]  off 0.0000  largest branch miss 0.0000
+  pass 3  f 0.0000  dwell [5.312, 0.4388, 1.944, 0.2082]  off 0.0000  largest branch miss 0.0000
+  pass 4  f 0.0000  dwell [5.319, 0.4408, 1.941, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 5  f 0.0000  dwell [5.346, 0.441, 1.947, 0.208]  off 0.0000  largest branch miss 0.0000
+  pass 6  f 0.0000  dwell [5.321, 0.442, 1.95, 0.2077]  off 0.0000  largest branch miss 0.0000
+  pass 7  f 0.0000  dwell [5.346, 0.4408, 1.941, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 8  f 0.0000  dwell [5.33, 0.4408, 1.953, 0.2085]  off 0.0000  largest branch miss 0.0000
+  pass 9  f 0.0000  dwell [5.305, 0.4397, 1.939, 0.2082]  off 0.0000  largest branch miss 0.0000
+  pass 10  f 0.0000  dwell [5.342, 0.4415, 1.95, 0.2075]  off 0.0000  largest branch miss 0.0000
+  pass 11  f 0.0000  dwell [5.325, 0.4412, 1.942, 0.2081]  off 0.0000  largest branch miss 0.0000
+
+worm ring at noise 0.001: 2 pairs, 0 transit corners, states on ["DS", "SS", "SD", "DD"]
+  pass 1  f 0.1446  dwell [4.391, 0.5278, 1.896, 0.2731]  off 0.0000  largest branch miss 0.0000
+  pass 2  f 0.0025  dwell [5.179, 0.4532, 1.936, 0.2145]  off 0.0000  largest branch miss 0.0000
+  pass 3  f 0.0000  dwell [5.312, 0.4388, 1.944, 0.2082]  off 0.0000  largest branch miss 0.0000
+  pass 4  f 0.0000  dwell [5.319, 0.4408, 1.941, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 5  f 0.0000  dwell [5.346, 0.441, 1.947, 0.208]  off 0.0000  largest branch miss 0.0000
+  pass 6  f 0.0000  dwell [5.321, 0.442, 1.95, 0.2077]  off 0.0000  largest branch miss 0.0000
+  pass 7  f 0.0000  dwell [5.346, 0.4408, 1.941, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 8  f 0.0000  dwell [5.33, 0.4408, 1.953, 0.2085]  off 0.0000  largest branch miss 0.0000
+  pass 9  f 0.0000  dwell [5.305, 0.4397, 1.939, 0.2082]  off 0.0000  largest branch miss 0.0000
+  pass 10  f 0.0000  dwell [5.342, 0.4415, 1.95, 0.2075]  off 0.0000  largest branch miss 0.0000
+  pass 11  f 0.0000  dwell [5.325, 0.4412, 1.942, 0.2081]  off 0.0000  largest branch miss 0.0000
+
+worm ring at noise 0.001: 2 pairs, 0 transit corners, states on ["DS", "SS", "SD", "DD"]
+  pass 1  f 0.1446  dwell [4.391, 0.5278, 1.896, 0.2731]  off 0.0000  largest branch miss 0.0000
+  pass 2  f 0.0025  dwell [5.179, 0.4532, 1.936, 0.2145]  off 0.0000  largest branch miss 0.0000
+  pass 3  f 0.0000  dwell [5.312, 0.4388, 1.944, 0.2082]  off 0.0000  largest branch miss 0.0000
+  pass 4  f 0.0000  dwell [5.319, 0.4408, 1.941, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 5  f 0.0000  dwell [5.346, 0.441, 1.947, 0.208]  off 0.0000  largest branch miss 0.0000
+  pass 6  f 0.0000  dwell [5.321, 0.442, 1.95, 0.2077]  off 0.0000  largest branch miss 0.0000
+  pass 7  f 0.0000  dwell [5.346, 0.4408, 1.941, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 8  f 0.0000  dwell [5.33, 0.4408, 1.953, 0.2085]  off 0.0000  largest branch miss 0.0000
+  pass 9  f 0.0000  dwell [5.305, 0.4397, 1.939, 0.2082]  off 0.0000  largest branch miss 0.0000
+  pass 10  f 0.0000  dwell [5.342, 0.4415, 1.95, 0.2075]  off 0.0000  largest branch miss 0.0000
+  pass 11  f 0.0000  dwell [5.325, 0.4412, 1.942, 0.2081]  off 0.0000  largest branch miss 0.0000
+
+worm ring at noise 0.001: 2 pairs, 0 transit corners, states on ["DS", "SS", "SD", "DD"]
+  pass 1  f 0.1446  dwell [4.391, 0.5278, 1.896, 0.2731]  off 0.0000  largest branch miss 0.0000
+  pass 2  f 0.0025  dwell [5.179, 0.4532, 1.936, 0.2145]  off 0.0000  largest branch miss 0.0000
+  pass 3  f 0.0000  dwell [5.312, 0.4388, 1.944, 0.2082]  off 0.0000  largest branch miss 0.0000
+  pass 4  f 0.0000  dwell [5.319, 0.4408, 1.941, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 5  f 0.0000  dwell [5.346, 0.441, 1.947, 0.208]  off 0.0000  largest branch miss 0.0000
+  pass 6  f 0.0000  dwell [5.321, 0.442, 1.95, 0.2077]  off 0.0000  largest branch miss 0.0000
+  pass 7  f 0.0000  dwell [5.346, 0.4408, 1.941, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 8  f 0.0000  dwell [5.33, 0.4408, 1.953, 0.2085]  off 0.0000  largest branch miss 0.0000
+  pass 9  f 0.0000  dwell [5.305, 0.4397, 1.939, 0.2082]  off 0.0000  largest branch miss 0.0000
+  pass 10  f 0.0000  dwell [5.342, 0.4415, 1.95, 0.2075]  off 0.0000  largest branch miss 0.0000
+
+worm ring at noise 0.001: 2 pairs, 0 transit corners, states on ["DS", "SS", "SD", "DD"]
+  pass 1  f 0.1446  dwell [4.391, 0.5278, 1.896, 0.2731]  off 0.0000  largest branch miss 0.0000
+  pass 2  f 0.0025  dwell [5.179, 0.4532, 1.936, 0.2145]  off 0.0000  largest branch miss 0.0000
+  pass 3  f 0.0000  dwell [5.312, 0.4388, 1.944, 0.2082]  off 0.0000  largest branch miss 0.0000
+  pass 4  f 0.0000  dwell [5.319, 0.4408, 1.941, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 5  f 0.0000  dwell [5.346, 0.441, 1.947, 0.208]  off 0.0000  largest branch miss 0.0000
+  pass 6  f 0.0000  dwell [5.321, 0.442, 1.95, 0.2077]  off 0.0000  largest branch miss 0.0000
+  pass 7  f 0.0000  dwell [5.346, 0.4408, 1.941, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 8  f 0.0000  dwell [5.33, 0.4408, 1.953, 0.2085]  off 0.0000  largest branch miss 0.0000
+  pass 9  f 0.0000  dwell [5.305, 0.4397, 1.939, 0.2082]  off 0.0000  largest branch miss 0.0000
+  pass 10  f 0.0000  dwell [5.342, 0.4415, 1.95, 0.2075]  off 0.0000  largest branch miss 0.0000
+
+worm ring at noise 0.001: 2 pairs, 0 transit corners, states on ["DS", "SS", "SD", "DD"]
+  pass 1  f 0.1446  dwell [4.391, 0.5278, 1.896, 0.2731]  off 0.0000  largest branch miss 0.0000
+  pass 2  f 0.0025  dwell [5.179, 0.4532, 1.936, 0.2145]  off 0.0000  largest branch miss 0.0000
+  pass 3  f 0.0000  dwell [5.312, 0.4388, 1.944, 0.2082]  off 0.0000  largest branch miss 0.0000
+  pass 4  f 0.0000  dwell [5.319, 0.4408, 1.941, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 5  f 0.0000  dwell [5.346, 0.441, 1.947, 0.208]  off 0.0000  largest branch miss 0.0000
+  pass 6  f 0.0000  dwell [5.321, 0.442, 1.95, 0.2077]  off 0.0000  largest branch miss 0.0000
+  pass 7  f 0.0000  dwell [5.346, 0.4408, 1.941, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 8  f 0.0000  dwell [5.33, 0.4408, 1.953, 0.2085]  off 0.0000  largest branch miss 0.0000
+  pass 9  f 0.0000  dwell [5.305, 0.4397, 1.939, 0.2082]  off 0.0000  largest branch miss 0.0000
+  pass 10  f 0.0000  dwell [5.342, 0.4415, 1.95, 0.2075]  off 0.0000  largest branch miss 0.0000
+  pass 11  f 0.0000  dwell [5.325, 0.4412, 1.942, 0.2081]  off 0.0000  largest branch miss 0.0000
+
+worm ring at noise 0.001: 2 pairs, 0 transit corners, states on ["DS", "SS", "SD", "DD"]
+  pass 1  f 0.1446  dwell [4.391, 0.5278, 1.896, 0.2731]  off 0.0000  largest branch miss 0.0000
+  pass 2  f 0.0025  dwell [5.179, 0.4532, 1.936, 0.2145]  off 0.0000  largest branch miss 0.0000
+  pass 3  f 0.0000  dwell [5.312, 0.4388, 1.944, 0.2082]  off 0.0000  largest branch miss 0.0000
+  pass 4  f 0.0000  dwell [5.319, 0.4408, 1.941, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 5  f 0.0000  dwell [5.346, 0.441, 1.947, 0.208]  off 0.0000  largest branch miss 0.0000
+  pass 6  f 0.0000  dwell [5.321, 0.442, 1.95, 0.2077]  off 0.0000  largest branch miss 0.0000
+  pass 7  f 0.0000  dwell [5.346, 0.4408, 1.941, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 8  f 0.0000  dwell [5.33, 0.4408, 1.953, 0.2085]  off 0.0000  largest branch miss 0.0000
+  pass 9  f 0.0000  dwell [5.305, 0.4397, 1.939, 0.2082]  off 0.0000  largest branch miss 0.0000
+  pass 10  f 0.0000  dwell [5.342, 0.4415, 1.95, 0.2075]  off 0.0000  largest branch miss 0.0000
+
+worm ring at noise 0.001: 2 pairs, 0 transit corners, states on ["DS", "SS", "SD", "DD"]
+  pass 1  f 0.1446  dwell [4.391, 0.5278, 1.896, 0.2731]  off 0.0000  largest branch miss 0.0000
+  pass 2  f 0.0025  dwell [5.179, 0.4532, 1.936, 0.2145]  off 0.0000  largest branch miss 0.0000
+  pass 3  f 0.0000  dwell [5.312, 0.4388, 1.944, 0.2082]  off 0.0000  largest branch miss 0.0000
+  pass 4  f 0.0000  dwell [5.319, 0.4408, 1.941, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 5  f 0.0000  dwell [5.346, 0.441, 1.947, 0.208]  off 0.0000  largest branch miss 0.0000
+  pass 6  f 0.0000  dwell [5.321, 0.442, 1.95, 0.2077]  off 0.0000  largest branch miss 0.0000
+  pass 7  f 0.0000  dwell [5.346, 0.4408, 1.941, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 8  f 0.0000  dwell [5.33, 0.4408, 1.953, 0.2085]  off 0.0000  largest branch miss 0.0000
+  pass 9  f 0.0000  dwell [5.305, 0.4397, 1.939, 0.2082]  off 0.0000  largest branch miss 0.0000
+  pass 10  f 0.0000  dwell [5.342, 0.4415, 1.95, 0.2075]  off 0.0000  largest branch miss 0.0000
+
+worm ring at noise 0.001: 2 pairs, 0 transit corners, states on ["DS", "SS", "SD", "DD"]
+  pass 1  f 0.1446  dwell [4.391, 0.5278, 1.896, 0.2731]  off 0.0000  largest branch miss 0.0000
+  pass 2  f 0.0025  dwell [5.179, 0.4532, 1.936, 0.2145]  off 0.0000  largest branch miss 0.0000
+  pass 3  f 0.0000  dwell [5.312, 0.4388, 1.944, 0.2082]  off 0.0000  largest branch miss 0.0000

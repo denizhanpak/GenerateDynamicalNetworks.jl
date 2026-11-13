@@ -1,0 +1,14 @@
+first run: 19 cells, 0 errored
+graph_choice = option 1: 19 cells, 0 errored
+graph_choice = option 4: 19 cells, 0 errored
+graph_choice = option 6: 19 cells, 0 errored
+graph_choice = option 2: 19 cells, 0 errored
+noise_choice = option 1: 19 cells, 0 errored
+noise_choice = option 2: 19 cells, 0 errored
+backend_choice = option 2: 19 cells, 0 errored
+backend_choice = option 1: 19 cells, 0 errored
+watch_seed = option 2: 19 cells, 0 errored
+watch_seed = option 3: 19 cells, 0 errored
+watch_seed = option 1: 19 cells, 0 errored
+ALL CLEAN
+exit 0

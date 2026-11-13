@@ -1,0 +1,49 @@
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+  pass 1  f 65.2792  dwell [2.863, 0.9089, 12.07, 0.2309]  off 0.0000  largest branch miss 0.9666
+  pass 2  f 54.8722  dwell [4.675, 0.3935, 9.964, 0.08373]  off 0.0000  largest branch miss 0.9239
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+  resuming after pass 2
+  pass 3  f 46.7837  dwell [4.141, 0.3377, 2.452, 0.1421]  off 0.0000  largest branch miss 0.5690
+  pass 4  f 25.5951  dwell [0.4189, 0.659, 0.6981, 0.2129]  off 0.0000  largest branch miss 0.1742
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+  resuming after pass 4
+  pass 5  f 59.2128  dwell [5.437, 0.4601, 1.823, 0.3522]  off 0.0000  largest branch miss 0.5081
+  pass 6  f 41.6014  dwell [1.182, 0.398, 0.4093, 0.3726]  off 0.0000  largest branch miss 0.3327
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+  resuming after pass 6
+  pass 7  f 54.1611  dwell [3.798, 0.4476, 2.024, 0.1872]  off 0.0000  largest branch miss 0.3705
+  pass 8  f 71.8641  dwell [10.0, 0.5132, 2.111, 0.359]  off 0.0000  largest branch miss 0.8351
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+  resuming after pass 8
+  pass 9  f 54.6488  dwell [4.185, 0.4812, 1.149, 0.2635]  off 0.0000  largest branch miss 0.3823
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+  resuming after pass 9, with 16 runs of the next
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+  resuming after pass 9, with 32 runs of the next
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+  resuming after pass 9, with 48 runs of the next
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+  resuming after pass 9, with 64 runs of the next
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+  resuming after pass 9, with 80 runs of the next
+  pass 10  f 43.5190  dwell [1.117, 0.4288, 0.2076, 0.5251]  off 0.0000  largest branch miss 0.2558
+  batch time used; rerun to continue

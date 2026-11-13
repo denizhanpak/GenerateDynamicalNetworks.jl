@@ -1,0 +1,5 @@
+library,seconds,calls
+CMAEvolutionStrategy,0.021873594,20008
+Evolutionary CMAES,0.032008082,20001
+BlackBoxOptim DE,0.009032718,20002
+Metaheuristics SHADE,0.034701826,20000

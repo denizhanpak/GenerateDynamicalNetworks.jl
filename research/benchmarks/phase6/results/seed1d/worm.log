@@ -1,0 +1,42 @@
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+  pass 1  f 1.3747  dwell [6.53, 0.5404, 2.405, 0.3389]  off 0.0000  largest branch miss 0.2304
+  pass 2  f 0.0854  dwell [5.729, 0.527, 2.021, 0.2588]  off 0.0000  largest branch miss 0.0403
+  pass 3  f 0.1076  dwell [5.664, 0.4743, 2.073, 0.2221]  off 0.0000  largest branch miss 0.0064
+  pass 4  f 0.0807  dwell [5.642, 0.4848, 2.156, 0.2223]  off 0.0000  largest branch miss 0.0067
+  pass 5  f 0.3550  dwell [5.647, 0.486, 2.117, 0.2222]  off 0.0000  largest branch miss 0.0061
+  pass 6  f 0.2467  dwell [5.733, 0.4855, 2.111, 0.2194]  off 0.0000  largest branch miss 0.0108
+  pass 7  f 0.1124  dwell [5.733, 0.4863, 2.11, 0.2232]  off 0.0000  largest branch miss 0.0066
+  pass 8  f 0.2221  dwell [5.544, 0.4835, 2.08, 0.2207]  off 0.0000  largest branch miss 0.0043
+  pass 9  f 0.0442  dwell [5.595, 0.4869, 2.086, 0.2204]  off 0.0000  largest branch miss 0.0046
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+  resuming after pass 9
+  pass 10  f 0.0245  dwell [5.745, 0.4817, 2.09, 0.2211]  off 0.0000  largest branch miss 0.0057
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+  resuming after pass 10, with 64 runs of the next
+  pass 11  f 0.0261  dwell [5.618, 0.4842, 2.082, 0.2221]  off 0.0000  largest branch miss 0.0103
+  pass 12  f 0.0016  dwell [5.674, 0.4863, 2.075, 0.221]  off 0.0000  largest branch miss 0.0011
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+sync worm data ε=0.1, set 1    dwell 5.619 0.485 2.102 0.222  err% -0.9 -0.0 +0.3 +0.1  rms  0.48%  off  0.00%  dwell ok branch ok PASS
+sync worm data ε=0.1, set 2    dwell 5.665 0.486 2.091 0.222  err% -0.1 +0.3 -0.2 +0.2  rms  0.20%  off  0.00%  dwell ok branch NO fail
+sync worm data ε=0.1, half step dwell 5.693 0.484 2.093 0.221  err% +0.4 -0.2 -0.1 -0.1  rms  0.25%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.99 measured 0.990 ok, set 2 0.988 outside CI, half step 0.990 ok
+    branch 1→3 designed 0.01 measured 0.010 ok, set 2 0.012 outside CI, half step 0.010 ok
+    branch 2→1 designed 0.47 measured 0.474 ok, set 2 0.472 ok, half step 0.474 ok
+    branch 2→3 designed 0.53 measured 0.526 ok, set 2 0.528 ok, half step 0.526 ok
+    branch 3→1 designed 0.01 measured 0.005 ok, set 2 0.005 ok, half step 0.006 ok
+    branch 3→2 designed 0.02 measured 0.023 ok, set 2 0.025 ok, half step 0.024 ok
+    branch 3→4 designed 0.97 measured 0.972 ok, set 2 0.970 ok, half step 0.970 ok
+    branch 4→1 designed 0.95 measured 0.948 ok, set 2 0.945 ok, half step 0.946 ok
+    branch 4→3 designed 0.05 measured 0.052 ok, set 2 0.055 ok, half step 0.054 ok
+  class excitable (stable stable stable stable stable), out-rates [-0.435, -1.9, 10.3, 6.65, -1.48, -1.13, 0.719, 47.3, 26.9], pass on all three: false, fit 1261 s, case 2010 s
+finished: 1 of 1

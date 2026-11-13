@@ -1,0 +1,10 @@
+worm with return, held-out set 1 dwell 5.332 0.443 1.956 0.208  err% +0.1 +0.3 +0.6 +0.1  rms  0.35%  off  0.35%  dwell ok branch ok PASS
+worm with return, held-out set 2 dwell 5.317 0.441 1.922 0.208  err% -0.2 +0.0 -1.2 -0.1  rms  0.61%  off  0.34%  dwell ok branch ok PASS
+worm with return, set 1 at half the step dwell 5.329 0.442 1.954 0.208  err% -0.0 +0.2 +0.5 +0.2  rms  0.27%  off  0.34%  dwell ok branch NO fail
+    branch 2→1 designed 0.47 measured 0.474 ok, set 2 0.474 ok, half step 0.477 outside CI
+    branch 2→3 designed 0.53 measured 0.526 ok, set 2 0.526 ok, half step 0.523 outside CI
+  third held-out set (information only): branches 2→1 0.481 outside CI, 2→3 0.519 outside CI, dwell errors [-0.9, -0.0, -0.1, -0.2]%
+  bout CV [0.97, 0.21, 0.84, 0.16]
+  class excitable: stable stable stable stable stable
+  relay for 2→1: 64 switches, 64 with the relay on just before, 82 relay firings
+  pass on all three: false

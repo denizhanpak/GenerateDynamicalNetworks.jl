@@ -1,0 +1,5 @@
+case,cells,relays,rate,seconds
+"two-way and exit",4,1,96.00000000000001,71.895488175
+"hub with two returns",5,2,127.27922061357856,62.553687491
+"flip-flop",3,1,160.0,40.670556915
+"worm with return",5,1,252.01523338117386,434.242492241

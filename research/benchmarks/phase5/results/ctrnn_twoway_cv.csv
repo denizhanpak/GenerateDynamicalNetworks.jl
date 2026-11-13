@@ -1,0 +1,17 @@
+case,state,cv
+"flip-flop",1,0.6696877198309398
+"flip-flop",2,0.14023836961882247
+"two-way and exit",1,0.6952712231973133
+"two-way and exit",2,0.17569164864912043
+"two-way and exit",3,0.5268838888739376
+"hub with two returns",1,0.5560669431804887
+"hub with two returns",2,0.14602256286339707
+"hub with two returns",3,0.22586329368109934
+"worm with return",1,0.9819353185657436
+"worm with return",2,0.21286655460855197
+"worm with return",3,0.8110150781623026
+"worm with return",4,0.1575724785477369
+"worm data",1,1.0303587280784885
+"worm data",2,0.4050681710302823
+"worm data",3,0.8433703077933843
+"worm data",4,0.20112006472942986

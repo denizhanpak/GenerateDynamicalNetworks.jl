@@ -1,0 +1,22 @@
+flip-flop: 2 states, relays [(2, 1)], cell τ [0.075, 0.075, 0.075]
+  pass 1  f 0.1737  dwell [1.08, 0.4519]  off 0.0000  largest branch miss 0.0000
+    learned responses (dwell; branch) per state: 1.0 | 1.0
+  pass 2  f 0.0758  dwell [1.018, 0.3949]  off 0.0000  largest branch miss 0.0000
+    learned responses (dwell; branch) per state: 0.77 | 0.33
+  pass 3  f 0.0014  dwell [1.003, 0.2892]  off 0.0000  largest branch miss 0.0000
+    learned responses (dwell; branch) per state: 0.77 | 0.37
+  pass 4  f 0.0001  dwell [1.006, 0.303]  off 0.0000  largest branch miss 0.0000
+    learned responses (dwell; branch) per state: 0.77 | 0.47
+  pass 5  f 0.0001  dwell [0.9912, 0.301]  off 0.0000  largest branch miss 0.0000
+    learned responses (dwell; branch) per state: 0.77 | 0.47
+  pass 6  f 0.0000  dwell [1.005, 0.2995]  off 0.0000  largest branch miss 0.0000
+    learned responses (dwell; branch) per state: 0.77 | 0.47
+  pass 7  f 0.0001  dwell [0.9904, 0.3]  off 0.0000  largest branch miss 0.0000
+    learned responses (dwell; branch) per state: 0.77 | 0.47
+  pass 8  f 0.0000  dwell [1.001, 0.2995]  off 0.0000  largest branch miss 0.0000
+    learned responses (dwell; branch) per state: 0.77 | 0.47
+  pass 9  f 0.0001  dwell [1.009, 0.3004]  off 0.0000  largest branch miss 0.0000
+    learned responses (dwell; branch) per state: 0.77 | 0.47
+  pass 10  f 0.0000  dwell [0.9939, 0.2999]  off 0.0000  largest branch miss 0.0000
+    learned responses (dwell; branch) per state: 0.77 | 0.47
+  last batch 139 s, step-rule rate 160

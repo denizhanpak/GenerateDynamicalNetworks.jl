@@ -1,0 +1,284 @@
+
+foraging at noise 0.001: 3 pairs, 2 transit corners, states on ["DDS", "SDS", "DDD", "SSS", "DSS"]
+  pass 1  f 7.2122  dwell [2.19, 1.219, 0.8365, 1.711, 1.187]  off 0.0000  largest branch miss 0.2776
+  pass 2  f 79.5362  dwell [2.021, 0.6631, NaN, 1.521, 1.032]  off 0.0000  largest branch miss 1.0000
+sync foraging ε=0.001, set 1   dwell 2.021 0.663 NaN 1.520 1.032  err% +1.1 -33.7 +NaN +1.3 +3.2  rms   NaN%  off  0.00%  dwell NO branch NO fail
+sync foraging ε=0.001, set 2   dwell 2.018 0.662 NaN 1.523 1.031  err% +0.9 -33.8 +NaN +1.6 +3.1  rms   NaN%  off  0.00%  dwell NO branch NO fail
+sync foraging ε=0.001, half step dwell 2.019 0.663 NaN 1.519 1.032  err% +0.9 -33.7 +NaN +1.3 +3.2  rms   NaN%  off  0.00%  dwell NO branch NO fail
+    branch 2→3 designed 0.70 measured 0.000 outside CI, set 2 0.000 outside CI, half step 0.000 outside CI
+    branch 2→4 designed 0.30 measured 1.000 outside CI, set 2 1.000 outside CI, half step 1.000 outside CI
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [3.78, 4.79, 13.6, 23.1, 5.25, 8.2], pass on all three: false, fit 21 s, case 130 s
+
+worm ring at noise 0.001: 2 pairs, 0 transit corners, states on ["DS", "SS", "SD", "DD"]
+  pass 1  f 0.1673  dwell [4.671, 0.5522, 2.0, 0.2848]  off 0.0000  largest branch miss 0.0000
+  pass 2  f 0.0025  dwell [5.235, 0.4538, 1.957, 0.2157]  off 0.0000  largest branch miss 0.0000
+  pass 3  f 0.0000  dwell [5.313, 0.4414, 1.944, 0.2082]  off 0.0000  largest branch miss 0.0000
+  pass 4  f 0.0000  dwell [5.343, 0.4409, 1.942, 0.2077]  off 0.0000  largest branch miss 0.0000
+  pass 5  f 0.0000  dwell [5.297, 0.4407, 1.945, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 6  f 0.0000  dwell [5.361, 0.4418, 1.946, 0.2079]  off 0.0000  largest branch miss 0.0000
+  pass 7  f 0.0000  dwell [5.315, 0.4415, 1.945, 0.2076]  off 0.0000  largest branch miss 0.0000
+  pass 8  f 0.0000  dwell [5.349, 0.4403, 1.941, 0.2087]  off 0.0000  largest branch miss 0.0000
+  pass 9  f 0.0000  dwell [5.316, 0.4414, 1.942, 0.2078]  off 0.0000  largest branch miss 0.0000
+  pass 10  f 0.0000  dwell [5.328, 0.4398, 1.951, 0.2076]  off 0.0000  largest branch miss 0.0000
+  pass 11  f 0.0000  dwell [5.326, 0.4412, 1.945, 0.2078]  off 0.0000  largest branch miss 0.0000
+  batch time used; rerun to continue
+
+worm ring at noise 0.001: 2 pairs, 0 transit corners, states on ["DS", "SS", "SD", "DD"]
+  resuming after pass 11, with 48 runs of the next
+  pass 12  f 0.0000  dwell [5.332, 0.4404, 1.943, 0.2083]  off 0.0000  largest branch miss 0.0000
+sync worm ring ε=0.001, set 1  dwell 5.325 0.441 1.942 0.208  err% -0.1 -0.1 -0.2 +0.2  rms  0.13%  off  0.00%  dwell ok branch ok PASS
+sync worm ring ε=0.001, set 2  dwell 5.333 0.441 1.941 0.208  err% +0.1 +0.1 -0.2 -0.1  rms  0.13%  off  0.00%  dwell ok branch ok PASS
+sync worm ring ε=0.001, half step dwell 5.340 0.440 1.945 0.207  err% +0.2 -0.2 -0.0 -0.2  rms  0.18%  off  0.00%  dwell ok branch ok PASS
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [1.11, 20.2, 3.67, 47.3], pass on all three: true, fit 388 s, case 616 s
+batch time used; rerun to continue
+finished: 2 of 13
+
+figure-eight at noise 0.001: 4 pairs, 2 transit corners, states on ["DDSD", "SDSD", "SDSS", "DDDD", "DSDD"]
+  pass 1  f 13.8166  dwell [1.0, 0.7745, 1.852, 2.23, 1.226]  off 0.0000  largest branch miss 0.2436
+  pass 2  f 115.9158  dwell [0.6773, NaN, NaN, 2.017, 0.9105]  off 0.0000  largest branch miss 1.0000
+sync figure-eight ε=0.001, set 1 dwell 0.674 NaN NaN 2.012 0.909  err% -32.6 +NaN +NaN +0.6 +13.7  rms   NaN%  off  0.00%  dwell NO branch NO fail
+sync figure-eight ε=0.001, set 2 dwell 0.675 NaN NaN 2.013 0.909  err% -32.5 +NaN +NaN +0.7 +13.6  rms   NaN%  off  0.00%  dwell NO branch NO fail
+sync figure-eight ε=0.001, half step dwell 0.674 NaN NaN 2.011 0.907  err% -32.6 +NaN +NaN +0.6 +13.4  rms   NaN%  off  0.00%  dwell NO branch NO fail
+    branch 1→2 designed 0.75 measured 0.000 outside CI, set 2 0.000 outside CI, half step 0.000 outside CI
+    branch 1→4 designed 0.25 measured 1.000 outside CI, set 2 1.000 outside CI, half step 1.000 outside CI
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [3.16, 13.1, 14.9, 6.53, 3.85, 13.2], pass on all three: false, fit 21 s, case 137 s
+
+Δ-clique at noise 0.001: 3 pairs, 2 transit corners, states on ["SDD", "DDD", "SDS", "SSS"]
+  pass 1  f 4.0445  dwell [1.577, 0.409, 1.018, 2.556]  off 0.0000  largest branch miss 0.3279
+  pass 2  f 42.1134  dwell [1.156, 1.702, 0.8168, 2.117]  off 0.0000  largest branch miss 0.5995
+  pass 3  f 0.2683  dwell [1.662, 0.6022, 0.8058, 2.005]  off 0.0000  largest branch miss 0.0071
+  pass 4  f 0.2252  dwell [1.522, 0.6255, 0.7955, 2.002]  off 0.0000  largest branch miss 0.0228
+  pass 5  f 0.0066  dwell [1.504, 1.082, 0.8039, 2.002]  off 0.0000  largest branch miss 0.0065
+  pass 6  f 0.0013  dwell [1.501, 0.9732, 0.7956, 1.998]  off 0.0000  largest branch miss 0.0074
+  pass 7  f 0.0031  dwell [1.5, 0.9788, 0.8035, 2.001]  off 0.0000  largest branch miss 0.0169
+  pass 8  f 0.0093  dwell [1.503, 1.1, 0.7985, 2.001]  off 0.0000  largest branch miss 0.0053
+  pass 9  f 0.0001  dwell [1.497, 1.001, 0.8014, 1.998]  off 0.0000  largest branch miss 0.0022
+  pass 10  f 0.0006  dwell [1.499, 0.9901, 0.7961, 1.996]  off 0.0000  largest branch miss 0.0069
+  pass 11  f 0.0003  dwell [1.501, 1.011, 0.8022, 2.003]  off 0.0000  largest branch miss 0.0042
+  pass 12  f 0.0003  dwell [1.499, 1.014, 0.7997, 1.999]  off 0.0000  largest branch miss 0.0030
+sync Δ-clique ε=0.001, set 1   dwell 1.502 0.998 0.802 2.001  err% +0.1 -0.2 +0.2 +0.0  rms  0.17%  off  0.00%  dwell ok branch ok PASS
+sync Δ-clique ε=0.001, set 2   dwell 1.501 0.982 0.801 2.002  err% +0.1 -1.8 +0.1 +0.1  rms  0.93%  off  0.00%  dwell ok branch ok PASS
+sync Δ-clique ε=0.001, half step dwell 1.501 0.999 0.799 1.998  err% +0.1 -0.1 -0.2 -0.1  rms  0.13%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.40 measured 0.393 ok, set 2 0.399 ok, half step 0.396 ok
+    branch 1→3 designed 0.60 measured 0.607 ok, set 2 0.601 ok, half step 0.604 ok
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [5.17, 4.98, 1.36, 11.3, 4.77], pass on all three: true, fit 97 s, case 157 s
+batch time used; rerun to continue
+finished: 4 of 13
+
+shared, solvable at noise 0.001: 4 pairs, 3 transit corners, states on ["DDDS", "SDDS", "DSDS", "SSDS", "DDSS", "SDDD"]
+  pass 1  f 6.4252  dwell [1.505, 0.4039, 1.267, 1.267, 1.208, 1.156]  off 0.0004  largest branch miss 0.2751
+  pass 2  f 40.2090  dwell [1.351, 0.4504, 0.9307, 0.9861, 1.022, 0.826]  off 0.0000  largest branch miss 0.6985
+  pass 3  f 1.8481  dwell [1.677, 1.149, 0.8136, 1.476, 1.002, 0.717]  off 0.0017  largest branch miss 0.4061
+  pass 4  f 12.3622  dwell [1.536, 0.9996, 0.7955, 0.8103, 0.9979, 0.7029]  off 0.0016  largest branch miss 0.3874
+  pass 5  f 0.1621  dwell [1.495, 0.9976, 0.8004, 1.325, 0.9986, 0.696]  off 0.0019  largest branch miss 0.1359
+  pass 6  f 0.1031  dwell [1.498, 0.9844, 0.7998, 1.273, 1.0, 0.7013]  off 0.0019  largest branch miss 0.1089
+  pass 7  f 0.3253  dwell [1.508, 0.9806, 0.7982, 1.077, 1.003, 0.6989]  off 0.0015  largest branch miss 0.1591
+  pass 8  f 0.0008  dwell [1.495, 1.011, 0.8013, 1.19, 0.9988, 0.7012]  off 0.0020  largest branch miss 0.0060
+  pass 9  f 0.0005  dwell [1.504, 1.006, 0.8005, 1.202, 1.001, 0.7018]  off 0.0019  largest branch miss 0.0071
+  pass 10  f 0.0016  dwell [1.495, 1.014, 0.7983, 1.208, 0.9976, 0.6958]  off 0.0017  largest branch miss 0.0119
+  pass 11  f 0.0004  dwell [1.501, 1.003, 0.7993, 1.198, 0.9993, 0.6996]  off 0.0017  largest branch miss 0.0059
+  pass 12  f 0.0006  dwell [1.497, 1.004, 0.7998, 1.203, 1.0, 0.6996]  off 0.0018  largest branch miss 0.0071
+sync shared, solvable ε=0.001, set 1 dwell 1.504 0.998 0.799 1.202 0.997 0.700  err% +0.3 -0.2 -0.1 +0.2 -0.3 +0.0  rms  0.20%  off  0.18%  dwell ok branch NO fail
+sync shared, solvable ε=0.001, set 2 dwell 1.503 0.994 0.799 1.202 0.999 0.702  err% +0.2 -0.6 -0.1 +0.2 -0.1 +0.3  rms  0.30%  off  0.19%  dwell ok branch ok PASS
+sync shared, solvable ε=0.001, half step dwell 1.504 0.998 0.800 1.198 1.000 0.699  err% +0.3 -0.2 -0.0 -0.1 +0.0 -0.1  rms  0.16%  off  0.19%  dwell ok branch ok PASS
+    branch 1→2 designed 0.70 measured 0.691 outside CI, set 2 0.698 ok, half step 0.694 ok
+    branch 1→3 designed 0.30 measured 0.304 ok, set 2 0.297 ok, half step 0.300 ok
+    branch 4→3 designed 0.60 measured 0.599 ok, set 2 0.595 ok, half step 0.598 ok
+    branch 4→6 designed 0.40 measured 0.401 ok, set 2 0.405 ok, half step 0.402 ok
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [5.34, 4.55, 1.17, 17.4, 6.68, 6.63, 8.53, 21.6], pass on all three: false, fit 185 s, case 305 s
+batch time used; rerun to continue
+finished: 5 of 13
+
+shared, conflicting at noise 0.001: 3 pairs, 2 transit corners, states on ["SSS", "SSD", "DSS", "DSD", "SDD", "DDS"]
+  pass 1  f 6.5673  dwell [1.505, 1.226, 1.007, 1.307, 1.487, 1.156]  off 0.0000  largest branch miss 0.2687
+  pass 2  f 53.8736  dwell [1.221, 1.008, 0.8233, 1.134, 1.108, 0.8342]  off 0.0000  largest branch miss 0.6999
+  pass 3  f 0.0703  dwell [1.747, 1.017, 0.8015, 1.267, 1.026, 0.71]  off 0.0000  largest branch miss 0.0609
+  pass 4  f 0.0125  dwell [1.53, 1.004, 0.7967, 1.214, 0.9954, 0.7005]  off 0.0000  largest branch miss 0.0355
+  pass 5  f 0.0003  dwell [1.502, 1.001, 0.8019, 1.207, 0.9996, 0.701]  off 0.0000  largest branch miss 0.0047
+  pass 6  f 0.0012  dwell [1.498, 0.9973, 0.7994, 1.197, 0.9992, 0.6994]  off 0.0000  largest branch miss 0.0096
+  pass 7  f 0.0009  dwell [1.504, 0.9985, 0.8, 1.203, 1.0, 0.7011]  off 0.0000  largest branch miss 0.0095
+  pass 8  f 0.0018  dwell [1.499, 1.003, 0.8035, 1.197, 1.002, 0.6983]  off 0.0000  largest branch miss 0.0101
+  pass 9  f 0.0004  dwell [1.497, 0.9995, 0.7958, 1.204, 0.9995, 0.7014]  off 0.0000  largest branch miss 0.0055
+  pass 10  f 0.0006  dwell [1.501, 0.9989, 0.8011, 1.197, 0.9979, 0.6976]  off 0.0000  largest branch miss 0.0060
+  pass 11  f 0.0002  dwell [1.495, 0.9982, 0.7985, 1.2, 0.9998, 0.7001]  off 0.0000  largest branch miss 0.0041
+  pass 12  f 0.0009  dwell [1.504, 1.001, 0.8002, 1.198, 1.0, 0.6994]  off 0.0000  largest branch miss 0.0073
+sync shared, conflicting ε=0.001, set 1 dwell 1.502 1.001 0.801 1.201 1.000 0.700  err% +0.1 +0.1 +0.1 +0.1 -0.0 +0.1  rms  0.08%  off  0.00%  dwell ok branch ok PASS
+sync shared, conflicting ε=0.001, set 2 dwell 1.501 1.001 0.800 1.205 0.999 0.701  err% +0.1 +0.1 -0.0 +0.4 -0.1 +0.2  rms  0.19%  off  0.00%  dwell ok branch NO fail
+sync shared, conflicting ε=0.001, half step dwell 1.503 0.999 0.801 1.200 0.998 0.699  err% +0.2 -0.1 +0.1 -0.0 -0.2 -0.1  rms  0.14%  off  0.00%  dwell ok branch NO fail
+    branch 1→2 designed 0.70 measured 0.699 ok, set 2 0.698 ok, half step 0.691 outside CI
+    branch 1→3 designed 0.30 measured 0.301 ok, set 2 0.302 ok, half step 0.309 outside CI
+    branch 4→2 designed 0.40 measured 0.405 ok, set 2 0.408 outside CI, half step 0.403 ok
+    branch 4→3 designed 0.60 measured 0.595 ok, set 2 0.592 outside CI, half step 0.597 ok
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [5.27, 4.73, 8.7, 11.2, 6.31, 6.7, 12.2, 21.8], pass on all three: false, fit 145 s, case 223 s
+
+foraging at noise 0.1: 3 pairs, 2 transit corners, states on ["DDS", "SDS", "DDD", "SSS", "DSS"]
+  pass 1  f 0.8365  dwell [2.085, 1.348, 1.11, 1.779, 1.324]  off 0.0000  largest branch miss 0.0118
+  pass 2  f 0.1881  dwell [2.045, 1.162, 0.7306, 1.594, 1.095]  off 0.0000  largest branch miss 0.0257
+  pass 3  f 0.0080  dwell [1.97, 0.9849, 0.5253, 1.488, 0.9998]  off 0.0000  largest branch miss 0.0201
+  pass 4  f 0.0005  dwell [2.008, 1.004, 0.5025, 1.498, 0.9947]  off 0.0000  largest branch miss 0.0055
+  pass 5  f 0.0002  dwell [1.98, 0.9973, 0.5009, 1.507, 1.005]  off 0.0000  largest branch miss 0.0013
+  pass 6  f 0.0001  dwell [2.007, 1.004, 0.4998, 1.485, 1.002]  off 0.0000  largest branch miss 0.0002
+  pass 7  f 0.0002  dwell [2.009, 1.001, 0.5012, 1.497, 0.9927]  off 0.0000  largest branch miss 0.0024
+  pass 8  f 0.0007  dwell [1.996, 0.9939, 0.498, 1.52, 1.004]  off 0.0000  largest branch miss 0.0058
+  pass 9  f 0.0002  dwell [1.995, 1.003, 0.5005, 1.5, 1.006]  off 0.0000  largest branch miss 0.0036
+  pass 10  f 0.0002  dwell [2.006, 0.9972, 0.4973, 1.486, 0.9951]  off 0.0000  largest branch miss 0.0013
+  pass 11  f 0.0001  dwell [1.996, 0.9994, 0.5021, 1.49, 1.001]  off 0.0000  largest branch miss 0.0002
+  pass 12  f 0.0005  dwell [2.003, 1.0, 0.499, 1.515, 1.001]  off 0.0000  largest branch miss 0.0057
+sync foraging ε=0.1, set 1     dwell 2.010 1.000 0.499 1.492 0.998  err% +0.5 +0.0 -0.2 -0.5 -0.2  rms  0.34%  off  0.00%  dwell ok branch ok PASS
+sync foraging ε=0.1, set 2     dwell 2.000 0.999 0.501 1.500 0.998  err% -0.0 -0.1 +0.2 +0.0 -0.2  rms  0.15%  off  0.00%  dwell ok branch ok PASS
+sync foraging ε=0.1, half step dwell 1.999 0.999 0.498 1.492 0.999  err% -0.1 -0.1 -0.3 -0.5 -0.1  rms  0.29%  off  0.00%  dwell ok branch ok PASS
+    branch 2→3 designed 0.70 measured 0.703 ok, set 2 0.704 ok, half step 0.701 ok
+    branch 2→4 designed 0.30 measured 0.297 ok, set 2 0.296 ok, half step 0.299 ok
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [1.24, 4.58, 3.34, 23.6, 1.97, 3.49], pass on all three: true, fit 68 s, case 110 s
+batch time used; rerun to continue
+finished: 7 of 13
+
+worm ring at noise 0.1: 2 pairs, 0 transit corners, states on ["DS", "SS", "SD", "DD"]
+  pass 1  f 1.1640  dwell [2.491, 0.6713, 1.672, 0.3873]  off 0.0000  largest branch miss 0.0000
+  pass 2  f 0.3958  dwell [2.945, 0.4964, 1.78, 0.2413]  off 0.0000  largest branch miss 0.0000
+  pass 3  f 0.2350  dwell [3.283, 0.4404, 1.973, 0.2066]  off 0.0000  largest branch miss 0.0000
+  pass 4  f 0.1828  dwell [3.476, 0.4404, 1.929, 0.207]  off 0.0000  largest branch miss 0.0000
+  pass 5  f 0.1675  dwell [3.539, 0.441, 1.935, 0.209]  off 0.0000  largest branch miss 0.0000
+  pass 6  f 0.1431  dwell [3.651, 0.4416, 1.943, 0.2074]  off 0.0000  largest branch miss 0.0000
+  pass 7  f 0.1073  dwell [3.841, 0.4399, 1.956, 0.2082]  off 0.0000  largest branch miss 0.0000
+  pass 8  f 0.0189  dwell [4.645, 0.44, 1.949, 0.2072]  off 0.0000  largest branch miss 0.0000
+  pass 9  f 0.0485  dwell [6.639, 0.4435, 1.964, 0.2078]  off 0.0000  largest branch miss 0.0000
+  pass 10  f 0.0021  dwell [5.092, 0.4404, 1.93, 0.2078]  off 0.0000  largest branch miss 0.0000
+  pass 11  f 0.0001  dwell [5.286, 0.4396, 1.944, 0.2089]  off 0.0000  largest branch miss 0.0000
+  pass 12  f 0.0000  dwell [5.334, 0.4424, 1.942, 0.2077]  off 0.0000  largest branch miss 0.0000
+sync worm ring ε=0.1, set 1    dwell 5.314 0.441 1.956 0.208  err% -0.3 -0.0 +0.6 -0.1  rms  0.33%  off  0.00%  dwell ok branch ok PASS
+sync worm ring ε=0.1, set 2    dwell 5.309 0.441 1.962 0.208  err% -0.4 -0.1 +0.9 -0.1  rms  0.48%  off  0.00%  dwell ok branch ok PASS
+sync worm ring ε=0.1, half step dwell 5.322 0.439 1.958 0.208  err% -0.1 -0.4 +0.6 -0.2  rms  0.39%  off  0.00%  dwell ok branch ok PASS
+  class unknown (stable saddle saddle stable stable), out-rates [-0.336, 9.35, 0.838, 24.7], pass on all three: true, fit 122 s, case 195 s
+
+figure-eight at noise 0.1: 4 pairs, 2 transit corners, states on ["DDSD", "SDSD", "SDSS", "DDDD", "DSDD"]
+  pass 1  f 0.8589  dwell [1.137, 0.977, 2.073, 2.178, 1.533]  off 0.0000  largest branch miss 0.0315
+  pass 2  f 0.1514  dwell [1.066, 0.6875, 1.682, 2.073, 1.086]  off 0.0000  largest branch miss 0.0065
+  pass 3  f 0.0027  dwell [0.9881, 0.5918, 1.389, 1.981, 0.8127]  off 0.0000  largest branch miss 0.0104
+  pass 4  f 0.0001  dwell [1.005, 0.5997, 1.401, 2.007, 0.8013]  off 0.0000  largest branch miss 0.0020
+  pass 5  f 0.0003  dwell [0.9969, 0.5993, 1.402, 1.982, 0.7992]  off 0.0000  largest branch miss 0.0032
+  pass 6  f 0.0022  dwell [1.004, 0.5989, 1.399, 1.997, 0.7991]  off 0.0000  largest branch miss 0.0114
+  pass 7  f 0.0005  dwell [0.999, 0.6008, 1.397, 2.019, 0.8002]  off 0.0000  largest branch miss 0.0046
+  pass 8  f 0.0003  dwell [0.9999, 0.6026, 1.403, 2.011, 0.7969]  off 0.0000  largest branch miss 0.0033
+  pass 9  f 0.0022  dwell [1.002, 0.5974, 1.399, 1.972, 0.8052]  off 0.0000  largest branch miss 0.0102
+  pass 10  f 0.0002  dwell [0.995, 0.6001, 1.398, 2.015, 0.7937]  off 0.0000  largest branch miss 0.0014
+  pass 11  f 0.0002  dwell [0.9985, 0.6, 1.399, 2.002, 0.8007]  off 0.0000  largest branch miss 0.0035
+  pass 12  f 0.0002  dwell [1.0, 0.5983, 1.399, 1.994, 0.8008]  off 0.0000  largest branch miss 0.0027
+sync figure-eight ε=0.1, set 1 dwell 1.001 0.601 1.398 2.005 0.801  err% +0.1 +0.2 -0.1 +0.2 +0.1  rms  0.17%  off  0.00%  dwell ok branch ok PASS
+sync figure-eight ε=0.1, set 2 dwell 1.002 0.602 1.399 1.983 0.799  err% +0.2 +0.3 -0.1 -0.9 -0.1  rms  0.44%  off  0.00%  dwell ok branch ok PASS
+sync figure-eight ε=0.1, half step dwell 1.001 0.601 1.402 2.003 0.796  err% +0.1 +0.2 +0.1 +0.1 -0.5  rms  0.25%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.75 measured 0.749 ok, set 2 0.747 ok, half step 0.747 ok
+    branch 1→4 designed 0.25 measured 0.251 ok, set 2 0.253 ok, half step 0.253 ok
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [3.31, 2.2, 7.37, 3.37, 1.32, 10.0], pass on all three: true, fit 62 s, case 101 s
+batch time used; rerun to continue
+finished: 9 of 13
+
+Δ-clique at noise 0.1: 3 pairs, 2 transit corners, states on ["SDD", "DDD", "SDS", "SSS"]
+  pass 1  f 0.7273  dwell [1.534, 1.029, 1.258, 2.736]  off 0.0001  largest branch miss 0.1795
+  pass 2  f 0.0439  dwell [1.554, 1.062, 0.9038, 2.335]  off 0.0000  largest branch miss 0.0028
+  pass 3  f 0.0101  dwell [1.509, 1.1, 0.7961, 1.966]  off 0.0001  largest branch miss 0.0087
+  pass 4  f 0.0001  dwell [1.504, 1.007, 0.7995, 2.008]  off 0.0000  largest branch miss 0.0018
+  pass 5  f 0.0018  dwell [1.504, 0.9839, 0.799, 2.008]  off 0.0000  largest branch miss 0.0127
+  pass 6  f 0.0003  dwell [1.501, 1.012, 0.8054, 1.993]  off 0.0001  largest branch miss 0.0031
+  pass 7  f 0.0003  dwell [1.496, 1.003, 0.7964, 1.991]  off 0.0000  largest branch miss 0.0055
+  pass 8  f 0.0011  dwell [1.496, 1.007, 0.7992, 2.009]  off 0.0000  largest branch miss 0.0105
+  pass 9  f 0.0002  dwell [1.504, 1.009, 0.8018, 1.998]  off 0.0000  largest branch miss 0.0029
+  pass 10  f 0.0002  dwell [1.497, 0.9904, 0.7977, 1.994]  off 0.0001  largest branch miss 0.0033
+  pass 11  f 0.0002  dwell [1.498, 0.9876, 0.7972, 2.003]  off 0.0001  largest branch miss 0.0010
+  pass 12  f 0.0001  dwell [1.505, 0.9976, 0.8036, 1.997]  off 0.0000  largest branch miss 0.0023
+sync Δ-clique ε=0.1, set 1     dwell 1.499 1.016 0.795 1.998  err% -0.1 +1.6 -0.6 -0.1  rms  0.83%  off  0.00%  dwell ok branch ok PASS
+sync Δ-clique ε=0.1, set 2     dwell 1.498 1.004 0.798 1.999  err% -0.1 +0.4 -0.3 -0.0  rms  0.27%  off  0.00%  dwell ok branch ok PASS
+sync Δ-clique ε=0.1, half step dwell 1.494 1.003 0.796 2.000  err% -0.4 +0.3 -0.5 -0.0  rms  0.37%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.40 measured 0.397 ok, set 2 0.398 ok, half step 0.397 ok
+    branch 1→3 designed 0.60 measured 0.603 ok, set 2 0.602 ok, half step 0.603 ok
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [1.81, 1.46, 2.58, 5.31, 2.08], pass on all three: true, fit 36 s, case 57 s
+
+shared, solvable at noise 0.1: 4 pairs, 3 transit corners, states on ["DDDS", "SDDS", "DSDS", "SSDS", "DDSS", "SDDD"]
+  pass 1  f 1.5608  dwell [1.554, 0.7295, 1.626, 1.374, 1.385, 1.499]  off 0.0007  largest branch miss 0.1469
+  pass 2  f 0.2766  dwell [1.427, 0.9579, 1.119, 1.368, 1.093, 1.004]  off 0.0005  largest branch miss 0.0171
+  pass 3  f 0.0922  dwell [1.488, 0.9877, 0.819, 1.014, 0.9981, 0.7319]  off 0.0005  largest branch miss 0.0768
+  pass 4  f 0.0017  dwell [1.492, 0.9913, 0.7998, 1.2, 0.9931, 0.7047]  off 0.0003  largest branch miss 0.0097
+  pass 5  f 0.0389  dwell [1.485, 1.046, 0.7993, 1.215, 0.9997, 0.6986]  off 0.0004  largest branch miss 0.0492
+  pass 6  f 0.0029  dwell [1.497, 1.009, 0.7985, 1.2, 1.004, 0.6999]  off 0.0004  largest branch miss 0.0127
+  pass 7  f 0.0004  dwell [1.494, 1.002, 0.8028, 1.196, 1.001, 0.7031]  off 0.0004  largest branch miss 0.0043
+  pass 8  f 0.0004  dwell [1.506, 0.9929, 0.7991, 1.2, 0.9948, 0.696]  off 0.0004  largest branch miss 0.0043
+  pass 9  f 0.0035  dwell [1.495, 1.014, 0.8017, 1.21, 1.002, 0.6999]  off 0.0003  largest branch miss 0.0123
+  pass 10  f 0.0075  dwell [1.502, 0.9977, 0.7962, 1.185, 0.9929, 0.6976]  off 0.0004  largest branch miss 0.0238
+  pass 11  f 0.0014  dwell [1.501, 0.9992, 0.7981, 1.202, 1.005, 0.7017]  off 0.0005  largest branch miss 0.0120
+  pass 12  f 0.0001  dwell [1.501, 1.005, 0.8016, 1.199, 0.9997, 0.7002]  off 0.0005  largest branch miss 0.0022
+sync shared, solvable ε=0.1, set 1 dwell 1.504 1.005 0.802 1.199 1.001 0.697  err% +0.2 +0.5 +0.2 -0.1 +0.1 -0.4  rms  0.30%  off  0.04%  dwell ok branch ok PASS
+sync shared, solvable ε=0.1, set 2 dwell 1.495 0.994 0.799 1.201 0.996 0.702  err% -0.3 -0.6 -0.2 +0.1 -0.4 +0.3  rms  0.34%  off  0.03%  dwell ok branch ok PASS
+sync shared, solvable ε=0.1, half step dwell 1.490 0.993 0.800 1.208 0.997 0.698  err% -0.7 -0.7 +0.0 +0.7 -0.3 -0.4  rms  0.53%  off  0.03%  dwell ok branch NO fail
+    branch 1→2 designed 0.70 measured 0.697 ok, set 2 0.700 ok, half step 0.700 ok
+    branch 1→3 designed 0.30 measured 0.302 ok, set 2 0.300 ok, half step 0.300 ok
+    branch 4→3 designed 0.60 measured 0.598 ok, set 2 0.600 ok, half step 0.589 outside CI
+    branch 4→6 designed 0.40 measured 0.402 ok, set 2 0.400 ok, half step 0.411 outside CI
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [2.05, 0.969, 1.59, 11.5, 2.82, 2.61, 3.56, 15.5], pass on all three: false, fit 65 s, case 106 s
+
+shared, conflicting at noise 0.1: 3 pairs, 2 transit corners, states on ["SSS", "SSD", "DSS", "DSD", "SDD", "DDS"]
+  pass 1  f 1.2837  dwell [1.529, 1.433, 1.235, 1.34, 1.824, 1.499]  off 0.0000  largest branch miss 0.0276
+  pass 2  f 0.2423  dwell [1.518, 1.123, 0.8964, 1.25, 1.317, 1.015]  off 0.0000  largest branch miss 0.0065
+  pass 3  f 0.0076  dwell [1.489, 0.9927, 0.8045, 1.211, 1.018, 0.6806]  off 0.0000  largest branch miss 0.0212
+  pass 4  f 0.0034  dwell [1.476, 0.9952, 0.7985, 1.201, 0.9988, 0.7102]  off 0.0000  largest branch miss 0.0146
+  pass 5  f 0.0027  dwell [1.488, 1.006, 0.8014, 1.199, 0.9968, 0.6987]  off 0.0000  largest branch miss 0.0138
+  pass 6  f 0.0031  dwell [1.492, 0.9976, 0.7994, 1.193, 1.004, 0.6985]  off 0.0000  largest branch miss 0.0151
+  pass 7  f 0.0001  dwell [1.492, 0.9959, 0.8021, 1.204, 0.9963, 0.699]  off 0.0000  largest branch miss 0.0021
+  pass 8  f 0.0021  dwell [1.508, 1.006, 0.7958, 1.203, 1.004, 0.6997]  off 0.0000  largest branch miss 0.0106
+  pass 9  f 0.0002  dwell [1.498, 0.9953, 0.8079, 1.204, 0.9949, 0.6998]  off 0.0000  largest branch miss 0.0017
+  pass 10  f 0.0013  dwell [1.489, 0.9957, 0.7943, 1.193, 1.003, 0.697]  off 0.0000  largest branch miss 0.0110
+  pass 11  f 0.0003  dwell [1.494, 1.006, 0.7997, 1.198, 0.999, 0.6991]  off 0.0000  largest branch miss 0.0044
+  pass 12  f 0.0009  dwell [1.498, 0.9987, 0.7972, 1.2, 1.0, 0.6989]  off 0.0000  largest branch miss 0.0081
+sync shared, conflicting ε=0.1, set 1 dwell 1.504 0.997 0.800 1.200 1.000 0.702  err% +0.2 -0.3 -0.0 -0.0 +0.0 +0.3  rms  0.19%  off  0.00%  dwell ok branch ok PASS
+sync shared, conflicting ε=0.1, set 2 dwell 1.506 0.993 0.798 1.207 0.999 0.702  err% +0.4 -0.7 -0.2 +0.6 -0.1 +0.3  rms  0.44%  off  0.00%  dwell ok branch ok PASS
+sync shared, conflicting ε=0.1, half step dwell 1.499 0.996 0.803 1.200 0.998 0.700  err% -0.1 -0.4 +0.3 -0.0 -0.2 +0.1  rms  0.22%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.70 measured 0.697 ok, set 2 0.700 ok, half step 0.705 ok
+    branch 1→3 designed 0.30 measured 0.303 ok, set 2 0.300 ok, half step 0.295 ok
+    branch 4→2 designed 0.40 measured 0.403 ok, set 2 0.407 ok, half step 0.402 ok
+    branch 4→3 designed 0.60 measured 0.597 ok, set 2 0.593 ok, half step 0.598 ok
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [1.94, 1.13, 3.86, 5.19, 2.02, 2.54, 7.18, 13.8], pass on all three: true, fit 41 s, case 66 s
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+  pass 1  f 34.6135  dwell [1.782, 0.5534, 1.272, 0.4133]  off 0.0000  largest branch miss 0.4643
+  pass 2  f 24.1874  dwell [1.796, 0.536, 1.026, 0.4005]  off 0.0000  largest branch miss 0.4591
+  pass 3  f 39.5844  dwell [1.822, 0.5159, 1.653, 0.23]  off 0.0000  largest branch miss 0.4540
+  pass 4  f 28.6448  dwell [1.833, 0.4941, 1.138, 0.2596]  off 0.0000  largest branch miss 0.4589
+  pass 5  f 23.2076  dwell [1.836, 0.4804, 1.081, 0.2057]  off 0.0000  largest branch miss 0.4562
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+  resuming after pass 5
+  pass 6  f 26.9453  dwell [1.835, 0.4889, 1.304, 0.2259]  off 0.0000  largest branch miss 0.4577
+  pass 7  f 31.8894  dwell [1.851, 0.4969, 1.595, 0.2231]  off 0.0000  largest branch miss 0.4595
+  pass 8  f 21.0941  dwell [1.844, 0.475, 0.9614, 0.2196]  off 0.0000  largest branch miss 0.4525
+  pass 9  f 26.3452  dwell [1.884, 0.4878, 1.309, 0.2221]  off 0.0000  largest branch miss 0.4214
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+  resuming after pass 9, with 80 runs of the next
+  pass 10  f 34.3041  dwell [2.236, 0.5027, 1.845, 0.2209]  off 0.0000  largest branch miss 0.4290
+  pass 11  f 31.9485  dwell [2.394, 0.4989, 1.715, 0.2221]  off 0.0000  largest branch miss 0.4075
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+  resuming after pass 11, with 32 runs of the next
+  pass 12  f 28.4890  dwell [2.548, 0.4867, 1.55, 0.2214]  off 0.0000  largest branch miss 0.3599
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 6 pairs, 11 transit corners, states on ["DDSSSD", "DDSSDD", "DDSSSS", "DDDSSS"]
+sync worm data ε=0.1, set 1    dwell 2.776 0.490 1.373 0.221  err% -51.0 +1.1 -34.5 -0.1  rms 41.50%  off  0.00%  dwell NO branch NO fail
+sync worm data ε=0.1, set 2    dwell 2.777 0.487 1.373 0.222  err% -51.0 +0.3 -34.5 +0.3  rms 41.48%  off  0.00%  dwell NO branch NO fail
+sync worm data ε=0.1, half step dwell 2.749 0.488 1.377 0.220  err% -51.5 +0.6 -34.3 -0.6  rms 41.85%  off  0.00%  dwell NO branch NO fail
+    branch 1→2 designed 0.99 measured 0.706 outside CI, set 2 0.709 outside CI, half step 0.709 outside CI
+    branch 1→3 designed 0.01 measured 0.294 outside CI, set 2 0.291 outside CI, half step 0.291 outside CI
+    branch 2→1 designed 0.47 measured 0.467 ok, set 2 0.461 outside CI, half step 0.465 ok
+    branch 2→3 designed 0.53 measured 0.533 ok, set 2 0.539 outside CI, half step 0.535 ok
+    branch 3→1 designed 0.01 measured 0.107 outside CI, set 2 0.109 outside CI, half step 0.113 outside CI
+    branch 3→2 designed 0.02 measured 0.115 outside CI, set 2 0.113 outside CI, half step 0.117 outside CI
+    branch 3→4 designed 0.97 measured 0.778 outside CI, set 2 0.779 outside CI, half step 0.770 outside CI
+    branch 4→1 designed 0.95 measured 0.948 ok, set 2 0.944 outside CI, half step 0.952 outside CI
+    branch 4→3 designed 0.05 measured 0.052 ok, set 2 0.056 outside CI, half step 0.048 outside CI
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [0.0984, -0.709, 9.66, 5.55, -0.00481, 0.00105, 1.64, 47.5, 26.8], pass on all three: false, fit 1326 s, case 2108 s
+finished: 13 of 13

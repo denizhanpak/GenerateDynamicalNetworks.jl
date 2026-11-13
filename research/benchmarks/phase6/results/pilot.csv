@@ -1,0 +1,3 @@
+noise,worst_err,rms,off,set1_pass,set2_pass,half_pass,third_pass,class,seconds
+0.1,0.02956958288559841,0.01684307842478003,0.0,true,true,true,true,unknown,83.809608442
+0.001,0.002340731168432364,0.0017316216137829871,0.0,true,true,true,true,heteroclinic,264.943367158

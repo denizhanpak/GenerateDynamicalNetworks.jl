@@ -1,0 +1,4 @@
+case,worst_err,rms,off,dwell_ok,branches_ok,repeat_pass,fine_pass,class,relay_switches,relay_preceded
+"two-way and exit",0.007715363979043932,0.006054074108989891,0.0,true,false,false,false,excitable,50,50
+"hub with two returns",0.004871865149637777,0.0035302968179777195,0.0,true,false,true,true,excitable,140,140
+"flip-flop",0.006384254805548939,0.004663678689026073,0.0,true,true,true,true,excitable,91,91

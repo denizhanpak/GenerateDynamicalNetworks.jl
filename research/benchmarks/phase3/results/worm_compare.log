@@ -1,0 +1,5 @@
+formula seed                   dwell 2.144 0.445 1.412 0.205  err% -59.8 +1.0 -27.4 -1.5  rms 48.27%  off  0.00%  dwell NO branch ok fail
+CMA-ES on dwell requests       dwell 3.032 0.417 1.884 0.297  err% -43.1 -5.5 -3.1 +42.9  rms 33.52%  off  0.00%  dwell NO branch ok fail
+your fit                       dwell 5.272 0.438 1.931 0.207  err% -1.1 -0.8 -0.7 -0.4  rms  0.78%  off  3.85%  dwell ok branch ok fail
+CMA-ES on α and ν              dwell 5.397 0.439 1.918 0.208  err% +1.3 -0.4 -1.4 -0.2  rms  0.97%  off  0.00%  dwell ok branch ok PASS
+CMA-ES on α and ν + polish     dwell 5.377 0.441 1.948 0.208  err% +0.9 +0.1 +0.2 -0.1  rms  0.46%  off  0.00%  dwell ok branch ok PASS

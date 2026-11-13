@@ -1,0 +1,19 @@
+ERROR: LoadError: ArgumentError: Cannot open 'benchmarks/phase5/results/theta_ctrnn_twoway_worm_with_return_0.1.csv': not a file
+Stacktrace:
+ [1] readdlm_auto(input::String, dlm::Char, T::Type, eol::Char, auto::Bool; opts::@Kwargs{})
+   @ DelimitedFiles ~/.julia/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:234
+ [2] readdlm_auto
+   @ ~/.julia/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:233 [inlined]
+ [3] readdlm
+   @ ~/.julia/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:170 [inlined]
+ [4] readdlm(input::String, dlm::Char)
+   @ DelimitedFiles ~/.julia/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:162
+ [5] top-level scope
+   @ benchmarks/phase5/ctrnn_twoway.jl:82
+ [6] include(mod::Module, _path::String)
+   @ Base ./Base.jl:309
+ [7] exec_options(opts::Base.JLOptions)
+   @ Base ./client.jl:344
+ [8] _start()
+   @ Base ./client.jl:577
+in expression starting at benchmarks/phase5/ctrnn_twoway.jl:51

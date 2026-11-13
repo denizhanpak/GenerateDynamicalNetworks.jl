@@ -1,0 +1,60 @@
+ERROR: LoadError: DomainError with -3.086397110748229e113:
+log was called with a negative real argument but will only return a complex result if called with a complex argument. Try log(Complex(x)).
+Stacktrace:
+  [1] throw_complex_domainerror(f::Symbol, x::Float64)
+    @ Base.Math ./math.jl:33
+  [2] _log
+    @ ./special/log.jl:295 [inlined]
+  [3] log(x::Float64)
+    @ Base.Math ./special/log.jl:261
+  [4] race_outputs(λs::Vector{Float64}, contract::Float64, η::Float64)
+    @ Main benchmarks/phase6/seed1d.jl:123
+  [5] seed_out_race(spec::@NamedTuple{P::Matrix{Float64}, τ::Vector{Float64}, form::Symbol, ε₀::Float64, sample::Float64}; contract::Float64, iters::Int64)
+    @ Main benchmarks/phase6/seed1d.jl:136
+  [6] seed_out_race
+    @ benchmarks/phase6/seed1d.jl:126 [inlined]
+  [7] hop_seed(spec::@NamedTuple{P::Matrix{Float64}, τ::Vector{Float64}, form::Symbol, ε₀::Float64, sample::Float64}, L::SyncLayout; rounds::Int64)
+    @ Main benchmarks/phase7/hopfield.jl:251
+  [8] hop_seed
+    @ benchmarks/phase7/hopfield.jl:247 [inlined]
+  [9] fit_hop(spec::@NamedTuple{P::Matrix{Float64}, τ::Vector{Float64}, form::Symbol, ε₀::Float64, sample::Float64}, L::SyncLayout; checkpoint::String, kw::@Kwargs{deadline::Float64})
+    @ Main benchmarks/phase7/hopfield.jl:296
+ [10] top-level scope
+    @ benchmarks/phase7/pilot.jl:32
+ [11] include(mod::Module, _path::String)
+    @ Base ./Base.jl:309
+ [12] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:344
+ [13] _start()
+    @ Base ./client.jl:577
+in expression starting at benchmarks/phase7/pilot.jl:29
+3-ring at noise 0.001: 2 neurons, states on ["SD", "DS", "SS"], paths ["SD→DD→DS", "DS→SS", "SS→SD"]
+vertex check: design violation 5.4e-15, largest gap between Jacobian eigenvalues and design rates 4.5e-09
+3-ring at noise 0.001: 2 neurons, states on ["SD", "DS", "SS"], paths ["SD→DD→DS", "DS→SS", "SS→SD"]
+vertex check: design violation 5.4e-15, largest gap between Jacobian eigenvalues and design rates 4.5e-09
+  pass 1  f 0.9117  dwell [2.031, 4.807, 15.42]  off 0.0000  largest branch miss 0.0000
+  pass 2  f 0.0297  dwell [1.187, 3.027, 10.17]  off 0.0000  largest branch miss 0.0000
+  pass 3  f 0.0003  dwell [1.018, 3.009, 10.02]  off 0.0000  largest branch miss 0.0000
+  pass 4  f 0.0000  dwell [1.001, 3.0, 9.986]  off 0.0000  largest branch miss 0.0000
+  pass 5  f 0.0000  dwell [0.9992, 2.999, 9.982]  off 0.0000  largest branch miss 0.0000
+  pass 6  f 0.0000  dwell [0.9981, 3.011, 10.05]  off 0.0000  largest branch miss 0.0000
+  pass 7  f 0.0001  dwell [1.002, 2.988, 9.926]  off 0.0000  largest branch miss 0.0000
+  pass 8  f 0.0000  dwell [0.9996, 2.996, 10.03]  off 0.0000  largest branch miss 0.0000
+  pass 9  f 0.0000  dwell [1.0, 3.009, 10.01]  off 0.0000  largest branch miss 0.0000
+  pass 10  f 0.0000  dwell [0.999, 2.995, 10.02]  off 0.0000  largest branch miss 0.0000
+  pass 11  f 0.0000  dwell [0.9995, 2.996, 9.984]  off 0.0000  largest branch miss 0.0000
+  batch time used; rerun to continue
+3-ring at noise 0.001: 2 neurons, states on ["SD", "DS", "SS"], paths ["SD→DD→DS", "DS→SS", "SS→SD"]
+vertex check: design violation 1.5e-14, largest gap between Jacobian eigenvalues and design rates 4.5e-09
+  resuming after pass 11, with 32 runs of the next
+  pass 12  f 0.0000  dwell [1.0, 3.011, 10.01]  off 0.0000  largest branch miss 0.0000
+3-ring at noise 0.001: 2 neurons, states on ["SD", "DS", "SS"], paths ["SD→DD→DS", "DS→SS", "SS→SD"]
+vertex check: design violation 2.1e-14, largest gap between Jacobian eigenvalues and design rates 4.5e-09
+fitted out-rates [18.34, 3.58, 0.8533], race seed –, transit 27.6, contraction 27.6, design violation 2.3e-14
+hopfield pilot ε=0.001, held-out set 1 dwell 0.893 2.311 8.015  err% -10.7 -23.0 -19.8  rms 20.80%  off  0.00%  dwell NO branch ok fail
+hopfield pilot ε=0.001, held-out set 2 dwell 0.892 2.312 8.006  err% -10.8 -22.9 -19.9  rms 20.85%  off  0.00%  dwell NO branch ok fail
+hopfield pilot ε=0.001, set 1 at half the step dwell 0.892 2.313 8.013  err% -10.8 -22.9 -19.9  rms 20.80%  off  0.00%  dwell NO branch ok fail
+hopfield pilot ε=0.001, third set (information) dwell 0.893 2.310 7.993  err% -10.7 -23.0 -20.1  rms 20.92%  off  0.00%  dwell NO branch ok fail
+  bout CV [0.09, 0.13, 0.16]
+  class heteroclinic: saddle saddle saddle saddle saddle
+  pass on all three: false

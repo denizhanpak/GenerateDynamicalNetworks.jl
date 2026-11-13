@@ -1,0 +1,16 @@
+flip-flop: 2 states, relays [(2, 1)], cell τ [0.075, 0.075, 0.075]
+  pass 1  f 0.1737  dwell [1.08, 0.4519]  off 0.0000
+  pass 2  f 0.0758  dwell [1.018, 0.3949]  off 0.0000
+  pass 3  f 0.0367  dwell [1.0, 0.3634]  off 0.0000
+  pass 4  f 0.0154  dwell [1.005, 0.3396]  off 0.0000
+  pass 5  f 0.0059  dwell [0.998, 0.3239]  off 0.0000
+  pass 6  f 0.0019  dwell [0.9887, 0.3129]  off 0.0000
+  pass 7  f 0.0007  dwell [1.015, 0.3067]  off 0.0000
+  pass 8  f 0.0001  dwell [0.9977, 0.3035]  off 0.0000
+┌ Warning: Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
+└ @ benchmarks/phase5/ctrnn_twoway.jl:91
+┌ Warning: Assignment to `spec` in soft scope is ambiguous because a global variable by the same name exists: `spec` will be treated as a new local. Disambiguate by using `local spec` to suppress this warning or `global spec` to assign to the existing global variable.
+└ @ benchmarks/phase5/ctrnn_twoway.jl:92
+┌ Warning: Assignment to `m` in soft scope is ambiguous because a global variable by the same name exists: `m` will be treated as a new local. Disambiguate by using `local m` to suppress this warning or `global m` to assign to the existing global variable.
+└ @ benchmarks/phase5/ctrnn_twoway.jl:93
+  fitted in 38 s, step-rule rate 160

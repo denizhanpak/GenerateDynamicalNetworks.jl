@@ -1,0 +1,4 @@
+flip-flop, held-out set 1      dwell 0.995 0.300  err% -0.5 +0.0  rms  0.37%  off  0.00%  dwell ok branch ok PASS
+flip-flop, held-out set 2      dwell 0.999 0.299  err% -0.1 -0.2  rms  0.18%  off  0.00%  dwell ok branch ok PASS
+flip-flop, set 1 at half the step dwell 1.002 0.299  err% +0.2 -0.3  rms  0.25%  off  0.00%  dwell ok branch ok PASS
+  pass on all three: true

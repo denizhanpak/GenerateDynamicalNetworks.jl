@@ -1,0 +1,14 @@
+case,noise,pairs,oscillators,transits,worst_err,rms,off,dwell_ok,branches_ok,set2_pass,half_pass,pass,class,outcomes,seconds
+"worm data",0.1,6,12,11,0.009001965575740845,0.004787517796822793,0.0,true,true,false,true,false,excitable,"stable stable stable stable stable",1260.7355840206146
+"foraging",0.001,3,6,2,0.0022685161115687524,0.0017122316344279302,0.0,true,false,true,true,false,heteroclinic,"saddle saddle saddle saddle saddle",193.85638999938965
+"worm ring",0.001,2,4,0,0.0043087134009255346,0.002494706839916749,0.0,true,true,true,true,true,heteroclinic,"saddle saddle saddle saddle saddle",408.80724692344666
+"figure-eight",0.001,4,8,2,0.003064892252932938,0.001786425228838762,0.0,true,true,true,true,true,heteroclinic,"saddle saddle saddle saddle saddle",223.12454390525818
+"Δ-clique",0.001,3,6,2,0.017454954851252813,0.008670004072705646,0.0,true,true,true,true,true,heteroclinic,"saddle saddle saddle saddle saddle",101.33232998847961
+"shared, solvable",0.001,4,8,3,0.002583311510391928,0.0016693043224273575,0.0017313518972731207,true,true,false,true,false,heteroclinic,"saddle saddle saddle saddle saddle",211.70015811920166
+"shared, conflicting",0.001,3,6,2,0.0013189559527934103,0.0008130384856343958,0.0,true,true,false,true,false,heteroclinic,"saddle saddle saddle saddle saddle",191.5225648880005
+"foraging",0.1,3,6,2,0.006560221237164043,0.0033339733306011936,0.0,true,true,true,true,true,heteroclinic,"saddle saddle saddle saddle saddle",95.32797312736511
+"worm ring",0.1,2,4,0,0.0032174641526775405,0.0024343888806558295,0.0,true,true,true,true,true,unknown,"stable stable stable stable saddle",147.79649209976196
+"figure-eight",0.1,4,8,2,0.004300110435315085,0.0025568409540928337,0.0,true,true,true,true,true,heteroclinic,"saddle saddle saddle saddle saddle",101.3752830028534
+"Δ-clique",0.1,3,6,2,0.0009978933371949106,0.0005533349654727605,6.53242532621299e-5,true,false,true,true,false,heteroclinic,"saddle saddle saddle saddle saddle",39.000311851501465
+"shared, solvable",0.1,4,8,3,0.007071722190739704,0.004663206871796752,0.000445603012276363,true,true,false,true,false,heteroclinic,"saddle saddle saddle saddle saddle",83.1126229763031
+"shared, conflicting",0.1,3,6,2,0.003111575497748764,0.0018367065795538854,0.0,true,true,true,false,false,heteroclinic,"saddle saddle saddle saddle saddle",53.49404811859131

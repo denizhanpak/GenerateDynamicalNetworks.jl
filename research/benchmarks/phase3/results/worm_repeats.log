@@ -1,0 +1,25 @@
+repeat 2, search               dwell 5.206 0.438 1.957 0.205  err% -2.3 -0.7 +0.6 -1.4  rms  1.45%  off  0.00%  dwell ok branch ok PASS
+repeat 2, polished             dwell 5.300 0.441 1.942 0.208  err% -0.5 -0.1 -0.2 -0.0  rms  0.29%  off  0.00%  dwell ok branch ok PASS
+   α = [62.86, 19.82, 37.55, 40.67]  ν = [477.9, 1.756, 97.1, 2.262]  255 s
+repeat 2 exit 0
+repeat 3 exit 137
+repeat 4, search               dwell 5.348 0.434 1.949 0.206  err% +0.4 -1.5 +0.2 -1.2  rms  0.98%  off  0.00%  dwell ok branch ok PASS
+repeat 4, polished             dwell 5.343 0.439 1.941 0.208  err% +0.3 -0.4 -0.2 +0.1  rms  0.28%  off  0.00%  dwell ok branch ok PASS
+   α = [33.14, 14.7, 60.56, 25.4]  ν = [257.0, 2.492, 55.08, 0.8297]  632 s
+repeat 4 exit 0
+--- repeat 3 rerun, alpha bound 100
+ERROR: LoadError: UndefVarError: `αmax` not defined in `Main`
+Suggestion: check for spelling errors or missing imports.
+Stacktrace:
+ [1] top-level scope
+   @ benchmarks/phase3/worm_repeat.jl:16
+ [2] include(mod::Module, _path::String)
+   @ Base ./Base.jl:309
+ [3] exec_options(opts::Base.JLOptions)
+   @ Base ./client.jl:344
+ [4] _start()
+   @ Base ./client.jl:577
+in expression starting at benchmarks/phase3/worm_repeat.jl:16
+repeat 3 rerun exit 1
+--- repeat 3 rerun, alpha bound 100, second launch
+repeat 3 rerun exit 137

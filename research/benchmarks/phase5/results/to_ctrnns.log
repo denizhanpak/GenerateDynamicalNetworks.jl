@@ -1,0 +1,4 @@
+static version  dwell [1.657, 0.7666, 1.214, 0.1841]
+CTRNNs.jl       dwell [1.408, 0.7026, 0.9182, 0.2573]
+difference      [-15.0, -8.4, -24.3, 39.7] %
+exit 0

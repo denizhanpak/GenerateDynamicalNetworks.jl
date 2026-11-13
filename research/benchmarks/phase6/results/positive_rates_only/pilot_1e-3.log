@@ -1,0 +1,30 @@
+3-ring at noise 0.001: states on corners ["SS", "DS", "DD"], paths ["SS→DS", "DS→DD", "DD→SD→SS"]
+corner check: largest gap between Jacobian eigenvalues and design, or drift at a corner, 9.76e-10
+  pass 1  f 0.0478  dwell [1.196, 3.098, 8.852]  off 0.0000
+    response β per state [1.0, 1.0, 1.0]
+  pass 2  f 0.0010  dwell [1.024, 3.012, 9.793]  off 0.0000
+    response β per state [0.93, 0.94, 0.91]
+  pass 3  f 0.0000  dwell [1.002, 3.001, 9.946]  off 0.0000
+    response β per state [0.89, 0.94, 0.8]
+  pass 4  f 0.0000  dwell [0.9981, 3.002, 10.03]  off 0.0000
+    response β per state [0.89, 0.94, 0.8]
+  pass 5  f 0.0000  dwell [1.002, 2.993, 10.02]  off 0.0000
+    response β per state [0.89, 0.94, 0.8]
+  pass 6  f 0.0000  dwell [0.9994, 2.998, 9.954]  off 0.0000
+    response β per state [0.89, 0.94, 0.8]
+  pass 7  f 0.0000  dwell [0.9995, 2.999, 10.01]  off 0.0000
+    response β per state [0.89, 0.94, 0.8]
+  pass 8  f 0.0000  dwell [0.9977, 2.999, 10.01]  off 0.0000
+    response β per state [0.89, 0.94, 0.8]
+  pass 9  f 0.0000  dwell [1.001, 3.0, 9.987]  off 0.0000
+    response β per state [0.89, 0.94, 0.8]
+  pass 10  f 0.0000  dwell [0.9984, 3.011, 10.02]  off 0.0000
+    response β per state [0.89, 0.94, 0.8]
+fitted out-rates [8.458, 2.39, 0.595], transit 27.6, contraction 55.3, 314 s
+pilot ε=0.001, held-out set 1  dwell 1.001 2.994 9.977  err% +0.1 -0.2 -0.2  rms  0.19%  off  0.00%  dwell ok branch ok PASS
+pilot ε=0.001, held-out set 2  dwell 1.002 2.999 9.964  err% +0.2 -0.0 -0.4  rms  0.25%  off  0.00%  dwell ok branch ok PASS
+pilot ε=0.001, set 1 at half the step dwell 1.002 2.993 9.983  err% +0.2 -0.2 -0.2  rms  0.20%  off  0.00%  dwell ok branch ok PASS
+pilot ε=0.001, third set (information) dwell 1.004 2.999 9.970  err% +0.4 -0.0 -0.3  rms  0.28%  off  0.00%  dwell ok branch ok PASS
+  bout CV [0.14, 0.15, 0.19]
+  class heteroclinic: saddle saddle saddle saddle saddle
+  pass on all three: true

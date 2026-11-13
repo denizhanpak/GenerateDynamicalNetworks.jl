@@ -1,0 +1,22 @@
+hub with two returns: 3 states, relays [(2, 1), (3, 1)], cell τ [0.1, 0.1, 0.2, 0.1, 0.2]
+  pass 1  f 0.2746  dwell [1.17, 0.5991, 1.073]  off 0.0000  largest branch miss 0.0043
+    learned responses (dwell; branch) per state: 1.0; 1.0 | 1.0 | 1.0
+  pass 2  f 0.1214  dwell [1.08, 0.5288, 0.9675]  off 0.0000  largest branch miss 0.0127
+    learned responses (dwell; branch) per state: 0.51; 0.97 | 0.31 | 0.35
+  pass 3  f 0.0058  dwell [1.008, 0.3753, 0.8277]  off 0.0000  largest branch miss 0.0081
+    learned responses (dwell; branch) per state: 0.48; 1.06 | 0.38 | 0.29
+  pass 4  f 0.0042  dwell [1.027, 0.4074, 0.7978]  off 0.0000  largest branch miss 0.0197
+    learned responses (dwell; branch) per state: 0.25; 3.35 | 0.49 | 0.31
+  pass 5  f 0.0002  dwell [1.001, 0.3982, 0.795]  off 0.0000  largest branch miss 0.0034
+    learned responses (dwell; branch) per state: 0.25; 3.04 | 0.6 | 0.31
+  pass 6  f 0.0005  dwell [1.003, 0.3988, 0.8048]  off 0.0000  largest branch miss 0.0074
+    learned responses (dwell; branch) per state: 0.25; 3.04 | 0.6 | 0.31
+  pass 7  f 0.0000  dwell [1.004, 0.399, 0.7976]  off 0.0000  largest branch miss 0.0006
+    learned responses (dwell; branch) per state: 0.25; 3.04 | 0.6 | 0.31
+  pass 8  f 0.0002  dwell [0.994, 0.4013, 0.7987]  off 0.0000  largest branch miss 0.0036
+    learned responses (dwell; branch) per state: 0.25; 3.04 | 0.6 | 0.31
+  pass 9  f 0.0001  dwell [1.003, 0.4003, 0.8007]  off 0.0000  largest branch miss 0.0036
+    learned responses (dwell; branch) per state: 0.25; 3.04 | 0.6 | 0.31
+  pass 10  f 0.0000  dwell [1.002, 0.4003, 0.7997]  off 0.0000  largest branch miss 0.0004
+    learned responses (dwell; branch) per state: 0.25; 3.04 | 0.6 | 0.31
+  last batch 233 s, step-rule rate 127

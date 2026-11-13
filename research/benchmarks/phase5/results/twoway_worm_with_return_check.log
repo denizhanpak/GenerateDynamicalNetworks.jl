@@ -1,0 +1,7 @@
+  batch time used; rerun to continue
+worm with return, held-out set 1 dwell 5.358 0.441 1.963 0.208  err% +0.5 -0.1 +0.9 +0.2  rms  0.55%  off  0.00%  dwell ok branch ok PASS
+worm with return, held-out set 2 dwell 5.346 0.441 1.929 0.208  err% +0.3 +0.0 -0.8 +0.0  rms  0.44%  off  0.00%  dwell ok branch ok PASS
+worm with return, set 1 at half the step dwell 5.349 0.442 1.964 0.208  err% +0.4 +0.2 +1.0 +0.1  rms  0.54%  off  0.00%  dwell ok branch ok PASS
+    branch 2→1 designed 0.47 measured 0.470 ok, set 2 0.466 ok, half step 0.471 ok
+    branch 2→3 designed 0.53 measured 0.530 ok, set 2 0.534 ok, half step 0.529 ok
+  pass on all three: true

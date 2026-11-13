@@ -1,0 +1,29 @@
+worm with return: 4 states, relays [(2, 1)], cell τ [0.052, 0.11, 0.11, 0.052, 0.11]
+  pass 1  f 0.3397  dwell [4.649, 0.6436, 2.059, 0.3159]  off 0.0000  largest branch miss 0.0063
+    learned responses (dwell; branch) per state: 1.0 | 1.0; 1.0 | 1.0 | 1.0
+  pass 2  f 0.1363  dwell [5.31, 0.5563, 1.924, 0.2771]  off 0.0000  largest branch miss 0.0020
+    learned responses (dwell; branch) per state: 0.97 | 0.39; 1.0 | 1.19 | 0.31
+  pass 3  f 0.0117  dwell [5.569, 0.4678, 1.981, 0.1951]  off 0.0000  largest branch miss 0.0151
+    learned responses (dwell; branch) per state: 0.97 | 0.29; 1.0 | 1.19 | 0.38
+  pass 4  f 0.0047  dwell [5.47, 0.4411, 1.954, 0.2095]  off 0.0000  largest branch miss 0.0219
+    learned responses (dwell; branch) per state: 0.4 | 0.29; 1.14 | 1.19 | 0.43
+  pass 5  f 0.0017  dwell [5.163, 0.4424, 1.991, 0.2083]  off 0.0000  largest branch miss 0.0048
+    learned responses (dwell; branch) per state: 0.88 | 0.29; 1.4 | 1.19 | 0.43
+  pass 6  f 0.0005  dwell [5.338, 0.4405, 1.963, 0.2075]  off 0.0000  largest branch miss 0.0068
+    learned responses (dwell; branch) per state: 0.93 | 0.29; 1.4 | 1.19 | 0.43
+  pass 7  f 0.0011  dwell [5.362, 0.4426, 1.889, 0.2084]  off 0.0000  largest branch miss 0.0049
+worm with return: 4 states, relays [(2, 1)], cell τ [0.052, 0.11, 0.11, 0.052, 0.11]
+  resuming after pass 7
+  pass 8  f 0.0003  dwell [5.243, 0.4403, 1.943, 0.2075]  off 0.0000  largest branch miss 0.0016
+    learned responses (dwell; branch) per state: 0.93 | 0.29; 1.4 | 1.19 | 0.43
+  batch time used; rerun to continue
+worm with return: 4 states, relays [(2, 1)], cell τ [0.052, 0.11, 0.11, 0.052, 0.11]
+  resuming after pass 8
+  pass 9  f 0.0000  dwell [5.328, 0.4412, 1.957, 0.208]  off 0.0000  largest branch miss 0.0005
+    learned responses (dwell; branch) per state: 0.93 | 0.29; 1.4 | 1.19 | 0.43
+  batch time used; rerun to continue
+worm with return: 4 states, relays [(2, 1)], cell τ [0.052, 0.11, 0.11, 0.052, 0.11]
+  resuming after pass 9
+  pass 10  f 0.0000  dwell [5.323, 0.4401, 1.948, 0.2082]  off 0.0000  largest branch miss 0.0003
+    learned responses (dwell; branch) per state: 0.93 | 0.29; 1.4 | 1.19 | 0.43
+  last batch 419 s, step-rule rate 252

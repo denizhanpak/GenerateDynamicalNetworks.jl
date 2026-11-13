@@ -1,0 +1,118 @@
+simplex foraging ε=0.001 [correction] dwell 1.994 1.001 0.501 1.489 1.002  err% -0.3 +0.1 +0.2 -0.7 +0.2  rms  0.40%  off  0.00%  dwell ok branch NO fail
+    branch 2→3 designed 0.70 measured 0.693 outside CI, repeat 0.700 ok
+    branch 2→4 designed 0.30 measured 0.307 outside CI, repeat 0.300 ok
+    dim 12, seeded true, evaluations 0, failed runs 0, 12 s
+simplex worm ring ε=0.001 [correction] dwell 5.319 0.441 1.950 0.208  err% -0.2 -0.0 +0.3 +0.1  rms  0.17%  off  0.00%  dwell ok branch ok PASS
+    dim 9, seeded true, evaluations 0, failed runs 0, 19 s
+simplex figure-eight ε=0.001 [search] dwell 0.994 0.602 1.398 1.977 0.801  err% -0.6 +0.4 -0.1 -1.1 +0.1  rms  0.61%  off  1.43%  dwell ok branch NO fail
+    branch 1→2 designed 0.75 measured 0.766 outside CI, repeat 0.768 outside CI
+    branch 1→4 designed 0.25 measured 0.234 outside CI, repeat 0.232 outside CI
+    dim 12, seeded true, evaluations 504, failed runs 0, 106 s
+batch time used; rerun to continue
+finished: 3 of 24
+batch exit 0
+simplex Δ-clique ε=0.001 [search] dwell 1.497 0.999 0.801 1.997  err% -0.2 -0.1 +0.1 -0.2  rms  0.14%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.40 measured 0.404 ok, repeat 0.407 ok
+    branch 1→3 designed 0.60 measured 0.596 ok, repeat 0.593 ok
+    dim 10, seeded true, evaluations 504, failed runs 0, 84 s
+simplex shared, solvable ε=0.001 [search] dwell 1.499 1.005 0.801 1.202 1.001 0.697  err% -0.1 +0.5 +0.2 +0.2 +0.1 -0.5  rms  0.30%  off  0.19%  dwell ok branch NO fail
+    branch 1→2 designed 0.70 measured 0.707 outside CI, repeat 0.702 ok
+    branch 1→3 designed 0.30 measured 0.293 outside CI, repeat 0.298 ok
+    branch 4→3 designed 0.60 measured 0.584 outside CI, repeat 0.580 outside CI
+    branch 4→6 designed 0.40 measured 0.416 outside CI, repeat 0.420 outside CI
+    dim 15, seeded true, evaluations 504, failed runs 0, 87 s
+simplex shared, conflicting ε=0.001 [search] dwell 1.496 0.996 0.801 1.200 0.997 0.699  err% -0.3 -0.4 +0.1 +0.0 -0.3 -0.2  rms  0.25%  off  0.14%  dwell ok branch NO fail
+    branch 1→2 designed 0.70 measured 0.693 ok, repeat 0.694 ok
+    branch 1→3 designed 0.30 measured 0.307 ok, repeat 0.306 ok
+    branch 4→2 designed 0.40 measured 0.438 outside CI, repeat 0.437 outside CI
+    branch 4→3 designed 0.60 measured 0.562 outside CI, repeat 0.563 outside CI
+    dim 15, seeded true, evaluations 504, failed runs 0, 106 s
+cylinder foraging ε=0.001 [correction] dwell 2.001 1.006 0.505 1.508 1.011  err% +0.0 +0.6 +1.1 +0.5 +1.1  rms  0.76%  off  0.00%  dwell ok branch ok PASS
+    branch 2→3 designed 0.70 measured 0.694 ok, repeat 0.699 ok
+    branch 2→4 designed 0.30 measured 0.306 ok, repeat 0.301 ok
+    dim 7, seeded true, evaluations 0, failed runs 0, 10 s
+cylinder worm ring ε=0.001 [correction] dwell 5.363 0.442 1.946 0.209  err% +0.6 +0.2 +0.1 +0.5  rms  0.41%  off  0.00%  dwell ok branch ok PASS
+    dim 5, seeded true, evaluations 0, failed runs 0, 19 s
+batch time used; rerun to continue
+finished: 8 of 24
+batch exit 0
+cylinder figure-eight ε=0.001 [search] dwell 0.998 0.599 1.397 2.001 0.799  err% -0.2 -0.2 -0.2 +0.1 -0.1  rms  0.14%  off  0.00%  dwell ok branch NO fail
+    branch 1→2 designed 0.75 measured 0.757 outside CI, repeat 0.757 outside CI
+    branch 1→4 designed 0.25 measured 0.243 outside CI, repeat 0.243 outside CI
+    dim 7, seeded true, evaluations 504, failed runs 0, 112 s
+cylinder Δ-clique ε=0.001 [search] dwell 1.497 0.998 0.800 1.999  err% -0.2 -0.2 -0.0 -0.1  rms  0.13%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.40 measured 0.402 ok, repeat 0.400 ok
+    branch 1→3 designed 0.60 measured 0.598 ok, repeat 0.600 ok
+    dim 6, seeded true, evaluations 504, failed runs 0, 63 s
+cylinder shared, solvable ε=0.001 [correction] dwell 1.503 1.004 0.798 1.204 1.008 0.715  err% +0.2 +0.4 -0.3 +0.3 +0.8 +2.1  rms  0.96%  off  0.00%  dwell ok branch NO fail
+    branch 1→2 designed 0.70 measured 0.690 outside CI, repeat 0.691 outside CI
+    branch 1→3 designed 0.30 measured 0.310 outside CI, repeat 0.309 outside CI
+    branch 4→3 designed 0.60 measured 0.581 outside CI, repeat 0.590 ok
+    branch 4→6 designed 0.40 measured 0.419 outside CI, repeat 0.410 ok
+    dim 9, seeded true, evaluations 0, failed runs 0, 8 s
+cylinder shared, conflicting ε=0.001 [search] dwell 1.507 1.000 0.809 1.196 0.991 0.689  err% +0.5 -0.0 +1.1 -0.3 -0.9 -1.6  rms  0.89%  off  0.00%  dwell ok branch NO fail
+    branch 1→2 designed 0.70 measured 0.691 outside CI, repeat 0.692 outside CI
+    branch 1→3 designed 0.30 measured 0.309 outside CI, repeat 0.308 outside CI
+    branch 4→2 designed 0.40 measured 0.399 ok, repeat 0.397 ok
+    branch 4→3 designed 0.60 measured 0.601 ok, repeat 0.603 ok
+    dim 9, seeded true, evaluations 504, failed runs 0, 112 s
+simplex foraging ε=0.1 [search] dwell 1.990 1.004 0.497 1.482 1.003  err% -0.5 +0.4 -0.5 -1.2 +0.3  rms  0.68%  off  0.08%  dwell ok branch NO fail
+    branch 2→3 designed 0.70 measured 0.682 outside CI, repeat 0.687 outside CI
+    branch 2→4 designed 0.30 measured 0.318 outside CI, repeat 0.313 outside CI
+    dim 12, seeded true, evaluations 504, failed runs 0, 74 s
+batch time used; rerun to continue
+finished: 13 of 24
+batch exit 0
+simplex worm ring ε=0.1 [search] dwell 5.234 0.441 1.947 0.209  err% -1.8 +0.1 +0.1 +0.3  rms  0.91%  off  0.00%  dwell ok branch ok PASS
+    dim 9, seeded true, evaluations 504, failed runs 0, 139 s
+simplex figure-eight ε=0.1 [search] dwell 1.001 0.602 1.398 2.006 0.796  err% +0.1 +0.4 -0.1 +0.3 -0.5  rms  0.32%  off  0.38%  dwell ok branch ok PASS
+    branch 1→2 designed 0.75 measured 0.750 ok, repeat 0.751 ok
+    branch 1→4 designed 0.25 measured 0.250 ok, repeat 0.249 ok
+    dim 12, seeded true, evaluations 504, failed runs 0, 54 s
+simplex Δ-clique ε=0.1 [search] dwell 1.501 1.004 0.801 1.992  err% +0.1 +0.4 +0.2 -0.4  rms  0.31%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.40 measured 0.396 ok, repeat 0.398 ok
+    branch 1→3 designed 0.60 measured 0.604 ok, repeat 0.602 ok
+    dim 10, seeded true, evaluations 504, failed runs 0, 31 s
+simplex shared, solvable ε=0.1 [search] dwell 1.499 0.998 0.804 1.185 1.006 0.703  err% -0.1 -0.2 +0.5 -1.3 +0.6 +0.5  rms  0.64%  off  0.29%  dwell ok branch ok PASS
+    branch 1→2 designed 0.70 measured 0.695 ok, repeat 0.696 ok
+    branch 1→3 designed 0.30 measured 0.305 ok, repeat 0.304 ok
+    branch 4→3 designed 0.60 measured 0.594 ok, repeat 0.586 outside CI
+    branch 4→6 designed 0.40 measured 0.406 ok, repeat 0.414 outside CI
+    dim 15, seeded true, evaluations 504, failed runs 0, 41 s
+simplex shared, conflicting ε=0.1 [search] dwell 1.542 1.007 0.799 1.199 1.002 0.702  err% +2.8 +0.7 -0.2 -0.1 +0.2 +0.3  rms  1.17%  off  0.13%  dwell ok branch ok PASS
+    branch 1→2 designed 0.70 measured 0.704 ok, repeat 0.701 ok
+    branch 1→3 designed 0.30 measured 0.296 ok, repeat 0.299 ok
+    branch 4→2 designed 0.40 measured 0.399 ok, repeat 0.404 ok
+    branch 4→3 designed 0.60 measured 0.601 ok, repeat 0.596 ok
+    dim 15, seeded true, evaluations 504, failed runs 0, 40 s
+cylinder foraging ε=0.1 [search] dwell 2.002 0.988 0.497 1.505 1.001  err% +0.1 -1.2 -0.6 +0.3 +0.1  rms  0.60%  off  0.17%  dwell ok branch NO fail
+    branch 2→3 designed 0.70 measured 0.706 ok, repeat 0.704 ok
+    branch 2→4 designed 0.30 measured 0.287 outside CI, repeat 0.290 outside CI
+    dim 7, seeded true, evaluations 504, failed runs 0, 66 s
+batch time used; rerun to continue
+finished: 19 of 24
+batch exit 0
+cylinder worm ring ε=0.1 [search] dwell 2.846 0.439 2.158 0.250  err% -46.6 -0.5 +11.0 +20.4  rms 33.12%  off 25.34%  dwell NO branch ok fail
+    dim 5, seeded true, evaluations 504, failed runs 0, 135 s
+cylinder figure-eight ε=0.1 [search] dwell 0.996 0.598 1.394 1.981 0.798  err% -0.4 -0.4 -0.4 -0.9 -0.2  rms  0.53%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.75 measured 0.749 ok, repeat 0.752 ok
+    branch 1→4 designed 0.25 measured 0.251 ok, repeat 0.248 ok
+    dim 7, seeded true, evaluations 504, failed runs 0, 58 s
+cylinder Δ-clique ε=0.1 [search] dwell 1.497 0.998 0.797 2.000  err% -0.2 -0.2 -0.4 +0.0  rms  0.23%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.40 measured 0.405 ok, repeat 0.402 ok
+    branch 1→3 designed 0.60 measured 0.595 ok, repeat 0.598 ok
+    dim 6, seeded true, evaluations 504, failed runs 0, 39 s
+cylinder shared, solvable ε=0.1 [search] dwell 1.471 1.001 0.795 1.212 0.995 0.715  err% -2.0 +0.1 -0.6 +1.0 -0.5 +2.1  rms  1.30%  off  0.91%  dwell ok branch NO fail
+    branch 1→2 designed 0.70 measured 0.702 ok, repeat 0.698 ok
+    branch 1→3 designed 0.30 measured 0.298 ok, repeat 0.302 ok
+    branch 4→3 designed 0.60 measured 0.567 outside CI, repeat 0.565 outside CI
+    branch 4→6 designed 0.40 measured 0.381 outside CI, repeat 0.386 outside CI
+    dim 9, seeded true, evaluations 504, failed runs 0, 70 s
+cylinder shared, conflicting ε=0.1 [search] dwell 1.470 1.003 0.786 1.168 1.003 0.698  err% -2.0 +0.3 -1.7 -2.6 +0.3 -0.3  rms  1.56%  off  0.43%  dwell ok branch ok PASS
+    branch 1→2 designed 0.70 measured 0.703 ok, repeat 0.699 ok
+    branch 1→3 designed 0.30 measured 0.297 ok, repeat 0.301 ok
+    branch 4→2 designed 0.40 measured 0.405 ok, repeat 0.408 outside CI
+    branch 4→3 designed 0.60 measured 0.595 ok, repeat 0.592 outside CI
+    dim 9, seeded true, evaluations 504, failed runs 0, 65 s
+finished: 24 of 24
+batch exit 0

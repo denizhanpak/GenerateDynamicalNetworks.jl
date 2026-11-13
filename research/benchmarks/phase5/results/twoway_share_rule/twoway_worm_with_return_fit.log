@@ -1,0 +1,18 @@
+worm with return: 4 states, relays [(2, 1)], cell τ [0.052, 0.11, 0.11, 0.052, 0.11]
+  pass 1  f 0.4296  dwell [4.887, 0.6311, 2.049, 0.3165]  off 0.0009
+    dwell response β [1.0, 1.0, 1.0, 1.0], share response γ [1.0, 1.0, 1.0, 1.0], largest branch miss 0.1138
+  pass 2  f 0.1344  dwell [5.166, 0.5537, 1.918, 0.2763]  off 0.0016
+    dwell response β [0.82, 0.68, 1.14, 0.66], share response γ [1.0, 1.04, 1.0, 1.0], largest branch miss 0.01
+  pass 3  f 0.0439  dwell [5.553, 0.4996, 1.966, 0.2417]  off 0.0022
+    dwell response β [1.36, 0.5, 1.14, 0.49], share response γ [1.0, 1.04, 1.0, 1.0], largest branch miss 0.0219
+  pass 4  f 0.0070  dwell [5.516, 0.4652, 1.965, 0.2102]  off 0.0019
+    dwell response β [0.79, 0.39, 1.14, 0.47], share response γ [1.0, 0.61, 1.0, 1.0], largest branch miss 0.0184
+  pass 5  f 0.0008  dwell [5.342, 0.4494, 1.963, 0.2075]  off 0.0034
+    dwell response β [0.76, 0.32, 1.14, 0.47], share response γ [1.0, 0.71, 1.0, 1.0], largest branch miss 0.0182
+  pass 6  f 0.0010  dwell [5.253, 0.444, 1.91, 0.208]  off 0.0034
+    dwell response β [0.76, 0.26, 1.14, 0.47], share response γ [1.0, 0.71, 1.0, 1.0], largest branch miss 0.0171
+  pass 7  f 0.0002  dwell [5.382, 0.4403, 1.95, 0.2082]  off 0.0035
+    dwell response β [0.76, 0.26, 1.14, 0.47], share response γ [1.0, 0.71, 1.0, 1.0], largest branch miss 0.0181
+  pass 8  f 0.0002  dwell [5.329, 0.4399, 1.955, 0.208]  off 0.0032
+    dwell response β [0.76, 0.26, 1.14, 0.47], share response γ [1.0, 0.71, 1.0, 1.0], largest branch miss 0.0162
+  fitted in 409 s, step-rule rate 252

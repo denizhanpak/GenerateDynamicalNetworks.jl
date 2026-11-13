@@ -1,0 +1,53 @@
+3-ring at noise 0.1: 2 neurons, states on ["SD", "DS", "SS"], paths ["SD→DD→DS", "DS→SS", "SS→SD"]
+vertex check: design violation 2.3e-15, largest gap between Jacobian eigenvalues and design rates 1.5e-09
+  pass 1  f 0.1906  dwell [1.547, 3.003, 10.13]  off 0.0000  largest branch miss 0.0000
+  pass 2  f 0.0163  dwell [1.136, 2.998, 10.06]  off 0.0000  largest branch miss 0.0000
+  pass 3  f 0.0017  dwell [0.9681, 3.008, 9.75]  off 0.0000  largest branch miss 0.0000
+  pass 4  f 0.0002  dwell [0.9995, 2.988, 10.12]  off 0.0000  largest branch miss 0.0000
+  pass 5  f 0.0000  dwell [1.001, 3.015, 10.03]  off 0.0000  largest branch miss 0.0000
+  pass 6  f 0.0001  dwell [1.001, 2.966, 10.04]  off 0.0000  largest branch miss 0.0000
+  pass 7  f 0.0003  dwell [0.9979, 3.029, 9.863]  off 0.0000  largest branch miss 0.0000
+  pass 8  f 0.0000  dwell [1.002, 3.0, 10.06]  off 0.0000  largest branch miss 0.0000
+  pass 9  f 0.0000  dwell [0.9987, 3.01, 10.06]  off 0.0000  largest branch miss 0.0000
+  pass 10  f 0.0001  dwell [0.9956, 2.98, 9.928]  off 0.0000  largest branch miss 0.0000
+  pass 11  f 0.0000  dwell [1.002, 3.01, 9.994]  off 0.0000  largest branch miss 0.0000
+  pass 12  f 0.0000  dwell [1.001, 2.998, 10.01]  off 0.0000  largest branch miss 0.0000
+ERROR: LoadError: invalid assignment to constant Main.fit. This redefinition may be permitted using the `const` keyword.
+Stacktrace:
+ [1] top-level scope
+   @ benchmarks/phase7/pilot.jl:40
+ [2] include(mod::Module, _path::String)
+   @ Base ./Base.jl:309
+ [3] exec_options(opts::Base.JLOptions)
+   @ Base ./client.jl:344
+ [4] _start()
+   @ Base ./client.jl:577
+in expression starting at benchmarks/phase7/pilot.jl:40
+ERROR: LoadError: FieldError: type NamedTuple has no field `dwell_ok`, available fields: `dwell`, `err`, `rms`, `off`, `branch`, `pass`, `samples`
+Stacktrace:
+ [1] getproperty
+   @ ./Base_compiler.jl:57 [inlined]
+ [2] show_result(name::String, r::@NamedTuple{dwell::Vector{Float64}, err::Vector{Float64}, rms::Float64, off::Float64, branch::Vector{Tuple{Int64, Int64, Float64, Float64, Bool}}, pass::Bool, samples::Vector{Vector{Float64}}})
+   @ Main benchmarks/phase3/optimize.jl:235
+ [3] top-level scope
+   @ benchmarks/phase7/pilot.jl:63
+ [4] include(mod::Module, _path::String)
+   @ Base ./Base.jl:309
+ [5] exec_options(opts::Base.JLOptions)
+   @ Base ./client.jl:344
+ [6] _start()
+   @ Base ./client.jl:577
+in expression starting at benchmarks/phase7/pilot.jl:63
+3-ring at noise 0.1: 2 neurons, states on ["SD", "DS", "SS"], paths ["SD→DD→DS", "DS→SS", "SS→SD"]
+vertex check: design violation 2.3e-15, largest gap between Jacobian eigenvalues and design rates 1.5e-09
+fitted out-rates [8.895, 0.9697, 0.03858], race seed [4.21, 0.967, 0.03198], transit 9.21, contraction 9.21, design violation 2.8e-15
+3-ring at noise 0.1: 2 neurons, states on ["SD", "DS", "SS"], paths ["SD→DD→DS", "DS→SS", "SS→SD"]
+vertex check: design violation 9.6e-15, largest gap between Jacobian eigenvalues and design rates 1.5e-09
+fitted out-rates [8.895, 0.9697, 0.03858], race seed [4.21, 0.967, 0.03198], transit 9.21, contraction 9.21, design violation 5.2e-15
+hopfield pilot ε=0.1, held-out set 1 dwell 0.994 2.999 10.020  err% -0.6 -0.0 +0.2  rms  0.34%  off  0.00%  dwell ok branch ok PASS
+hopfield pilot ε=0.1, held-out set 2 dwell 0.997 3.005 10.003  err% -0.3 +0.2 +0.0  rms  0.20%  off  0.00%  dwell ok branch ok PASS
+hopfield pilot ε=0.1, set 1 at half the step dwell 0.994 2.995 10.044  err% -0.6 -0.2 +0.4  rms  0.43%  off  0.00%  dwell ok branch ok PASS
+hopfield pilot ε=0.1, third set (information) dwell 1.000 2.997 9.958  err% +0.0 -0.1 -0.4  rms  0.25%  off  0.00%  dwell ok branch ok PASS
+  bout CV [0.21, 0.36, 0.6]
+  class heteroclinic: saddle saddle saddle saddle saddle
+  pass on all three: true

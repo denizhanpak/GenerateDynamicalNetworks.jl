@@ -1,0 +1,5 @@
+case,worst_err,rms,off,dwell_ok,branches_ok,repeat_pass,fine_pass,pass
+"two-way and exit",0.0038163353175514336,0.0025000195811076967,0.0,true,true,true,true,true
+"hub with two returns",0.007579062781818635,0.005108346995597112,0.0,true,false,true,true,false
+"flip-flop",0.005151003449133329,0.0036654795940070256,0.0,true,true,true,true,true
+"worm with return",0.009298872278297177,0.005473539334994941,0.0,true,true,true,true,true

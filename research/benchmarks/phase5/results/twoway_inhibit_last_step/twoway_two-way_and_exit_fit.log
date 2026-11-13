@@ -1,0 +1,18 @@
+two-way and exit: 3 states, relays [(2, 1)], cell τ [0.125, 0.125, 0.125, 0.125]
+  pass 1  f 0.2717  dwell [2.175, 0.803, 1.394]  off 0.0000
+    dwell response β [1.0, 1.0, 1.0], share response γ [1.0, 1.0, 1.0], largest branch miss 0.0431
+  pass 2  f 0.0971  dwell [2.033, 0.6752, 1.269]  off 0.0000
+    dwell response β [0.9, 0.68, 0.81], share response γ [1.0, 1.22, 1.0], largest branch miss 0.0198
+  pass 3  f 0.0285  dwell [1.993, 0.5908, 1.183]  off 0.0000
+    dwell response β [0.9, 0.49, 0.92], share response γ [1.0, 1.45, 1.0], largest branch miss 0.0071
+  pass 4  f 0.0073  dwell [1.982, 0.5345, 1.212]  off 0.0000
+    dwell response β [0.9, 0.39, 0.92], share response γ [1.0, 1.45, 1.0], largest branch miss 0.0171
+  pass 5  f 0.0020  dwell [1.982, 0.5094, 1.211]  off 0.0000
+    dwell response β [0.9, 0.34, 0.92], share response γ [1.0, 0.92, 1.0], largest branch miss 0.0125
+  pass 6  f 0.0006  dwell [2.014, 0.503, 1.196]  off 0.0000
+    dwell response β [0.9, 0.28, 0.92], share response γ [1.0, 1.2, 1.0], largest branch miss 0.0076
+  pass 7  f 0.0005  dwell [2.0, 0.4971, 1.195]  off 0.0000
+    dwell response β [0.9, 0.28, 0.92], share response γ [1.0, 1.2, 1.0], largest branch miss 0.0074
+  pass 8  f 0.0007  dwell [2.001, 0.5021, 1.208]  off 0.0000
+    dwell response β [0.9, 0.28, 0.92], share response γ [1.0, 1.2, 1.0], largest branch miss 0.0086
+  fitted in 72 s, step-rule rate 96

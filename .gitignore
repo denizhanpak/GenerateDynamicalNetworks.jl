@@ -1,0 +1,16 @@
+/Manifest*.toml
+/docs/Manifest*.toml
+/docs/build/
+/test/Manifest*.toml
+
+# research/: the frozen prototype. Serialized checkpoints and run stores are not kept (Serialization is
+# not stable across Julia versions); the result CSVs and logs are.
+*.jls
+*.jls.seed
+research/benchmarks/**/elapsed_*.txt
+# No real data in this repo: the worm graph measured from the Roberts et al. (2016) tracks and its
+# extraction script stay local. research/DATA.md says how to download and rebuild them.
+research/benchmarks/phase5/results/worm_data.csv
+research/benchmarks/phase5/worm_data.jl
+# The user's own fits from other projects, read by a few research scripts; not included (research/DATA.md)
+research/data/

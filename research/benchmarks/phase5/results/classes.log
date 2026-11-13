@@ -1,0 +1,54 @@
+known     your worm fit                                  expected heteroclinic  got heteroclinic  saddle saddle saddle saddle saddle
+known     two-population, ν = −0.01                      expected heteroclinic  got heteroclinic  saddle saddle saddle saddle saddle
+known     two-population, ν = +0.01                      expected excitable     got excitable     stable stable stable stable stable
+known     CTRNN 2021, 4-ring                             expected excitable     got excitable     stable stable stable stable stable
+known     your 2-node CTRNN (row 9)                      expected ghost         got ghost         periodic(188.0) periodic(188.0) periodic(188.0) periodic(188.0) periodic(188.0)
+known     Beer oscillator                                expected limit_cycle   got limit_cycle   periodic(1.37) periodic(1.37) periodic(1.37) periodic(1.37) periodic(1.37)
+known     your ring3 (−5, −14)                           expected limit_cycle   got limit_cycle   periodic(1.78) periodic(1.78) periodic(1.78) periodic(1.78) periodic(1.78)
+known     your ring3 (−6.9, −15)                         expected unknown       got unknown       stable periodic(3.56) periodic(3.56) periodic(3.56) periodic(3.56)
+known     theta neuron, r = 1e-3                         expected ghost         got ghost         periodic(2010.0) periodic(2010.0) periodic(2010.0) periodic(2010.0) periodic(2010.0)
+known     theta neuron, r = 1                            expected limit_cycle   got limit_cycle   periodic(3.03) periodic(3.03) periodic(3.03) periodic(3.03) periodic(3.03)
+fit       simplex foraging 0.001                         expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       cylinder foraging 0.001                        expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       simplex worm ring 0.001                        expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       cylinder worm ring 0.001                       expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       simplex figure-eight 0.001                     expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       cylinder figure-eight 0.001                    expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       simplex Δ-clique 0.001                         expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       cylinder Δ-clique 0.001                        expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       simplex shared, solvable 0.001                 expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       cylinder shared, solvable 0.001                expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       simplex shared, conflicting 0.001              expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       cylinder shared, conflicting 0.001             expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       simplex foraging 0.1                           expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       cylinder foraging 0.1                          expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       simplex worm ring 0.1                          expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       cylinder worm ring 0.1                         expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       simplex figure-eight 0.1                       expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       cylinder figure-eight 0.1                      expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       simplex Δ-clique 0.1                           expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       cylinder Δ-clique 0.1                          expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       simplex shared, solvable 0.1                   expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       cylinder shared, solvable 0.1                  expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       simplex shared, conflicting 0.1                expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       cylinder shared, conflicting 0.1               expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       two foraging 0.001                             expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       two worm ring 0.001                            expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       two figure-eight 0.001                         expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       two Δ-clique 0.001                             expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       two shared, solvable 0.001                     expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       two shared, conflicting 0.001                  expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       two foraging 0.1                               expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       two worm ring 0.1                              expected –             got unknown       stable stable saddle stable stable
+fit       two figure-eight 0.1                           expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       two Δ-clique 0.1                               expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       two shared, solvable 0.1                       expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       two shared, conflicting 0.1                    expected –             got heteroclinic  saddle saddle saddle saddle saddle
+fit       ctrnn/excitable worm ring 0.1                  expected –             got excitable     stable stable stable stable stable
+fit       ctrnn/oscillator worm ring 0.1                 expected –             got limit_cycle   periodic(2.75) periodic(2.75) periodic(2.75) periodic(2.75) periodic(2.75)
+fit       ctrnn/fold worm ring 0.1                       expected –             got limit_cycle   periodic(12.4) periodic(12.4) periodic(12.4) periodic(12.4) periodic(12.4)
+fit       ctrnn/excitable foraging 0.1                   expected –             got excitable     stable stable stable stable stable
+fit       ctrnn/oscillator foraging 0.1                  expected –             got excitable     stable stable stable stable stable
+fit       ctrnn/fold foraging 0.1                        expected –             got unknown       periodic(4.18) stable stable stable stable
+all classified
+batch exit 0

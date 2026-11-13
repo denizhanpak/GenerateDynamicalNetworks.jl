@@ -1,0 +1,45 @@
+
+seed excitable
+  dwell [0.238, 0.0785, 0.139, 0.0749] (targets [5.33, 0.441, 1.94, 0.208]), off-graph 0.716, rate 168.3
+  τ [0.761, 0.063, 0.278, 0.0297]  g 20  W diag [1.0, 1.0, 1.0, 1.0]
+  d log dwell(row) / d log τ(column), from a +0.3 step in log τ:
+       0.55   -0.05   -0.04   -0.02
+      -0.04    0.28    0.03   -0.02
+       0.12   -0.04    0.50   -0.04
+      -0.07    0.08   -0.01    0.07
+
+seed oscillator
+  dwell [0.16, 2.13, 0.199, 4.1] (targets [5.33, 0.441, 1.94, 0.208]), off-graph 0.000, rate 52.8
+  τ [1.7, 0.14, 0.619, 0.0662]  g 1  W diag [1.0, 1.0, 1.0, 1.0]
+  d log dwell(row) / d log τ(column), from a +0.3 step in log τ:
+      -0.83    1.55   -0.14    0.38
+       0.08    0.01    0.96    0.01
+       0.19    0.79   -0.78    0.84
+       0.36   -0.22    0.57   -0.01
+
+seed fold
+  dwell [NaN, NaN, NaN, NaN] (targets [5.33, 0.441, 1.94, 0.208]), off-graph 0.000, rate 90.1
+  τ [1.07, 0.0882, 0.389, 0.0416]  g 1  W diag [1.0, 1.0, 1.0, 1.0]
+  d log dwell(row) / d log τ(column), from a +0.3 step in log τ:
+        NaN     NaN     NaN     NaN
+        NaN     NaN     NaN     NaN
+        NaN     NaN     NaN     NaN
+        NaN     NaN     NaN     NaN
+
+fit excitable
+  dwell [4.64, 0.415, 1.86, 0.221] (targets [5.33, 0.441, 1.94, 0.208]), off-graph 0.780, rate 55.8
+  τ [30.0, 3.22, 11.9, 0.0962]  g 17.1  W diag [1.26, 0.689, 0.495, 0.675]
+  d log dwell(row) / d log τ(column), from a +0.3 step in log τ:
+      -0.08   -0.13   -0.30    0.07
+      -0.03    0.41    0.10    0.09
+      -0.02    0.01    0.13   -0.10
+       0.09    0.29    0.19   -0.11
+
+fit oscillator
+  dwell [1.66, 0.758, 1.21, 0.176] (targets [5.33, 0.441, 1.94, 0.208]), off-graph 0.222, rate 21.5
+  τ [0.489, 0.391, 0.442, 0.227]  g 0.977  W diag [1.07, -0.0171, 1.86, 0.489]
+  d log dwell(row) / d log τ(column), from a +0.3 step in log τ:
+       0.23    0.58    0.15    0.11
+      -1.40    0.65   -1.74    0.61
+      -0.18   -0.04   -0.97    0.22
+       0.25    1.43    2.03    1.32

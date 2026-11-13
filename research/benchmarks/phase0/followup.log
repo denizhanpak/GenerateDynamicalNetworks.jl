@@ -1,0 +1,7 @@
+
+ctrnn_24d, budget 20000, 12 repeats
+method                    evals   search f  heldout f  worst err  success      off
+random BBO DE             20000  0.0009911    0.04302       6.6%     4/12     0.7%
+random CES restarts       20000     0.1298     0.1188       9.5%     3/12     2.2%
+random CES restarts fresh  20000      1.673      2.167      14.0%     2/12    37.3%
+random DE then CES fresh  20000  0.0001673     0.1024       7.3%     2/12     2.0%

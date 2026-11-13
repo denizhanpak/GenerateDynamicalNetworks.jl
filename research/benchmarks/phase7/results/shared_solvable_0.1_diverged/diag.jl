@@ -1,0 +1,15 @@
+include(joinpath(ENV["HOME"], "Programming/GenerateDynamicalNetworks.jl/benchmarks/phase7/hopfield.jl"))
+R = joinpath(ENV["HOME"], "Programming/GenerateDynamicalNetworks.jl/benchmarks/phase7/results")
+name, P, τ = only(c for c in NAMED if c[1] == "shared, solvable")
+spec = (; P=float(P), τ, form=:u, ε₀=0.1, sample=minimum(τ) / 10)
+L = hop_layout(spec)
+st = deserialize(joinpath(R, "ckpt_shared_solvable_0.1.jls"))
+_, c = rough_rates(spec)
+println("contract ", c, "  edges ", edge_list(spec.P))
+println("seed ", round.(deserialize(joinpath(R, "ckpt_shared_solvable_0.1.jls.seed")); sigdigits=3))
+for t in st.trace
+    d = hop_design(L, t.out; fast=c, contract=c)
+    println("pass $(t.pass) f $(round(t.f; sigdigits=3)) off $(round(t.off; digits=4)) worst $(round(d.worst; sigdigits=3)) out ", round.(t.out; sigdigits=3))
+end
+d = hop_design(L, st.out; fast=c, contract=c)
+println("next out ", round.(st.out; sigdigits=3), " worst ", d.worst, " NaN rows ", findall(j -> any(isnan, d.J[j, :]) || isnan(d.b[j]), 1:L.M))

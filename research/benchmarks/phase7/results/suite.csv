@@ -1,0 +1,14 @@
+case,noise,neurons,layout,design_violation,transits,worst_err,rms,off,dwell_ok,branches_ok,set2_pass,half_pass,pass,class,outcomes,seconds
+"foraging",0.001,3,search,2.931555498321993e-14,2,0.0036730797752828614,0.0017331856951140132,0.0048300715751539115,true,true,false,true,false,heteroclinic,"saddle saddle saddle saddle saddle",283.69589710235596
+"worm ring",0.001,2,search,4.3646232598175016e-14,0,0.003812005511188765,0.0022452041593435893,0.0,true,true,true,true,true,heteroclinic,"saddle saddle saddle saddle saddle",520.1228110790253
+"figure-eight",0.001,4,search,2.2538713528533123e-14,2,0.0012464926181519065,0.0008747489445988897,0.0,true,true,true,true,true,heteroclinic,"saddle saddle saddle saddle saddle",836.9864790439606
+"Δ-clique",0.001,3,search,2.304099760084654e-14,2,0.0011220349599714297,0.0008419568101544123,0.0,true,true,true,true,true,heteroclinic,"saddle saddle saddle saddle saddle",207.78178119659424
+"shared, solvable",0.001,5,search,8.696628335944332e-9,7,0.0029453717007785762,0.0014534411576519561,0.0,true,true,true,true,true,heteroclinic,"saddle saddle saddle saddle saddle",711.5898530483246
+"shared, conflicting",0.001,4,search,2.6011126197830664e-14,2,0.0019543557559043023,0.00140845469492389,0.0,true,false,true,false,false,heteroclinic,"saddle saddle saddle saddle saddle",372.82759380340576
+"foraging",0.1,3,search,4.03088881019274e-14,2,0.004693395107914999,0.002792306545837281,0.007315398539417015,true,true,true,true,true,heteroclinic,"saddle saddle saddle saddle saddle",84.94222092628479
+"worm ring",0.1,2,search,4.332530441730608e-15,0,0.003788910858695149,0.002438734247518664,0.0,true,true,true,true,true,unknown,"stable saddle stable saddle saddle",207.57082200050354
+"figure-eight",0.1,4,search,2.1523789053469366e-14,2,0.004075917676569674,0.0021617462950745195,0.0,true,true,true,true,true,heteroclinic,"saddle saddle saddle saddle saddle",195.7934010028839
+"Δ-clique",0.1,3,search,1.512065467555554e-14,2,0.00375111101668657,0.0025683789854896518,0.0003920095388987799,true,true,true,true,true,heteroclinic,"saddle saddle saddle saddle saddle",69.48684310913086
+"shared, conflicting",0.1,4,search,1.613319851543649e-14,2,0.0038605660870518754,0.0019612152384398465,0.0,true,true,true,true,true,heteroclinic,"saddle saddle saddle saddle saddle",106.76545810699463
+"worm data",0.1,8,one-hot,1.1099147248632817e-12,17,0.006482334166754811,0.0044519063476599514,0.0,true,true,false,false,false,unknown,"stable saddle stable stable stable",3156.068035840988
+"shared, solvable",0.1,5,search,2.742508741778886e-12,7,0.22043066306359904,0.08145115431501933,5.615958307125528e-5,false,false,false,false,false,heteroclinic,"saddle saddle saddle saddle saddle",23.35836386680603

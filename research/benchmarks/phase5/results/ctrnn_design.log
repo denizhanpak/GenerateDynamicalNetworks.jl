@@ -1,0 +1,19 @@
+
+worm ring at noise 0.1
+  pass 1  f 0.2642  dwell [5.344, 0.5856, 2.093, 0.3173]  off 0.0000
+  pass 2  f 0.1183  dwell [5.325, 0.532, 1.941, 0.2775]  off 0.0000
+  pass 3  f 0.0547  dwell [5.379, 0.5017, 1.941, 0.2528]  off 0.0000
+  pass 4  f 0.0235  dwell [5.315, 0.4821, 1.934, 0.2356]  off 0.0000
+  pass 5  f 0.0096  dwell [5.474, 0.4675, 1.958, 0.2239]  off 0.0000
+  pass 6  f 0.0031  dwell [5.249, 0.4581, 1.961, 0.2158]  off 0.0000
+  pass 7  f 0.0009  dwell [5.3, 0.452, 1.949, 0.2116]  off 0.0000
+  pass 8  f 0.0005  dwell [5.303, 0.4494, 1.931, 0.2099]  off 0.0000
+  cell τ [0.052, 0.11, 0.11, 0.052], gain 124, step-rule rate 252
+  edge offsets, in noise SDs of the receiving cell: [3.12, 0.28, 3.28, -0.55]
+ctrnn design worm ring ε=0.1   dwell 5.453 0.445 1.947 0.209  err% +2.3 +1.0 +0.1 +0.6  rms  1.29%  off  0.00%  dwell ok branch ok PASS
+  bout CV [0.9, 0.24, 0.81, 0.16]   repeat dwell errors [0.013, 0.008, 0.008, 0.005]  repeat pass true, failed runs 0
+  527 s
+
+foraging at noise 0.1
+  pass 1  f 0.9752  dwell [2.331, 1.457, 0.7513, 1.804, 1.315]  off 0.0000
+  pass 2  f 0.1605  dwell [2.098, 1.215, 0.6668, 1.607, 1.196]  off 0.0000

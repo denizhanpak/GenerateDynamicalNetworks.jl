@@ -1,0 +1,6 @@
+hub with two returns, held-out set 1 dwell 1.009 0.400 0.802  err% +0.9 +0.0 +0.3  rms  0.56%  off  0.00%  dwell ok branch NO fail
+hub with two returns, held-out set 2 dwell 1.004 0.400 0.800  err% +0.4 -0.1 +0.0  rms  0.23%  off  0.00%  dwell ok branch NO fail
+hub with two returns, set 1 at half the step dwell 1.008 0.400 0.800  err% +0.8 -0.0 -0.1  rms  0.44%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.50 measured 0.520 outside CI, set 2 0.508 outside CI, half step 0.505 ok
+    branch 1→3 designed 0.50 measured 0.480 outside CI, set 2 0.492 outside CI, half step 0.495 ok
+  pass on all three: false

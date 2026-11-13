@@ -1,0 +1,417 @@
+
+foraging at noise 0.001: 3 neurons, 2 transit vertices, states on ["DDS", "DDD", "SSD", "DSD", "DSS"]
+  pass 1  f 1.6766  dwell [3.337, 1.86, 0.9991, 2.499, 1.69]  off 0.0059  largest branch miss 0.0355
+  pass 2  f 0.1292  dwell [2.022, 1.015, 0.577, 1.497, 1.005]  off 0.0039  largest branch miss 0.0802
+  pass 3  f 0.2580  dwell [2.0, 1.0, 0.4719, 1.512, 1.003]  off 0.0058  largest branch miss 0.1602
+  pass 4  f 0.0003  dwell [2.002, 1.002, 0.5055, 1.491, 0.996]  off 0.0047  largest branch miss 0.0271
+  pass 5  f 0.0027  dwell [2.003, 1.001, 0.5045, 1.504, 1.0]  off 0.0045  largest branch miss 0.0252
+  pass 6  f 0.0031  dwell [1.999, 1.0, 0.4994, 1.499, 1.001]  off 0.0042  largest branch miss 0.0246
+  pass 7  f 0.0010  dwell [1.997, 1.0, 0.4989, 1.503, 1.001]  off 0.0045  largest branch miss 0.0253
+  pass 8  f 0.0001  dwell [2.001, 0.998, 0.5005, 1.496, 0.9997]  off 0.0046  largest branch miss 0.0260
+  pass 9  f 0.0000  dwell [2.003, 0.9988, 0.4987, 1.497, 1.0]  off 0.0047  largest branch miss 0.0268
+  pass 10  f 0.0004  dwell [1.996, 1.003, 0.4994, 1.502, 0.9993]  off 0.0045  largest branch miss 0.0261
+  pass 11  f 0.0001  dwell [2.0, 0.998, 0.499, 1.5, 0.9983]  off 0.0049  largest branch miss 0.0281
+  pass 12  f 0.0000  dwell [2.0, 1.001, 0.5, 1.501, 1.001]  off 0.0047  largest branch miss 0.0269
+  batch time used; rerun to continue
+
+foraging at noise 0.001: 3 neurons, 2 transit vertices, states on ["DDS", "DDD", "SSD", "DSD", "DSS"]
+hopfield foraging ε=0.001, set 1 dwell 2.002 1.000 0.500 1.494 1.000  err% +0.1 -0.0 +0.1 -0.4 -0.0  rms  0.17%  off  0.48%  dwell ok branch ok PASS
+hopfield foraging ε=0.001, set 2 dwell 2.003 1.000 0.500 1.505 0.999  err% +0.2 -0.0 +0.1 +0.4 -0.1  rms  0.18%  off  0.44%  dwell ok branch NO fail
+hopfield foraging ε=0.001, half step dwell 1.999 0.998 0.498 1.495 0.999  err% -0.0 -0.2 -0.3 -0.3 -0.1  rms  0.22%  off  0.50%  dwell ok branch ok PASS
+    branch 2→3 designed 0.70 measured 0.703 ok, set 2 0.707 outside CI, half step 0.696 ok
+    branch 2→4 designed 0.30 measured 0.297 ok, set 2 0.293 outside CI, half step 0.304 ok
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [4.02, 9.07, 7.39, 26.1, 5.47, 8.78], pass on all three: false, fit 284 s, case 529 s
+
+worm ring at noise 0.001: 2 neurons, 0 transit vertices, states on ["SD", "SS", "DS", "DD"]
+  pass 1  f 1.2941  dwell [9.069, 0.7883, 3.407, 0.3789]  off 0.0000  largest branch miss 0.0000
+  pass 2  f 0.0002  dwell [5.387, 0.445, 1.951, 0.2078]  off 0.0000  largest branch miss 0.0000
+  pass 3  f 0.0000  dwell [5.328, 0.441, 1.952, 0.2076]  off 0.0000  largest branch miss 0.0000
+  pass 4  f 0.0000  dwell [5.332, 0.4413, 1.939, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 5  f 0.0000  dwell [5.329, 0.4408, 1.948, 0.2079]  off 0.0000  largest branch miss 0.0000
+  pass 6  f 0.0000  dwell [5.34, 0.4399, 1.94, 0.2085]  off 0.0000  largest branch miss 0.0000
+  pass 7  f 0.0000  dwell [5.326, 0.4414, 1.947, 0.2073]  off 0.0000  largest branch miss 0.0000
+  pass 8  f 0.0000  dwell [5.337, 0.4413, 1.946, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 9  f 0.0000  dwell [5.318, 0.4412, 1.943, 0.2079]  off 0.0000  largest branch miss 0.0000
+  pass 10  f 0.0000  dwell [5.312, 0.4407, 1.944, 0.2083]  off 0.0000  largest branch miss 0.0000
+  batch time used; rerun to continue
+
+worm ring at noise 0.001: 2 neurons, 0 transit vertices, states on ["SD", "SS", "DS", "DD"]
+  resuming after pass 10, with 64 runs of the next
+  pass 11  f 0.0000  dwell [5.336, 0.441, 1.949, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 12  f 0.0000  dwell [5.339, 0.441, 1.943, 0.2079]  off 0.0000  largest branch miss 0.0000
+hopfield worm ring ε=0.001, set 1 dwell 5.327 0.440 1.947 0.207  err% -0.0 -0.2 +0.1 -0.4  rms  0.22%  off  0.00%  dwell ok branch ok PASS
+hopfield worm ring ε=0.001, set 2 dwell 5.316 0.441 1.945 0.208  err% -0.2 +0.1 -0.0 -0.1  rms  0.14%  off  0.00%  dwell ok branch ok PASS
+hopfield worm ring ε=0.001, half step dwell 5.313 0.440 1.950 0.208  err% -0.3 -0.2 +0.2 -0.2  rms  0.23%  off  0.00%  dwell ok branch ok PASS
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [1.19, 21.2, 3.87, 48.6], pass on all three: true, fit 520 s, case 789 s
+batch time used; rerun to continue
+finished: 2 of 13
+
+figure-eight at noise 0.001: 4 neurons, 2 transit vertices, states on ["DDSD", "SDSD", "SDSS", "DDDD", "DSDD"]
+  pass 1  f 3.3287  dwell [1.764, 1.032, 2.567, 3.36, 1.584]  off 0.0000  largest branch miss 0.1784
+  pass 2  f 2.2567  dwell [0.9823, 0.6067, 1.519, 2.005, 0.9166]  off 0.0000  largest branch miss 0.4837
+  pass 3  f 3.3305  dwell [0.999, 0.6004, 1.401, 2.004, 0.804]  off 0.0000  largest branch miss 0.2090
+  pass 4  f 0.0381  dwell [1.042, 0.6006, 1.398, 2.005, 0.8007]  off 0.0000  largest branch miss 0.0488
+  pass 5  f 0.0420  dwell [0.998, 0.5999, 1.403, 1.988, 0.8004]  off 0.0000  largest branch miss 0.0446
+  pass 6  f 0.0003  dwell [0.9976, 0.5994, 1.396, 2.004, 0.8016]  off 0.0000  largest branch miss 0.0038
+  pass 7  f 0.0001  dwell [0.9998, 0.6007, 1.405, 2.002, 0.7986]  off 0.0000  largest branch miss 0.0021
+  pass 8  f 0.0001  dwell [0.9999, 0.6002, 1.398, 1.998, 0.7989]  off 0.0000  largest branch miss 0.0020
+  pass 9  f 0.0003  dwell [1.0, 0.5989, 1.398, 1.994, 0.8014]  off 0.0000  largest branch miss 0.0041
+  pass 10  f 0.0000  dwell [0.9999, 0.5999, 1.401, 2.003, 0.7995]  off 0.0000  largest branch miss 0.0010
+  batch time used; rerun to continue
+
+figure-eight at noise 0.001: 4 neurons, 2 transit vertices, states on ["DDSD", "SDSD", "SDSS", "DDDD", "DSDD"]
+  resuming after pass 10, with 32 runs of the next
+  pass 11  f 0.0009  dwell [1.001, 0.6002, 1.402, 2.004, 0.7996]  off 0.0000  largest branch miss 0.0071
+  pass 12  f 0.0013  dwell [0.9984, 0.6009, 1.398, 2.001, 0.8005]  off 0.0000  largest branch miss 0.0084
+hopfield figure-eight ε=0.001, set 1 dwell 1.001 0.599 1.399 2.001 0.799  err% +0.1 -0.1 -0.1 +0.1 -0.1  rms  0.09%  off  0.00%  dwell ok branch ok PASS
+hopfield figure-eight ε=0.001, set 2 dwell 1.000 0.600 1.400 2.001 0.799  err% -0.0 -0.1 +0.0 +0.1 -0.2  rms  0.08%  off  0.00%  dwell ok branch ok PASS
+hopfield figure-eight ε=0.001, half step dwell 1.000 0.599 1.399 1.994 0.800  err% -0.0 -0.2 -0.1 -0.3 +0.0  rms  0.17%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.75 measured 0.749 ok, set 2 0.754 ok, half step 0.750 ok
+    branch 1→4 designed 0.25 measured 0.251 ok, set 2 0.246 ok, half step 0.250 ok
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [8.52, 7.73, 16.2, 7.5, 4.11, 16.6], pass on all three: true, fit 837 s, case 1114 s
+batch time used; rerun to continue
+finished: 3 of 13
+
+Δ-clique at noise 0.001: 3 neurons, 2 transit vertices, states on ["SSS", "SDS", "SSD", "DSD"]
+  pass 1  f 2.6119  dwell [2.666, 0.5785, 1.352, 3.573]  off 0.0000  largest branch miss 0.2682
+  pass 2  f 2.9566  dwell [1.381, 1.002, 0.7872, 2.146]  off 0.0000  largest branch miss 0.4701
+  pass 3  f 2.5757  dwell [1.586, 0.7342, 0.8218, 2.008]  off 0.0000  largest branch miss 0.3122
+  pass 4  f 0.0169  dwell [1.582, 0.916, 0.7915, 1.996]  off 0.0000  largest branch miss 0.0268
+  pass 5  f 0.0846  dwell [1.516, 0.9339, 0.7998, 1.997]  off 0.0000  largest branch miss 0.0877
+  pass 6  f 0.0338  dwell [1.486, 1.19, 0.7976, 2.006]  off 0.0000  largest branch miss 0.0200
+  pass 7  f 0.0014  dwell [1.5, 1.018, 0.7997, 2.001]  off 0.0000  largest branch miss 0.0107
+  pass 8  f 0.0011  dwell [1.497, 0.9914, 0.7996, 1.999]  off 0.0000  largest branch miss 0.0105
+  pass 9  f 0.0006  dwell [1.502, 1.021, 0.7996, 1.996]  off 0.0000  largest branch miss 0.0043
+  pass 10  f 0.0000  dwell [1.499, 1.002, 0.7998, 1.999]  off 0.0000  largest branch miss 0.0009
+  pass 11  f 0.0001  dwell [1.502, 0.9912, 0.8008, 2.003]  off 0.0000  largest branch miss 0.0004
+  pass 12  f 0.0001  dwell [1.498, 0.9993, 0.7997, 1.998]  off 0.0000  largest branch miss 0.0028
+  batch time used; rerun to continue
+
+Δ-clique at noise 0.001: 3 neurons, 2 transit vertices, states on ["SSS", "SDS", "SSD", "DSD"]
+hopfield Δ-clique ε=0.001, set 1 dwell 1.499 1.001 0.800 2.002  err% -0.1 +0.1 -0.0 +0.1  rms  0.08%  off  0.00%  dwell ok branch ok PASS
+hopfield Δ-clique ε=0.001, set 2 dwell 1.502 1.004 0.799 2.002  err% +0.1 +0.4 -0.2 +0.1  rms  0.22%  off  0.00%  dwell ok branch ok PASS
+hopfield Δ-clique ε=0.001, half step dwell 1.500 1.018 0.797 2.001  err% +0.0 +1.8 -0.4 +0.1  rms  0.89%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.40 measured 0.405 ok, set 2 0.393 ok, half step 0.406 ok
+    branch 1→3 designed 0.60 measured 0.595 ok, set 2 0.607 ok, half step 0.594 ok
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [5.45, 5.2, 1.57, 11.8, 4.98], pass on all three: true, fit 208 s, case 31783 s
+
+shared, solvable at noise 0.001: 5 neurons, 7 transit vertices, states on ["DDDDS", "SDDDD", "DDSDD", "SDDSD", "DDDDD", "DSDSD"]
+  pass 1  f 3.0473  dwell [2.929, 1.661, 1.34, 2.637, 1.685, 1.646]  off 0.0000  largest branch miss 0.1393
+  pass 2  f 0.7448  dwell [1.639, 1.001, 0.7865, 1.389, 1.01, 0.9759]  off 0.0000  largest branch miss 0.2251
+  pass 3  f 2.2058  dwell [1.481, 0.9982, 0.8198, 1.296, 0.9996, 0.7604]  off 0.0000  largest branch miss 0.2192
+  pass 4  f 6.1679  dwell [1.533, 1.0, 0.7729, 0.9377, 0.9983, 0.7103]  off 0.0000  largest branch miss 0.5403
+  pass 5  f 0.0033  dwell [1.497, 0.9977, 0.8032, 1.231, 1.003, 0.699]  off 0.0000  largest branch miss 0.0137
+  pass 6  f 0.0067  dwell [1.5, 1.004, 0.8003, 1.216, 1.0, 0.7]  off 0.0000  largest branch miss 0.0261
+  pass 7  f 0.0009  dwell [1.5, 0.9946, 0.8024, 1.2, 0.9999, 0.7018]  off 0.0000  largest branch miss 0.0077
+  pass 8  f 0.0011  dwell [1.5, 1.002, 0.7988, 1.196, 0.9983, 0.6997]  off 0.0000  largest branch miss 0.0078
+  pass 9  f 0.0005  dwell [1.5, 0.999, 0.7988, 1.203, 0.9997, 0.7006]  off 0.0000  largest branch miss 0.0049
+  batch time used; rerun to continue
+
+shared, solvable at noise 0.001: 5 neurons, 7 transit vertices, states on ["DDDDS", "SDDDD", "DDSDD", "SDDSD", "DDDDD", "DSDSD"]
+  resuming after pass 9, with 80 runs of the next
+  pass 10  f 0.0001  dwell [1.499, 1.0, 0.8015, 1.198, 1.001, 0.6993]  off 0.0000  largest branch miss 0.0022
+  pass 11  f 0.0005  dwell [1.5, 1.0, 0.7999, 1.199, 0.9999, 0.6989]  off 0.0000  largest branch miss 0.0047
+  pass 12  f 0.0010  dwell [1.5, 1.001, 0.8, 1.201, 1.001, 0.7005]  off 0.0000  largest branch miss 0.0089
+  batch time used; rerun to continue
+
+shared, solvable at noise 0.001: 5 neurons, 7 transit vertices, states on ["DDDDS", "SDDDD", "DDSDD", "SDDSD", "DDDDD", "DSDSD"]
+hopfield shared, solvable ε=0.001, set 1 dwell 1.500 0.997 0.799 1.201 0.999 0.700  err% +0.0 -0.3 -0.1 +0.0 -0.1 -0.1  rms  0.15%  off  0.00%  dwell ok branch ok PASS
+hopfield shared, solvable ε=0.001, set 2 dwell 1.501 1.000 0.800 1.200 0.998 0.701  err% +0.0 -0.0 -0.0 +0.0 -0.2 +0.1  rms  0.11%  off  0.00%  dwell ok branch ok PASS
+hopfield shared, solvable ε=0.001, half step dwell 1.500 1.001 0.799 1.199 0.999 0.700  err% -0.0 +0.1 -0.2 -0.1 -0.1 -0.0  rms  0.09%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.70 measured 0.698 ok, set 2 0.695 ok, half step 0.701 ok
+    branch 1→3 designed 0.30 measured 0.302 ok, set 2 0.305 ok, half step 0.299 ok
+    branch 4→3 designed 0.60 measured 0.596 ok, set 2 0.601 ok, half step 0.595 ok
+    branch 4→6 designed 0.40 measured 0.404 ok, set 2 0.399 ok, half step 0.405 ok
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [6.81, 6.15, 8.89, 11.3, 11.5, 10.6, 9.18, 45.0], pass on all three: true, fit 712 s, case 1129 s
+batch time used; rerun to continue
+finished: 5 of 13
+
+shared, conflicting at noise 0.001: 4 neurons, 2 transit vertices, states on ["DDSD", "SDSD", "DSSD", "SSSD", "SDDD", "DSSS"]
+  pass 1  f 2.9179  dwell [2.671, 1.675, 1.346, 2.185, 1.938, 1.45]  off 0.0000  largest branch miss 0.1587
+  pass 2  f 0.9292  dwell [1.509, 1.013, 0.8113, 1.204, 1.135, 0.8335]  off 0.0000  largest branch miss 0.2820
+  pass 3  f 1.5472  dwell [1.493, 0.9952, 0.7943, 1.192, 1.006, 0.7134]  off 0.0000  largest branch miss 0.1939
+  pass 4  f 0.0007  dwell [1.526, 1.004, 0.8029, 1.21, 0.9979, 0.7004]  off 0.0000  largest branch miss 0.0044
+  pass 5  f 0.0049  dwell [1.498, 1.001, 0.8016, 1.199, 1.001, 0.7]  off 0.0000  largest branch miss 0.0172
+  pass 6  f 0.0002  dwell [1.502, 0.9982, 0.7973, 1.2, 1.001, 0.7002]  off 0.0000  largest branch miss 0.0039
+  pass 7  f 0.0003  dwell [1.498, 1.0, 0.8002, 1.199, 1.001, 0.6991]  off 0.0000  largest branch miss 0.0054
+  pass 8  f 0.0001  dwell [1.497, 1.0, 0.8015, 1.2, 0.9993, 0.7007]  off 0.0000  largest branch miss 0.0020
+  pass 9  f 0.0006  dwell [1.504, 1.001, 0.7974, 1.2, 1.0, 0.699]  off 0.0000  largest branch miss 0.0062
+  pass 10  f 0.0007  dwell [1.499, 0.9998, 0.8017, 1.199, 0.9989, 0.6999]  off 0.0000  largest branch miss 0.0067
+  pass 11  f 0.0001  dwell [1.499, 1.0, 0.7994, 1.2, 0.999, 0.7003]  off 0.0000  largest branch miss 0.0026
+  pass 12  f 0.0006  dwell [1.498, 0.999, 0.8009, 1.201, 0.9997, 0.7006]  off 0.0000  largest branch miss 0.0052
+  batch time used; rerun to continue
+
+shared, conflicting at noise 0.001: 4 neurons, 2 transit vertices, states on ["DDSD", "SDSD", "DSSD", "SSSD", "SDDD", "DSSS"]
+hopfield shared, conflicting ε=0.001, set 1 dwell 1.503 0.999 0.799 1.199 1.002 0.700  err% +0.2 -0.1 -0.2 -0.0 +0.2 -0.1  rms  0.14%  off  0.00%  dwell ok branch NO fail
+hopfield shared, conflicting ε=0.001, set 2 dwell 1.503 1.001 0.800 1.199 1.002 0.699  err% +0.2 +0.1 -0.0 -0.1 +0.2 -0.1  rms  0.14%  off  0.00%  dwell ok branch ok PASS
+hopfield shared, conflicting ε=0.001, half step dwell 1.502 1.000 0.799 1.199 1.002 0.699  err% +0.2 +0.0 -0.1 -0.1 +0.2 -0.2  rms  0.12%  off  0.00%  dwell ok branch NO fail
+    branch 1→2 designed 0.70 measured 0.704 ok, set 2 0.704 ok, half step 0.708 outside CI
+    branch 1→3 designed 0.30 measured 0.296 ok, set 2 0.296 ok, half step 0.292 outside CI
+    branch 4→2 designed 0.40 measured 0.409 outside CI, set 2 0.404 ok, half step 0.412 outside CI
+    branch 4→3 designed 0.60 measured 0.591 outside CI, set 2 0.596 ok, half step 0.588 outside CI
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [5.51, 5.02, 9.12, 11.7, 6.7, 6.98, 12.6, 22.2], pass on all three: false, fit 373 s, case 632 s
+
+foraging at noise 0.1: 3 neurons, 2 transit vertices, states on ["DDS", "DDD", "SSD", "DSD", "DSS"]
+  pass 1  f 0.5845  dwell [2.025, 1.081, 0.6613, 1.435, 0.9991]  off 0.0092  largest branch miss 0.2286
+  pass 2  f 0.0165  dwell [1.99, 1.02, 0.5306, 1.422, 0.9955]  off 0.0069  largest branch miss 0.0316
+  pass 3  f 0.1249  dwell [2.008, 0.995, 0.4957, 1.074, 0.9993]  off 0.0076  largest branch miss 0.0312
+  pass 4  f 0.0103  dwell [1.988, 1.003, 0.4983, 1.48, 1.0]  off 0.0069  largest branch miss 0.0293
+  pass 5  f 0.0101  dwell [1.988, 0.9954, 0.5015, 1.511, 1.0]  off 0.0068  largest branch miss 0.0279
+  pass 6  f 0.0107  dwell [2.018, 1.001, 0.4978, 1.484, 1.001]  off 0.0071  largest branch miss 0.0313
+  pass 7  f 0.0140  dwell [2.002, 1.0, 0.501, 1.483, 0.9941]  off 0.0077  largest branch miss 0.0313
+  pass 8  f 0.0124  dwell [2.01, 0.9999, 0.4981, 1.513, 1.003]  off 0.0074  largest branch miss 0.0323
+  pass 9  f 0.0089  dwell [1.998, 1.002, 0.4999, 1.514, 0.9982]  off 0.0068  largest branch miss 0.0280
+  pass 10  f 0.0129  dwell [1.995, 0.9974, 0.4977, 1.48, 1.003]  off 0.0074  largest branch miss 0.0320
+  pass 11  f 0.0117  dwell [1.994, 0.9999, 0.5033, 1.494, 0.999]  off 0.0073  largest branch miss 0.0304
+  pass 12  f 0.0132  dwell [2.005, 1.001, 0.4965, 1.497, 1.002]  off 0.0076  largest branch miss 0.0326
+hopfield foraging ε=0.1, set 1 dwell 1.998 0.998 0.501 1.496 0.995  err% -0.1 -0.2 +0.2 -0.3 -0.5  rms  0.28%  off  0.73%  dwell ok branch ok PASS
+hopfield foraging ε=0.1, set 2 dwell 1.992 0.999 0.503 1.508 0.996  err% -0.4 -0.1 +0.5 +0.6 -0.4  rms  0.43%  off  0.70%  dwell ok branch ok PASS
+hopfield foraging ε=0.1, half step dwell 2.001 0.999 0.501 1.502 0.997  err% +0.1 -0.1 +0.1 +0.1 -0.3  rms  0.15%  off  0.70%  dwell ok branch ok PASS
+    branch 2→3 designed 0.70 measured 0.704 ok, set 2 0.697 ok, half step 0.699 ok
+    branch 2→4 designed 0.30 measured 0.296 ok, set 2 0.303 ok, half step 0.301 ok
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [1.51, 4.4, 2.44, 13.9, 1.89, 3.89], pass on all three: true, fit 85 s, case 133 s
+batch time used; rerun to continue
+finished: 7 of 13
+
+worm ring at noise 0.1: 2 neurons, 0 transit vertices, states on ["SD", "SS", "DS", "DD"]
+  pass 1  f 0.0040  dwell [5.344, 0.4602, 1.951, 0.2178]  off 0.0000  largest branch miss 0.0000
+  pass 2  f 0.0002  dwell [5.385, 0.4411, 1.958, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 3  f 0.0001  dwell [5.306, 0.4416, 1.932, 0.209]  off 0.0000  largest branch miss 0.0000
+  pass 4  f 0.0000  dwell [5.335, 0.4396, 1.951, 0.2073]  off 0.0000  largest branch miss 0.0000
+  pass 5  f 0.0000  dwell [5.356, 0.4417, 1.941, 0.2085]  off 0.0000  largest branch miss 0.0000
+  pass 6  f 0.0000  dwell [5.344, 0.441, 1.947, 0.2081]  off 0.0000  largest branch miss 0.0000
+  pass 7  f 0.0000  dwell [5.319, 0.4417, 1.953, 0.2088]  off 0.0000  largest branch miss 0.0000
+  pass 8  f 0.0003  dwell [5.406, 0.4392, 1.956, 0.2068]  off 0.0000  largest branch miss 0.0000
+  pass 9  f 0.0004  dwell [5.436, 0.4409, 1.943, 0.2092]  off 0.0000  largest branch miss 0.0000
+  pass 10  f 0.0001  dwell [5.337, 0.4431, 1.937, 0.2066]  off 0.0000  largest branch miss 0.0000
+  pass 11  f 0.0000  dwell [5.312, 0.4403, 1.95, 0.2083]  off 0.0000  largest branch miss 0.0000
+  pass 12  f 0.0001  dwell [5.317, 0.4408, 1.933, 0.2072]  off 0.0000  largest branch miss 0.0000
+hopfield worm ring ε=0.1, set 1 dwell 5.309 0.440 1.950 0.208  err% -0.4 -0.2 +0.2 +0.1  rms  0.24%  off  0.00%  dwell ok branch ok PASS
+hopfield worm ring ε=0.1, set 2 dwell 5.306 0.441 1.956 0.209  err% -0.4 +0.0 +0.5 +0.3  rms  0.38%  off  0.00%  dwell ok branch ok PASS
+hopfield worm ring ε=0.1, half step dwell 5.334 0.441 1.953 0.208  err% +0.1 -0.1 +0.4 +0.1  rms  0.22%  off  0.00%  dwell ok branch ok PASS
+  class unknown (stable saddle stable saddle saddle), out-rates [-0.0456, 10.5, 1.17, 25.8], pass on all three: true, fit 208 s, case 323 s
+batch time used; rerun to continue
+finished: 8 of 13
+
+figure-eight at noise 0.1: 4 neurons, 2 transit vertices, states on ["DDSD", "SDSD", "SDSS", "DDDD", "DSDD"]
+  pass 1  f 0.2034  dwell [0.9897, 0.6326, 1.773, 2.055, 1.156]  off 0.0000  largest branch miss 0.0212
+  pass 2  f 0.0123  dwell [1.013, 0.6016, 1.46, 2.001, 0.8855]  off 0.0000  largest branch miss 0.0006
+  pass 3  f 0.0007  dwell [1.008, 0.6026, 1.405, 1.997, 0.8022]  off 0.0000  largest branch miss 0.0057
+  pass 4  f 0.0005  dwell [1.002, 0.5997, 1.392, 2.012, 0.7967]  off 0.0000  largest branch miss 0.0045
+  pass 5  f 0.0018  dwell [0.9935, 0.5994, 1.409, 2.002, 0.8046]  off 0.0000  largest branch miss 0.0096
+  pass 6  f 0.0007  dwell [0.9993, 0.6023, 1.389, 1.989, 0.7985]  off 0.0000  largest branch miss 0.0059
+  pass 7  f 0.0007  dwell [0.9999, 0.598, 1.407, 1.975, 0.7999]  off 0.0000  largest branch miss 0.0052
+  pass 8  f 0.0002  dwell [1.005, 0.5995, 1.393, 2.02, 0.8007]  off 0.0000  largest branch miss 0.0008
+  pass 9  f 0.0010  dwell [0.9959, 0.6034, 1.408, 1.998, 0.801]  off 0.0000  largest branch miss 0.0070
+  pass 10  f 0.0001  dwell [0.9981, 0.5972, 1.398, 2.015, 0.7995]  off 0.0000  largest branch miss 0.0014
+  pass 11  f 0.0000  dwell [0.9985, 0.5992, 1.396, 1.998, 0.796]  off 0.0000  largest branch miss 0.0001
+  pass 12  f 0.0007  dwell [1.002, 0.6, 1.404, 2.004, 0.8022]  off 0.0000  largest branch miss 0.0064
+hopfield figure-eight ε=0.1, set 1 dwell 1.004 0.601 1.398 2.003 0.800  err% +0.4 +0.1 -0.1 +0.2 -0.0  rms  0.22%  off  0.00%  dwell ok branch ok PASS
+hopfield figure-eight ε=0.1, set 2 dwell 1.006 0.600 1.398 2.000 0.800  err% +0.6 +0.0 -0.2 -0.0 -0.1  rms  0.26%  off  0.00%  dwell ok branch ok PASS
+hopfield figure-eight ε=0.1, half step dwell 1.005 0.601 1.397 1.990 0.800  err% +0.5 +0.1 -0.2 -0.5 -0.0  rms  0.33%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.75 measured 0.752 ok, set 2 0.746 ok, half step 0.749 ok
+    branch 1→4 designed 0.25 measured 0.248 ok, set 2 0.254 ok, half step 0.251 ok
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [3.65, 2.7, 8.39, 3.86, 1.63, 10.3], pass on all three: true, fit 196 s, case 270 s
+batch time used; rerun to continue
+finished: 9 of 13
+
+Δ-clique at noise 0.1: 3 neurons, 2 transit vertices, states on ["SSS", "SDS", "SSD", "DSD"]
+  pass 1  f 1.0076  dwell [1.471, 0.7454, 0.8387, 2.472]  off 0.0001  largest branch miss 0.2333
+  pass 2  f 0.0089  dwell [1.499, 0.9817, 0.7771, 2.062]  off 0.0005  largest branch miss 0.0278
+  pass 3  f 0.0010  dwell [1.506, 0.9896, 0.7988, 2.005]  off 0.0004  largest branch miss 0.0097
+  pass 4  f 0.0008  dwell [1.501, 1.024, 0.7962, 1.992]  off 0.0005  largest branch miss 0.0041
+  pass 5  f 0.0001  dwell [1.495, 0.9997, 0.7997, 2.019]  off 0.0004  largest branch miss 0.0030
+  pass 6  f 0.0009  dwell [1.504, 0.9902, 0.8009, 1.993]  off 0.0003  largest branch miss 0.0094
+  pass 7  f 0.0001  dwell [1.505, 1.008, 0.7986, 1.996]  off 0.0003  largest branch miss 0.0025
+  pass 8  f 0.0003  dwell [1.496, 0.9951, 0.8018, 2.003]  off 0.0005  largest branch miss 0.0058
+  pass 9  f 0.0000  dwell [1.501, 0.9989, 0.8006, 1.998]  off 0.0003  largest branch miss 0.0025
+  pass 10  f 0.0004  dwell [1.497, 1.008, 0.798, 1.998]  off 0.0003  largest branch miss 0.0057
+  pass 11  f 0.0006  dwell [1.5, 1.0, 0.7988, 1.997]  off 0.0003  largest branch miss 0.0079
+  pass 12  f 0.0002  dwell [1.499, 1.0, 0.801, 1.998]  off 0.0003  largest branch miss 0.0046
+hopfield Δ-clique ε=0.1, set 1 dwell 1.506 0.998 0.798 2.000  err% +0.4 -0.2 -0.3 +0.0  rms  0.26%  off  0.04%  dwell ok branch ok PASS
+hopfield Δ-clique ε=0.1, set 2 dwell 1.503 1.006 0.802 2.009  err% +0.2 +0.6 +0.2 +0.4  rms  0.39%  off  0.03%  dwell ok branch ok PASS
+hopfield Δ-clique ε=0.1, half step dwell 1.504 1.009 0.797 2.005  err% +0.3 +0.9 -0.3 +0.2  rms  0.52%  off  0.03%  dwell ok branch ok PASS
+    branch 1→2 designed 0.40 measured 0.399 ok, set 2 0.402 ok, half step 0.397 ok
+    branch 1→3 designed 0.60 measured 0.601 ok, set 2 0.598 ok, half step 0.603 ok
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [2.21, 1.72, 2.72, 5.83, 2.38], pass on all three: true, fit 69 s, case 103 s
+
+shared, solvable at noise 0.1: 5 neurons, 7 transit vertices, states on ["DDDDS", "SDDDD", "DDSDD", "SDDSD", "DDDDD", "DSDSD"]
+  pass 1  f 0.7951  dwell [1.927, 0.9685, 0.77, 1.836, 1.03, 1.355]  off 0.0000  largest branch miss 0.1111
+  pass 2  f 0.1556  dwell [1.549, 0.9949, 0.8074, 1.405, 1.002, 0.9924]  off 0.0000  largest branch miss 0.0200
+  pass 3  f 0.0228  dwell [1.505, 0.9811, 0.8082, 1.213, 1.003, 0.8069]  off 0.0001  largest branch miss 0.0116
+  pass 4  f 0.0963  dwell [1.499, 0.9902, 0.8012, 1.272, 1.001, 0.7559]  off 0.0120  largest branch miss 0.0812
+  pass 5  f 2.3224  dwell [1.498, 1.017, 0.803, 1.451, 0.9986, 0.7495]  off 0.0487  largest branch miss 0.3048
+  pass 6  f 36.1633  dwell [1.493, 1.017, 0.8036, 1.356, 1.001, 0.595]  off 0.0219  largest branch miss 0.3997
+  pass 7  f 4.8159  dwell [1.523, 0.9996, 0.7726, 1.606, 1.001, 0.7519]  off 0.1224  largest branch miss 0.3414
+ERROR: LoadError: InexactError: Int64(NaN)
+Stacktrace:
+  [1] Int64
+    @ ./float.jl:925 [inlined]
+  [2] convert
+    @ ./number.jl:7 [inlined]
+  [3] _round_convert
+    @ ./rounding.jl:489 [inlined]
+  [4] round
+    @ ./rounding.jl:488 [inlined]
+  [5] ceil
+    @ ./rounding.jl:485 [inlined]
+  [6] frame_steps(m::HopModel, sample::Float64, dtscale::Float64)
+    @ Main benchmarks/phase3/optimize.jl:43
+  [7] simulate_frames(m::HopModel; T::Float64, seeds::Vector{Int64}, sample::Float64, dtscale::Float64)
+    @ Main benchmarks/phase7/hopfield.jl:149
+  [8] fit_sync(spec::@NamedTuple{P::Matrix{Float64}, τ::Vector{Float64}, form::Symbol, ε₀::Float64, sample::Float64}, L::SyncLayout; passes::Int64, base::Int64, checkpoint::String, deadline::Float64, seed::Vector{Float64}, response::var"#hop_response##0#hop_response##1"{SyncLayout, Float64, Float64}, build::var"#build#507"{@NamedTuple{P::Matrix{Float64}, τ::Vector{Float64}, form::Symbol, ε₀::Float64, sample::Float64}, SyncLayout, Float64})
+    @ Main benchmarks/phase6/synchrony.jl:388
+  [9] fit_hop(spec::@NamedTuple{P::Matrix{Float64}, τ::Vector{Float64}, form::Symbol, ε₀::Float64, sample::Float64}, L::SyncLayout; checkpoint::String, kw::@Kwargs{deadline::Float64})
+    @ Main benchmarks/phase7/hopfield.jl:302
+ [10] top-level scope
+    @ benchmarks/phase7/suite.jl:75
+ [11] include(mod::Module, _path::String)
+    @ Base ./Base.jl:309
+ [12] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:344
+ [13] _start()
+    @ Base ./client.jl:577
+in expression starting at benchmarks/phase7/suite.jl:55
+
+shared, conflicting at noise 0.1: 4 neurons, 2 transit vertices, states on ["DDSD", "SDSD", "DSSD", "SSSD", "SDDD", "DSSS"]
+  pass 1  f 0.3276  dwell [1.556, 1.03, 0.8182, 1.231, 1.409, 1.096]  off 0.0000  largest branch miss 0.0224
+  pass 2  f 0.0357  dwell [1.496, 0.9901, 0.7958, 1.205, 1.09, 0.8031]  off 0.0000  largest branch miss 0.0255
+  pass 3  f 0.0032  dwell [1.51, 0.9997, 0.7979, 1.2, 1.009, 0.6758]  off 0.0000  largest branch miss 0.0119
+  pass 4  f 0.0025  dwell [1.498, 0.9989, 0.8018, 1.203, 1.001, 0.7033]  off 0.0000  largest branch miss 0.0137
+  pass 5  f 0.0012  dwell [1.5, 1.007, 0.7968, 1.195, 0.9978, 0.6982]  off 0.0000  largest branch miss 0.0098
+  pass 6  f 0.0025  dwell [1.501, 0.9948, 0.8026, 1.207, 0.9985, 0.7006]  off 0.0000  largest branch miss 0.0137
+  pass 7  f 0.0047  dwell [1.491, 1.003, 0.8, 1.197, 1.002, 0.7008]  off 0.0000  largest branch miss 0.0168
+  pass 8  f 0.0003  dwell [1.501, 0.9989, 0.8023, 1.201, 0.9982, 0.7029]  off 0.0000  largest branch miss 0.0051
+  pass 9  f 0.0007  dwell [1.504, 1.005, 0.7988, 1.201, 1.0, 0.6957]  off 0.0000  largest branch miss 0.0066
+  pass 10  f 0.0002  dwell [1.498, 0.9952, 0.7998, 1.198, 1.001, 0.7022]  off 0.0000  largest branch miss 0.0032
+  pass 11  f 0.0005  dwell [1.5, 1.001, 0.7999, 1.198, 1.001, 0.6993]  off 0.0000  largest branch miss 0.0059
+  pass 12  f 0.0001  dwell [1.5, 1.001, 0.799, 1.202, 0.9995, 0.6989]  off 0.0000  largest branch miss 0.0017
+hopfield shared, conflicting ε=0.1, set 1 dwell 1.498 0.999 0.799 1.195 0.999 0.700  err% -0.2 -0.1 -0.2 -0.4 -0.1 +0.0  rms  0.20%  off  0.00%  dwell ok branch ok PASS
+hopfield shared, conflicting ε=0.1, set 2 dwell 1.498 1.002 0.800 1.197 1.001 0.699  err% -0.1 +0.2 -0.0 -0.3 +0.1 -0.2  rms  0.17%  off  0.00%  dwell ok branch ok PASS
+hopfield shared, conflicting ε=0.1, half step dwell 1.501 1.001 0.801 1.199 0.999 0.699  err% +0.1 +0.1 +0.1 -0.1 -0.1 -0.2  rms  0.12%  off  0.00%  dwell ok branch ok PASS
+    branch 1→2 designed 0.70 measured 0.697 ok, set 2 0.697 ok, half step 0.700 ok
+    branch 1→3 designed 0.30 measured 0.303 ok, set 2 0.303 ok, half step 0.300 ok
+    branch 4→2 designed 0.40 measured 0.396 ok, set 2 0.397 ok, half step 0.395 ok
+    branch 4→3 designed 0.60 measured 0.604 ok, set 2 0.603 ok, half step 0.605 ok
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [2.23, 1.64, 4.31, 5.68, 2.51, 2.86, 7.54, 13.7], pass on all three: true, fit 107 s, case 161 s
+finished: 11 of 2
+
+worm data at noise 0.1: 8 neurons, 17 transit vertices, states on ["DSSSSSSS", "SDSSSSSS", "SSDSSSSS", "SSSDSSSS"]
+  pass 1  f 0.4501  dwell [6.922, 0.7036, 2.4, 0.3366]  off 0.0000  largest branch miss 0.0414
+  pass 2  f 0.1620  dwell [5.981, 0.5269, 2.098, 0.2534]  off 0.0000  largest branch miss 0.0185
+  pass 3  f 0.2072  dwell [5.728, 0.4929, 2.071, 0.2209]  off 0.0000  largest branch miss 0.0051
+  pass 4  f 0.0698  dwell [5.72, 0.4857, 2.109, 0.2223]  off 0.0000  largest branch miss 0.0049
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 8 neurons, 17 transit vertices, states on ["DSSSSSSS", "SDSSSSSS", "SSDSSSSS", "SSSDSSSS"]
+  resuming after pass 4
+  pass 5  f 10.2587  dwell [5.698, 0.4859, 2.007, 0.223]  off 0.0000  largest branch miss 0.0230
+  pass 6  f 0.2553  dwell [5.693, 0.4873, 2.085, 0.2182]  off 0.0000  largest branch miss 0.0118
+  pass 7  f 0.0814  dwell [5.651, 0.4814, 2.12, 0.2235]  off 0.0000  largest branch miss 0.0093
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 8 neurons, 17 transit vertices, states on ["DSSSSSSS", "SDSSSSSS", "SSDSSSSS", "SSSDSSSS"]
+  resuming after pass 7, with 16 runs of the next
+  pass 8  f 0.0745  dwell [5.651, 0.4876, 2.067, 0.2215]  off 0.0000  largest branch miss 0.0054
+  pass 9  f 0.1082  dwell [5.699, 0.486, 2.129, 0.2214]  off 0.0000  largest branch miss 0.0064
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 8 neurons, 17 transit vertices, states on ["DSSSSSSS", "SDSSSSSS", "SSDSSSSS", "SSSDSSSS"]
+  resuming after pass 9, with 32 runs of the next
+  pass 10  f 0.0097  dwell [5.638, 0.4847, 2.109, 0.2225]  off 0.0000  largest branch miss 0.0033
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 8 neurons, 17 transit vertices, states on ["DSSSSSSS", "SDSSSSSS", "SSDSSSSS", "SSSDSSSS"]
+  resuming after pass 10
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 8 neurons, 17 transit vertices, states on ["DSSSSSSS", "SDSSSSSS", "SSDSSSSS", "SSSDSSSS"]
+  resuming after pass 10, with 64 runs of the next
+  pass 11  f 0.0358  dwell [5.657, 0.4827, 2.107, 0.2208]  off 0.0000  largest branch miss 0.0108
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 8 neurons, 17 transit vertices, states on ["DSSSSSSS", "SDSSSSSS", "SSDSSSSS", "SSSDSSSS"]
+  resuming after pass 11, with 16 runs of the next
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 8 neurons, 17 transit vertices, states on ["DSSSSSSS", "SDSSSSSS", "SSDSSSSS", "SSSDSSSS"]
+  resuming after pass 11, with 80 runs of the next
+  pass 12  f 0.0149  dwell [5.65, 0.4859, 2.099, 0.2216]  off 0.0000  largest branch miss 0.0021
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 8 neurons, 17 transit vertices, states on ["DSSSSSSS", "SDSSSSSS", "SSDSSSSS", "SSSDSSSS"]
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 8 neurons, 17 transit vertices, states on ["DSSSSSSS", "SDSSSSSS", "SSDSSSSS", "SSSDSSSS"]
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 8 neurons, 17 transit vertices, states on ["DSSSSSSS", "SDSSSSSS", "SSDSSSSS", "SSSDSSSS"]
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 8 neurons, 17 transit vertices, states on ["DSSSSSSS", "SDSSSSSS", "SSDSSSSS", "SSSDSSSS"]
+  batch time used; rerun to continue
+
+worm data at noise 0.1: 8 neurons, 17 transit vertices, states on ["DSSSSSSS", "SDSSSSSS", "SSDSSSSS", "SSSDSSSS"]
+hopfield worm data ε=0.1, set 1 dwell 5.645 0.487 2.109 0.221  err% -0.4 +0.4 +0.6 -0.1  rms  0.45%  off  0.00%  dwell ok branch ok PASS
+hopfield worm data ε=0.1, set 2 dwell 5.645 0.486 2.114 0.222  err% -0.4 +0.3 +0.9 +0.1  rms  0.50%  off  0.00%  dwell ok branch NO fail
+hopfield worm data ε=0.1, half step dwell 5.672 0.486 2.109 0.221  err% +0.0 +0.1 +0.6 -0.2  rms  0.34%  off  0.00%  dwell ok branch NO fail
+    branch 1→2 designed 0.99 measured 0.991 ok, set 2 0.991 ok, half step 0.993 outside CI
+    branch 1→3 designed 0.01 measured 0.009 ok, set 2 0.009 ok, half step 0.007 outside CI
+    branch 2→1 designed 0.47 measured 0.476 ok, set 2 0.476 outside CI, half step 0.468 ok
+    branch 2→3 designed 0.53 measured 0.524 ok, set 2 0.524 outside CI, half step 0.532 ok
+    branch 3→1 designed 0.01 measured 0.006 ok, set 2 0.008 outside CI, half step 0.006 ok
+    branch 3→2 designed 0.02 measured 0.025 ok, set 2 0.023 ok, half step 0.025 ok
+    branch 3→4 designed 0.97 measured 0.969 ok, set 2 0.969 ok, half step 0.969 ok
+    branch 4→1 designed 0.95 measured 0.949 ok, set 2 0.947 ok, half step 0.949 ok
+    branch 4→3 designed 0.05 measured 0.051 ok, set 2 0.053 ok, half step 0.051 ok
+  class unknown (stable saddle stable stable stable), out-rates [-0.062, -1.23, 13.5, 13.8, -0.844, -0.579, 1.14, 47.5, 29.1], pass on all three: false, fit 3156 s, case 5269 s
+finished: 12 of 1
+
+shared, solvable at noise 0.1: 5 neurons, 7 transit vertices, states on ["DDDDS", "SDDDD", "DDSDD", "SDDSD", "DDDDD", "DSDSD"]
+  pass 1  f 0.7857  dwell [1.926, 0.9665, 0.7647, 1.844, 1.025, 1.351]  off 0.0000  largest branch miss 0.1021
+  pass 2  f 0.1636  dwell [1.549, 0.9912, 0.8212, 1.399, 1.011, 0.9913]  off 0.0000  largest branch miss 0.0281
+  pass 3  f 0.0476  dwell [1.502, 0.9977, 0.8057, 1.213, 0.9929, 0.8573]  off 0.0000  largest branch miss 0.0191
+  pass 4  f 0.0408  dwell [1.505, 1.001, 0.8022, 1.211, 0.998, 0.8551]  off 0.0000  largest branch miss 0.0076
+ERROR: LoadError: InexactError: Int64(NaN)
+Stacktrace:
+  [1] Int64
+    @ ./float.jl:925 [inlined]
+  [2] convert
+    @ ./number.jl:7 [inlined]
+  [3] _round_convert
+    @ ./rounding.jl:489 [inlined]
+  [4] round
+    @ ./rounding.jl:488 [inlined]
+  [5] ceil
+    @ ./rounding.jl:485 [inlined]
+  [6] frame_steps(m::HopModel, sample::Float64, dtscale::Float64)
+    @ Main benchmarks/phase3/optimize.jl:43
+  [7] simulate_frames(m::HopModel; T::Float64, seeds::Vector{Int64}, sample::Float64, dtscale::Float64)
+    @ Main benchmarks/phase7/hopfield.jl:149
+  [8] fit_sync(spec::@NamedTuple{P::Matrix{Float64}, τ::Vector{Float64}, form::Symbol, ε₀::Float64, sample::Float64}, L::SyncLayout; passes::Int64, base::Int64, checkpoint::String, deadline::Float64, seed::Vector{Float64}, response::var"#hop_response##0#hop_response##1"{SyncLayout, Float64, Float64}, build::var"#build#507"{@NamedTuple{P::Matrix{Float64}, τ::Vector{Float64}, form::Symbol, ε₀::Float64, sample::Float64}, SyncLayout, Float64}, cap::Float64)
+    @ Main benchmarks/phase6/synchrony.jl:388
+  [9] fit_hop(spec::@NamedTuple{P::Matrix{Float64}, τ::Vector{Float64}, form::Symbol, ε₀::Float64, sample::Float64}, L::SyncLayout; checkpoint::String, kw::@Kwargs{deadline::Float64})
+    @ Main benchmarks/phase7/hopfield.jl:304
+ [10] top-level scope
+    @ benchmarks/phase7/suite.jl:75
+ [11] include(mod::Module, _path::String)
+    @ Base ./Base.jl:309
+ [12] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:344
+ [13] _start()
+    @ Base ./client.jl:577
+in expression starting at benchmarks/phase7/suite.jl:55
+
+shared, solvable at noise 0.1: 5 neurons, 7 transit vertices, states on ["DDDDS", "SDDDD", "DDSDD", "SDDSD", "DDDDD", "DSDSD"]
+  resuming after pass 4
+  no pairwise design for pass 5's rates; keeping pass 4
+  fit stopped at pass 5: no pairwise design for its rates; checking pass 4
+hopfield shared, solvable ε=0.1, set 1 dwell 1.504 1.002 0.804 1.210 0.996 0.854  err% +0.2 +0.2 +0.5 +0.8 -0.4 +22.0  rms  8.15%  off  0.01%  dwell NO branch NO fail
+hopfield shared, solvable ε=0.1, set 2 dwell 1.502 1.003 0.802 1.209 0.993 0.856  err% +0.1 +0.3 +0.3 +0.7 -0.7 +22.2  rms  8.21%  off  0.00%  dwell NO branch NO fail
+hopfield shared, solvable ε=0.1, half step dwell 1.501 1.000 0.804 1.209 0.996 0.854  err% +0.1 -0.0 +0.5 +0.7 -0.4 +22.0  rms  8.14%  off  0.00%  dwell NO branch NO fail
+    branch 1→2 designed 0.70 measured 0.707 outside CI, set 2 0.707 outside CI, half step 0.709 outside CI
+    branch 1→3 designed 0.30 measured 0.293 outside CI, set 2 0.293 outside CI, half step 0.291 outside CI
+    branch 4→3 designed 0.60 measured 0.618 outside CI, set 2 0.611 outside CI, half step 0.616 outside CI
+    branch 4→6 designed 0.40 measured 0.382 outside CI, set 2 0.389 outside CI, half step 0.384 outside CI
+  class heteroclinic (saddle saddle saddle saddle saddle), out-rates [3.26, 2.43, 3.92, 5.21, 7.92, 5.89, 4.38, 26.3], pass on all three: false, fit 23 s, case 154 s
+finished: 13 of 2

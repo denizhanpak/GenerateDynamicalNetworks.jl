@@ -1,0 +1,8 @@
+ctrnn/design foraging ε=0.1 [correction] dwell 1.997 1.006 0.502 1.477 1.012  err% -0.2 +0.6 +0.4 -1.5 +1.2  rms  0.93%  off  0.00%  dwell ok branch ok PASS
+    branch 2→3 designed 0.70 measured 0.699 ok, repeat 0.702 ok
+    branch 2→4 designed 0.30 measured 0.301 ok, repeat 0.298 ok
+    dim 6, evaluations 0, failed runs 0, held-out score 0.0006, 199 s
+ctrnn/design worm ring ε=0.1 [correction] dwell 5.453 0.445 1.947 0.209  err% +2.3 +1.0 +0.1 +0.6  rms  1.29%  off  0.00%  dwell ok branch ok PASS
+    dim 4, evaluations 0, failed runs 0, held-out score 0.0004, 527 s
+batch time used; rerun to continue
+finished: 20 of 24

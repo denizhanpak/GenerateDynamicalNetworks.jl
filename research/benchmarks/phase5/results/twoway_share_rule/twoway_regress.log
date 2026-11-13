@@ -1,0 +1,8 @@
+  worm ring              excitable rms 0.087449 (suite 0.087449)  off 0.7774 (suite 0.7774)  identical
+  foraging               excitable rms 1.416046 (suite 1.416046)  off 0.2080 (suite 0.2080)  identical
+  foraging               design    rms 0.009283 (suite 0.009283)  off 0.0000 (suite 0.0000)  identical
+  worm ring              design    rms 0.012862 (suite 0.012862)  off 0.0000 (suite 0.0000)  identical
+  figure-eight           design    rms 0.005639 (suite 0.005639)  off 0.0000 (suite 0.0000)  identical
+  Δ-clique               design    rms 0.005143 (suite 0.005143)  off 0.0000 (suite 0.0000)  identical
+  shared, solvable       design    rms 0.007262 (suite 0.007262)  off 0.0000 (suite 0.0000)  identical
+  shared, conflicting    design    rms 0.010281 (suite 0.010281)  off 0.0000 (suite 0.0000)  identical

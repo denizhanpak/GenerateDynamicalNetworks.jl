@@ -1,0 +1,2 @@
+case,noise,pairs,oscillators,transits,worst_err,rms,off,dwell_ok,branches_ok,set2_pass,half_pass,pass,class,outcomes,seconds
+"foraging",0.001,3,6,2,0.0018312389364960602,0.0014654415198484538,0.0,true,true,true,true,true,heteroclinic,"saddle saddle saddle saddle saddle",361.219516701

@@ -1,0 +1,22 @@
+3-ring at noise 0.001: 2 neurons, states on ["SD", "DS", "SS"], paths ["SD→DD→DS", "DS→SS", "SS→SD"]
+vertex check: design violation 1.5e-14, largest gap between Jacobian eigenvalues and design rates 4.5e-09
+  pass 1  f 0.9109  dwell [2.027, 4.798, 15.49]  off 0.0000  largest branch miss 0.0000
+  pass 2  f 0.0296  dwell [1.186, 3.033, 10.15]  off 0.0000  largest branch miss 0.0000
+  pass 3  f 0.0004  dwell [1.02, 3.015, 9.986]  off 0.0000  largest branch miss 0.0000
+  pass 4  f 0.0000  dwell [0.9978, 2.995, 9.989]  off 0.0000  largest branch miss 0.0000
+  pass 5  f 0.0000  dwell [1.001, 2.999, 10.02]  off 0.0000  largest branch miss 0.0000
+  pass 6  f 0.0000  dwell [0.998, 2.999, 9.978]  off 0.0000  largest branch miss 0.0000
+  pass 7  f 0.0000  dwell [1.002, 3.006, 9.972]  off 0.0000  largest branch miss 0.0000
+  pass 8  f 0.0000  dwell [0.9988, 2.992, 10.06]  off 0.0000  largest branch miss 0.0000
+  pass 9  f 0.0000  dwell [1.001, 3.001, 9.985]  off 0.0000  largest branch miss 0.0000
+  pass 10  f 0.0000  dwell [0.9969, 2.997, 9.99]  off 0.0000  largest branch miss 0.0000
+  pass 11  f 0.0000  dwell [1.001, 3.0, 9.99]  off 0.0000  largest branch miss 0.0000
+  pass 12  f 0.0000  dwell [0.9993, 2.999, 9.995]  off 0.0000  largest branch miss 0.0000
+fitted out-rates [15.03, 2.654, 0.6543], race seed [5.194, 1.539, 0.3898], transit 27.6, contraction 27.6, design violation 1.7e-14
+hopfield pilot ε=0.001, held-out set 1 dwell 0.999 2.999 10.040  err% -0.1 -0.0 +0.4  rms  0.24%  off  0.00%  dwell ok branch ok PASS
+hopfield pilot ε=0.001, held-out set 2 dwell 1.001 3.002 10.005  err% +0.1 +0.1 +0.1  rms  0.07%  off  0.00%  dwell ok branch ok PASS
+hopfield pilot ε=0.001, set 1 at half the step dwell 0.999 2.999 10.009  err% -0.1 -0.0 +0.1  rms  0.07%  off  0.00%  dwell ok branch ok PASS
+hopfield pilot ε=0.001, third set (information) dwell 1.000 3.002 9.996  err% +0.0 +0.1 -0.0  rms  0.04%  off  0.00%  dwell ok branch ok PASS
+  bout CV [0.09, 0.14, 0.17]
+  class heteroclinic: saddle saddle saddle saddle saddle
+  pass on all three: true
