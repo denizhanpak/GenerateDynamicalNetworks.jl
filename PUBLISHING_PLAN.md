@@ -1,6 +1,6 @@
 # Plan: GenerateDynamicalNetworks.jl as a publishable package
 
-Status 2026-11-13: all decisions made. Steps 1 (scaffold) and 2 (core layer) are done; step 2 isn't committed. Step 1 was done in place: the prototype now lives in
+Status 2026-11-13: all decisions made. Steps 1 (scaffold) and 2 (core layer) are done and committed; step 3 is under way (CTRNN design ported). Step 1 was done in place: the prototype now lives in
 `research/` (`research/benchmarks/`, `research/notebooks/`). Paths below that say `benchmarks/` or
 `notebooks/` mean those.
 
@@ -152,6 +152,11 @@ Each step ends with a checkpoint for you. Runs over 10 minutes are asked about f
    - Hopfield: the prototype's OSQP design is not always bit-reproducible across processes (seen 2026-11-13: the same
      fit gave a slightly different J and b in 5 of 16 builds, two variants in all, with visit counts 1–2% apart). The likely cause is OSQP's
      default adaptive step-size interval, which is set from measured setup time. Fix a fixed `adaptive_rho_interval` in the port.
+   - **CTRNN design — ported 2026-11-13 (not committed yet).** `src/backends/ctrnn.jl`: `CTRNNModel`,
+     `CTRNNDesign`, `fit`, checkpoint and deadline. `test/differential/ctrnn.jl` (176 checks) matches the prototype
+     exactly for every example's layout, seed and design, for correction passes in both modes, for the fit pipeline
+     and for the stored fits. A full refit of the stored two-way flip-flop fit reproduces its weights bit for bit
+     (96 s). The CMA-ES CTRNN regimes (0/6) were not ported.
    Each one gets:
    - differential tests against the prototype
    - deterministic checks (design invariants, below)

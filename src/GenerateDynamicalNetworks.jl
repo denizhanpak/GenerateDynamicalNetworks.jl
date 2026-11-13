@@ -11,10 +11,13 @@ the measurement and acceptance rules ([`measure`](@ref), [`verdict`](@ref), [`va
 module GenerateDynamicalNetworks
 
 using Graphs: SimpleDiGraph, adjacency_matrix, is_strongly_connected
-using LinearAlgebra: eigvals, norm
+using LinearAlgebra: Diagonal, I, cond, eigvals, norm
 using Printf: @sprintf
 using Random: AbstractRNG, shuffle
+using Roots: Bisection, find_zero
 using SciMLBase: DiscreteCallback, EnsembleProblem, EnsembleThreads, SDEProblem, remake, solve, terminate!
+using Serialization: deserialize, serialize
+using StaticArrays: SMatrix, SVector
 using Statistics: mean, std
 using StochasticDiffEqLowOrder: EM
 
@@ -23,6 +26,8 @@ export ring, example, example_names, random_network
 export AbstractNetworkModel, simulate
 export measure, off_graph, verdict, score, validate, accept
 export classify
+export AbstractBackend, fit, OutOfTime
+export CTRNNModel, CTRNNDesign
 
 include("spec.jl")
 include("examples.jl")
@@ -30,5 +35,7 @@ include("model.jl")
 include("simulate.jl")
 include("measure.jl")
 include("classify.jl")
+include("backend.jl")
+include("backends/ctrnn.jl")
 
 end

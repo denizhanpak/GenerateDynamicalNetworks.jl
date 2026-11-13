@@ -5,7 +5,7 @@ using JET
 using Graphs: SimpleDiGraph, add_edge!
 using Random: Xoshiro
 using StaticArrays: SMatrix, SVector
-using Statistics: mean
+using Statistics: mean, std
 
 @testset "GenerateDynamicalNetworks.jl" begin
     @testset "Code quality (Aqua.jl)" begin
@@ -19,4 +19,5 @@ using Statistics: mean
     end
     @testset "Core" include("core.jl")
     @testset "Dynamics" include("dynamics.jl")
+    @testset "CTRNN backend" include("ctrnn.jl")
 end
