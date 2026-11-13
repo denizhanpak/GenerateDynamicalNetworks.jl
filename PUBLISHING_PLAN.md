@@ -164,6 +164,15 @@ Each step ends with a checkpoint for you. Runs over 10 minutes are asked about f
      identical, including the passage time against SHCTools itself and all 12 stored fits. The fit's search stops
      after 300 s by default (the prototype used 120 s; the user chose 300 s on 2026-11-13); `seconds=Inf` for
      machine-independent fits.
+   - **Synchrony — ported and committed 2026-11-13.** `src/backends/synchrony.jl` (`SyncModel`, `Synchrony`,
+     corner layout), `src/fit/correct.jl` (`rough_rates`, `initial_response`, `correct_rates`: the per-state Broyden
+     correction, written so Hopfield can reuse it through `build`/`cap`) and `src/fit/race.jl` (the full-distribution
+     race seed and response). `Synchrony(seed=:rough)` is the default, as in the prototype suite (8/13); `seed=:race`
+     is the race seed (6/13). Dropped as research only: the pilot fit and 3-ring layout, the mean-only 1-D seed
+     (`log_exit_time`, `seed_out_1d`, `race_response`), the unused `arrive`/`floor` options (every stored fit has 0) and
+     `ω` (always 0). `test/differential/synchrony.jl`: 385 checks identical (layouts, rates, drift, race, race seeds for
+     every example, correction passes and resume for both seeds, all 24 stored example fits rebuilt and simulated,
+     and full refits of the stored Δ-clique 0.1 fits for both seeds); 10.6 min.
    Each one gets:
    - differential tests against the prototype
    - deterministic checks (design invariants, below)

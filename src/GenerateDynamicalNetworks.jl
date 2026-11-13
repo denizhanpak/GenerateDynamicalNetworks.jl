@@ -13,10 +13,10 @@ module GenerateDynamicalNetworks
 import CMAEvolutionStrategy as CES
 using Distributions: Normal, cdf, truncated
 using Graphs: SimpleDiGraph, adjacency_matrix, is_strongly_connected
-using LinearAlgebra: Diagonal, I, cond, eigvals, norm
+using LinearAlgebra: Diagonal, I, Tridiagonal, cond, eigvals, norm
 using Printf: @sprintf
 using QuadGK: quadgk
-using Random: AbstractRNG, Xoshiro, shuffle
+using Random: AbstractRNG, Xoshiro, randperm, shuffle
 using Roots: Bisection, find_zero
 using SciMLBase: DiscreteCallback, EnsembleProblem, EnsembleThreads, SDEProblem, remake, solve, terminate!
 using Serialization: deserialize, serialize
@@ -32,6 +32,7 @@ export classify
 export AbstractBackend, fit, OutOfTime
 export CTRNNModel, CTRNNDesign
 export TwoPopModel, TwoPopulation
+export SyncModel, Synchrony
 
 include("spec.jl")
 include("examples.jl")
@@ -43,7 +44,10 @@ include("backend.jl")
 include("fit/seed.jl")
 include("fit/search.jl")
 include("fit/edges.jl")
+include("fit/correct.jl")
+include("fit/race.jl")
 include("backends/ctrnn.jl")
 include("backends/twopop.jl")
+include("backends/synchrony.jl")
 
 end
