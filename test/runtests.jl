@@ -20,4 +20,5 @@ using Statistics: mean, std
     @testset "Core" include("core.jl")
     @testset "Dynamics" include("dynamics.jl")
     @testset "CTRNN backend" include("ctrnn.jl")
+    @testset "Two-population backend" include("twopop.jl")
 end

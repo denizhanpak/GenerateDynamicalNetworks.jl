@@ -157,6 +157,13 @@ Each step ends with a checkpoint for you. Runs over 10 minutes are asked about f
      exactly for every example's layout, seed and design, for correction passes in both modes, for the fit pipeline
      and for the stored fits. A full refit of the stored two-way flip-flop fit reproduces its weights bit for bit
      (96 s). The CMA-ES CTRNN regimes (0/6) were not ported.
+   - **Two-population — ported and committed 2026-11-13.** `src/backends/twopop.jl` plus the shared fitting code
+     it needs: `src/fit/seed.jl` (Horchler dwell formulas, with the Stone–Holmes passage time inlined from SHCTools),
+     `src/fit/edges.jl` (edge seed and correction, shared with simplex and cylinder) and `src/fit/search.jl` (CMA-ES
+     on fresh noise). New deps: CMAEvolutionStrategy, Distributions, QuadGK. `test/differential/twopop.jl`: 97 checks
+     identical, including the passage time against SHCTools itself and all 12 stored fits. The fit's search stops
+     after 300 s by default (the prototype used 120 s; the user chose 300 s on 2026-11-13); `seconds=Inf` for
+     machine-independent fits.
    Each one gets:
    - differential tests against the prototype
    - deterministic checks (design invariants, below)

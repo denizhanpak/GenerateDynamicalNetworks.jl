@@ -10,10 +10,13 @@ the measurement and acceptance rules ([`measure`](@ref), [`verdict`](@ref), [`va
 """
 module GenerateDynamicalNetworks
 
+import CMAEvolutionStrategy as CES
+using Distributions: Normal, cdf, truncated
 using Graphs: SimpleDiGraph, adjacency_matrix, is_strongly_connected
 using LinearAlgebra: Diagonal, I, cond, eigvals, norm
 using Printf: @sprintf
-using Random: AbstractRNG, shuffle
+using QuadGK: quadgk
+using Random: AbstractRNG, Xoshiro, shuffle
 using Roots: Bisection, find_zero
 using SciMLBase: DiscreteCallback, EnsembleProblem, EnsembleThreads, SDEProblem, remake, solve, terminate!
 using Serialization: deserialize, serialize
@@ -28,6 +31,7 @@ export measure, off_graph, verdict, score, validate, accept
 export classify
 export AbstractBackend, fit, OutOfTime
 export CTRNNModel, CTRNNDesign
+export TwoPopModel, TwoPopulation
 
 include("spec.jl")
 include("examples.jl")
@@ -36,6 +40,10 @@ include("simulate.jl")
 include("measure.jl")
 include("classify.jl")
 include("backend.jl")
+include("fit/seed.jl")
+include("fit/search.jl")
+include("fit/edges.jl")
 include("backends/ctrnn.jl")
+include("backends/twopop.jl")
 
 end
