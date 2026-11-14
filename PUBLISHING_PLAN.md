@@ -173,6 +173,18 @@ Each step ends with a checkpoint for you. Runs over 10 minutes are asked about f
      `ω` (always 0). `test/differential/synchrony.jl`: 385 checks identical (layouts, rates, drift, race, race seeds for
      every example, correction passes and resume for both seeds, all 24 stored example fits rebuilt and simulated,
      and full refits of the stored Δ-clique 0.1 fits for both seeds); 10.6 min.
+   - **Hopfield — ported 2026-11-13 (not committed yet).** `src/backends/hopfield.jl` (`HopModel`, `Hopfield`, layout
+     search with one-hot fallback, OSQP design, race seed with per-edge contractions, the no-design fallback as
+     `keep_last_design`). New deps JuMP 1.32.1 and OSQP 0.8.1, regular deps (user's choice). OSQP's
+     `adaptive_rho_interval` is fixed at 25 (user's choice): repeated designs are identical and within 1e-9 of the old
+     ones. Consequence: the stored Hopfield fits can't be reproduced bit for bit by anything, the prototype included
+     (an unpatched refit of Δ-clique 0.1 gave rates up to 0.2% from the stored ones; the package's refit 0.18%).
+     `test/differential/hopfield.jl` checks unpatched designs within 1e-8, then applies the fix to an in-memory copy of
+     the prototype's `hop_design` and requires exact equality: layouts, designs, seeds and responses for every example,
+     all 12 stored example fits rebuilt and simulated, a 4-pass fit with resume, and a full refit of Δ-clique 0.1
+     (249 checks; ~16 min in total under a loaded machine). Without a checkpoint the package fit keeps a temporary one,
+     so the fallback works either way (the prototype only fell back with a checkpoint). The stored shared-solvable 0.1
+     fit (fell back after pass 5) predates the rate cap; refitted now it runs all 12 passes.
    Each one gets:
    - differential tests against the prototype
    - deterministic checks (design invariants, below)

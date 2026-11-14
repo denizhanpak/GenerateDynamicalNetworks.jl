@@ -911,7 +911,7 @@ uuid = "a0844989-3bd2-4988-8bea-c9407ab0941b"
 version = "1.2.0"
 
 [[deps.GenerateDynamicalNetworks]]
-deps = ["CMAEvolutionStrategy", "Distributions", "Graphs", "LinearAlgebra", "Printf", "QuadGK", "Random", "Roots", "SciMLBase", "Serialization", "StaticArrays", "Statistics", "StochasticDiffEqLowOrder"]
+deps = ["CMAEvolutionStrategy", "Distributions", "Graphs", "JuMP", "LinearAlgebra", "OSQP", "Printf", "QuadGK", "Random", "Roots", "SciMLBase", "Serialization", "StaticArrays", "Statistics", "StochasticDiffEqLowOrder"]
 path = "../.."
 uuid = "676d4f7f-27ac-43c2-8176-bb54d175033a"
 version = "0.1.0-DEV"

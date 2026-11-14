@@ -13,7 +13,9 @@ module GenerateDynamicalNetworks
 import CMAEvolutionStrategy as CES
 using Distributions: Normal, cdf, truncated
 using Graphs: SimpleDiGraph, adjacency_matrix, is_strongly_connected
+using JuMP: Model, @constraint, @objective, @variable, optimize!, set_attribute, set_silent, value
 using LinearAlgebra: Diagonal, I, Tridiagonal, cond, eigvals, norm
+import OSQP
 using Printf: @sprintf
 using QuadGK: quadgk
 using Random: AbstractRNG, Xoshiro, randperm, shuffle
@@ -33,6 +35,7 @@ export AbstractBackend, fit, OutOfTime
 export CTRNNModel, CTRNNDesign
 export TwoPopModel, TwoPopulation
 export SyncModel, Synchrony
+export HopModel, Hopfield
 
 include("spec.jl")
 include("examples.jl")
@@ -49,5 +52,6 @@ include("fit/race.jl")
 include("backends/ctrnn.jl")
 include("backends/twopop.jl")
 include("backends/synchrony.jl")
+include("backends/hopfield.jl")
 
 end
