@@ -196,6 +196,21 @@ Each step ends with a checkpoint for you. Runs over 10 minutes are asked about f
      437 checks identical (repair and design for every example in both forms at three noise levels, drift, runs,
      classes, correction and polish passes, the search, a short fit, the stored worm-ring θs rebuilt, and full refits
      of all four stored phase 3 branching-suite cases reproducing their held-out numbers exactly); 9 min.
+   - **Simplex and cylinder — ported 2026-11-14 (not committed yet).** `src/backends/simplex.jl` (`Simplex()`,
+     `simplex_model`; returns the shared u-form `LVModel`) and `src/backends/cylinder.jl` (`CylinderModel`,
+     `Cylinder()`), with the shared pipeline `edge_rate_fit` in `src/fit/edges.jl`. The cylinder's steepness `k`,
+     `Lω` and decoder windows `pwindow`/`ywindow` are keyword options (user's choice); defaults are the prototype's
+     constants (2, 1.5625, 0.25, 0.5). Search limit 300 s (user's choice; the prototype default was 420 s, its suite
+     used 300 s); at the limit the search keeps its progress and goes on to the polish (user's choice; the prototype
+     fell back to the correction result). CI: 61 checks (saddle rates for both models, including non-default k and
+     Lω; decoder; argument errors; short fits). `test/differential/simplex_cylinder.jl`: start, box and model for
+     every example, drift, correction passes, short fits, all 24 stored θs rebuilt, simulated and classified, and full
+     refits of all 24 stored phase 4 suite fits giving the same model and the same held-out numbers. Run in two parts
+     (the first stopped at the 2 h limit after 13 refits, all identical; the second, 244 checks, 62 min). An optional
+     argument limits the refits to one noise level.
+     Open: search-stage fits ran about 4–5× slower than the prototype's recorded times even on an otherwise idle
+     machine (correction-only fits matched its speed); Horchler showed the same, less (1.8×). Not yet diagnosed;
+     matters for the 300 s default.
    Each one gets:
    - differential tests against the prototype
    - deterministic checks (design invariants, below)

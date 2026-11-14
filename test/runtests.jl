@@ -24,4 +24,6 @@ using Statistics: mean, std
     @testset "Synchrony backend" include("synchrony.jl")
     @testset "Hopfield backend" include("hopfield.jl")
     @testset "Horchler backend" include("horchler.jl")
+    @testset "Simplex backend" include("simplex.jl")
+    @testset "Cylinder backend" include("cylinder.jl")
 end

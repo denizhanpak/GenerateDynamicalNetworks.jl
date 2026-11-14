@@ -37,6 +37,8 @@ export TwoPopModel, TwoPopulation
 export SyncModel, Synchrony
 export HopModel, Hopfield
 export LVModel, Horchler
+export Simplex
+export CylinderModel, Cylinder
 
 include("spec.jl")
 include("examples.jl")
@@ -55,5 +57,7 @@ include("backends/twopop.jl")
 include("backends/synchrony.jl")
 include("backends/hopfield.jl")
 include("backends/horchler.jl")
+include("backends/simplex.jl")
+include("backends/cylinder.jl")
 
 end

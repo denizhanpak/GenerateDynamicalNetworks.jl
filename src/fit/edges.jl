@@ -55,3 +55,27 @@ function correct_edges(build, θ0, spec, edges, lower, upper; passes, runs, T, d
     end
     return trace, θ
 end
+
+"""
+    edge_rate_fit(build, spec, θ0, lower, upper; passes, runs, T, budget, popsize, seconds, label="", verbose=false) -> θ
+
+The fit the simplex and cylinder backends share (the prototype's phase 4 `fit_backend`), on
+`θ = [log speed; log edge rates; …]` in the box `[lower, upper]`: `passes` correction passes
+([`correct_edges`](@ref)) from `θ0`. If the best of them passes a check on 32 held-out runs it is the
+result; otherwise a CMA-ES search from it of at most `budget` evaluations or `seconds` seconds, then two
+correction passes of 32 runs of length 4T.
+"""
+function edge_rate_fit(build, spec, θ0, lower, upper; passes, runs, T, budget, popsize, seconds, label="", verbose=false)
+    edges = edge_list(spec.P)
+    trace, _ = correct_edges(build, clamp.(θ0, lower, upper), spec, edges, lower, upper; passes, runs, T)
+    θc = argmin(p -> p.f, trace).θ
+    if validate(build(θc), spec; seeds=8_000_001:8_000_032, T=2T, dtscale=0.01).pass
+        verbose && println("  $label: the correction passes pass the held-out check; no search")
+        return θc
+    end
+    s = cma_search(build, spec, clamp.(θc, lower .+ 1e-6, upper .- 1e-6), 0.3, lower, upper; budget, popsize, runs, T,
+                   dtscale=0.04, maxtime=seconds)
+    verbose && println("  $label: search used $(s.evals) evaluations")
+    _, θp = correct_edges(build, s.θ, spec, edges, lower, upper; passes=2, runs=32, T=4T, base=200_000)
+    return θp
+end
