@@ -33,14 +33,15 @@ end
 
 """
     cma_search(build, spec, θ0, σ0, lower, upper; budget, restarts=0, popsize=8, runs=16, T=1000, dtscale=0.04,
-               seed=1, base=1_000_000) -> (; θ, candidates, evals, log)
+               seed=1, base=1_000_000, maxtime=nothing) -> (; θ, candidates, evals, log)
 
 CMA-ES (CMAEvolutionStrategy.jl) on `θ ↦ score(simulate(build(θ)))` within the box `[lower, upper]`,
 restarting with twice the population while `budget` evaluations last. Each restart's population mean is
-a candidate; with several, the one scoring best on four times the runs, on unused seeds, wins.
+a candidate; with several, the one scoring best on four times the runs, on unused seeds, wins. A finite
+`maxtime` stops each CMA-ES run after that many seconds, so the result then depends on the machine's speed.
 """
 function cma_search(build, spec, θ0, σ0, lower, upper; budget, restarts=0, popsize=8, runs=16, T=1000.0, dtscale=0.04,
-                    seed=1, base=1_000_000)
+                    seed=1, base=1_000_000, maxtime=nothing)
     s = Search(build, spec, copy(θ0), runs, float(T), float(dtscale), base, 0, NamedTuple[])
     candidates = Vector{Float64}[]
     λ, rng = popsize, Xoshiro(seed)
@@ -49,7 +50,7 @@ function cma_search(build, spec, θ0, σ0, lower, upper; budget, restarts=0, pop
         left < 2λ && break
         start = attempt == 0 ? θ0 : clamp.(θ0 .+ σ0 .* randn(rng, length(θ0)), lower, upper)
         share = attempt == restarts ? left : left ÷ 2
-        r = CES.minimize(s, start, σ0; lower, upper, popsize=λ, maxfevals=share, seed=rand(rng, UInt),
+        r = CES.minimize(s, start, σ0; lower, upper, popsize=λ, maxfevals=share, seed=rand(rng, UInt), maxtime,
                          verbosity=0, stagnation=10^9, ftol=1e-30)
         push!(candidates, clamp.(CES.population_mean(r), lower, upper))
         λ *= 2

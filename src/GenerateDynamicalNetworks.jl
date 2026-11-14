@@ -36,6 +36,7 @@ export CTRNNModel, CTRNNDesign
 export TwoPopModel, TwoPopulation
 export SyncModel, Synchrony
 export HopModel, Hopfield
+export LVModel, Horchler
 
 include("spec.jl")
 include("examples.jl")
@@ -53,5 +54,6 @@ include("backends/ctrnn.jl")
 include("backends/twopop.jl")
 include("backends/synchrony.jl")
 include("backends/hopfield.jl")
+include("backends/horchler.jl")
 
 end

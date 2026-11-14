@@ -184,7 +184,18 @@ Each step ends with a checkpoint for you. Runs over 10 minutes are asked about f
      all 12 stored example fits rebuilt and simulated, a 4-pass fit with resume, and a full refit of Δ-clique 0.1
      (249 checks; ~16 min in total under a loaded machine). Without a checkpoint the package fit keeps a temporary one,
      so the fallback works either way (the prototype only fell back with a checkpoint). The stored shared-solvable 0.1
-     fit (fell back after pass 5) predates the rate cap; refitted now it runs all 12 passes.
+     fit (fell back after pass 5) predates the rate cap; refitted now it runs all 12 passes. Committed 2026-11-13.
+   - **Horchler — ported 2026-11-13 (not committed yet).** `src/backends/horchler.jl`: graph repair (`repair`,
+     `subdivide`, `branch_noise`), the closed-form design (`horchler_design`), `LVModel` (u and x forms; the x form's
+     clamp is `project`; the type is shared with simplex next, user's choice) and `Horchler(form=:u; ...)`: dwell-request
+     correction passes, held-out gate, CMA-ES on [log α; log ν] and two ν polish passes. The search stops after 300 s
+     by default, as two-population (user's choice; the prototype had no time limit); `cma_search` gained `maxtime`.
+     Renamed from the prototype: `design` → `horchler_design`, `correct` → `correct_requests`, `correct_rates` (ν
+     polish) → `polish_saddles`, `raw_model` → `raw_design`. CI: the x-form design equals the SHCTools notebook's
+     stored numbers to rounding; designed dwells, saddle eigenvalues, repair rules, a short fit. `test/differential/horchler.jl`:
+     437 checks identical (repair and design for every example in both forms at three noise levels, drift, runs,
+     classes, correction and polish passes, the search, a short fit, the stored worm-ring θs rebuilt, and full refits
+     of all four stored phase 3 branching-suite cases reproducing their held-out numbers exactly); 9 min.
    Each one gets:
    - differential tests against the prototype
    - deterministic checks (design invariants, below)
