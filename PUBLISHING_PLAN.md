@@ -185,7 +185,7 @@ Each step ends with a checkpoint for you. Runs over 10 minutes are asked about f
      (249 checks; ~16 min in total under a loaded machine). Without a checkpoint the package fit keeps a temporary one,
      so the fallback works either way (the prototype only fell back with a checkpoint). The stored shared-solvable 0.1
      fit (fell back after pass 5) predates the rate cap; refitted now it runs all 12 passes. Committed 2026-11-13.
-   - **Horchler — ported 2026-11-13 (not committed yet).** `src/backends/horchler.jl`: graph repair (`repair`,
+   - **Horchler — ported and committed 2026-11-13.** `src/backends/horchler.jl`: graph repair (`repair`,
      `subdivide`, `branch_noise`), the closed-form design (`horchler_design`), `LVModel` (u and x forms; the x form's
      clamp is `project`; the type is shared with simplex next, user's choice) and `Horchler(form=:u; ...)`: dwell-request
      correction passes, held-out gate, CMA-ES on [log α; log ν] and two ν polish passes. The search stops after 300 s
