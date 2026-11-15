@@ -17,8 +17,10 @@ switching between states reproduces both. The system can be built with several c
 
 The dynamical class of the result is measured and reported: heteroclinic, excitable, ghost or limit cycle.
 
-**Status:** under construction. The code is being ported from the research prototype in
-[`research/`](research/), and the package doesn't have its API yet.
+**Status:** pre-release, and not registered yet. All seven constructions are implemented. On the benchmark
+suite four are labelled stable (Horchler, CTRNN, phase oscillators, Hopfield) and three experimental (simplex,
+cylinder, two-population); the documentation has the results. The research prototype the package was ported
+from is kept in [`research/`](research/).
 
 ## License
 
