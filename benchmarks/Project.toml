@@ -1,0 +1,7 @@
+[deps]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+GenerateDynamicalNetworks = "676d4f7f-27ac-43c2-8176-bb54d175033a"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+
+[sources]
+GenerateDynamicalNetworks = {path = ".."}

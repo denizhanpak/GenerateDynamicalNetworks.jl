@@ -208,9 +208,11 @@ Each step ends with a checkpoint for you. Runs over 10 minutes are asked about f
      refits of all 24 stored phase 4 suite fits giving the same model and the same held-out numbers. Run in two parts
      (the first stopped at the 2 h limit after 13 refits, all identical; the second, 244 checks, 62 min). An optional
      argument limits the refits to one noise level.
-     Open: search-stage fits ran about 4–5× slower than the prototype's recorded times even on an otherwise idle
-     machine (correction-only fits matched its speed); Horchler showed the same, less (1.8×). Not yet diagnosed;
-     matters for the 300 s default.
+     Search-stage fits in the differential run took 4–5× the prototype's recorded times. Not the code: side by side in
+     one fresh process (7 threads, 2026-11-14), a search evaluation took 0.056 s (package) against 0.063 s (prototype),
+     a correction evaluation 0.230 s against 0.242 s, same allocations, and the full simplex Δ-clique 0.1 fit 37.2 s
+     against 40.5 s (146 s inside the long differential run). The slowdown came from that run's conditions;
+     time benchmarks in fresh processes.
    Each one gets:
    - differential tests against the prototype
    - deterministic checks (design invariants, below)
@@ -220,6 +222,46 @@ Each step ends with a checkpoint for you. Runs over 10 minutes are asked about f
    Rerun a reproduction subset (the pilot and one branching graph per backend) and compare against the
    stored tables. Exact equality is expected only where the RNG path is unchanged; elsewhere, agreement
    within the CIs. The run time gets measured and you're asked before the long part.
+   - **Done 2026-11-14.** `benchmarks/` is its own environment (the package by path, Dates, Printf).
+     - `common.jl`: the cases and each backend with the package defaults (user's choice). Cases mirror the
+       prototype (user's choice): the six one-way examples at noise 0.001 and 0.1 for every backend, plus the two-way
+       examples for CTRNN (0.1 only, as the prototype) and the pilot 3-ring for synchrony and Hopfield.
+     - `suite.jl`: one driver, one schema (user's choice). It fits, runs `accept` and `classify`, and appends to
+       `results/cases.csv`, `states.csv` and `edges.csv`. It runs in batches: finished cases are skipped, and the
+       resumable fits (CTRNN, synchrony, Hopfield) stop at a deadline and resume from a checkpoint.
+     - `reproduce.jl`: the reproduction subset (Δ-clique 0.1 per backend with the prototype's settings, and the
+       synchrony and Hopfield pilots at both noises), checked as the prototype checked them. It writes
+       `results/reproduction.csv`.
+   - **Reproduction: 12/12 agree.**
+     - Seven cases expected to be exact are equal in every shared column: Horchler, simplex, cylinder,
+       two-population, CTRNN and synchrony.
+     - Five refits can't be exact: Hopfield, because of the OSQP fix, and the synchrony pilot, whose 3-ring layout
+       wasn't ported. Comparing within sampling error turned out too strict, since two different fits each carry
+       their own small residual. The rule used instead (user's choice): every state's mean dwell is on the same side
+       of the 5% band as the stored one, on set 1, set 2 and the half step. All five agree.
+     - Hopfield Δ-clique 0.1: the stored fit passed, the refit fails the branch and half-step checks.
+   - **Suite: 98 cases, 14 threads, sleep inhibited, four batches.** Times are fit plus checks.
+
+     | Backend | Pass | 0.001 | 0.1 | Fit + checks |
+     |---|---|---|---|---|
+     | Synchrony | 10/14 | 4/7 | 6/7 | 22 + 11 min |
+     | Hopfield | 10/14 | 6/7 | 4/7 | 39 + 19 min |
+     | CTRNN design | 8/10 | – | 8/10 | 49 + 15 min |
+     | Horchler | 8/12 | 5/6 | 3/6 | 9 + 5 min |
+     | Synchrony, race seed | 6/12 | 3/6 | 3/6 | 20 + 9 min |
+     | Cylinder | 5/12 | 3/6 | 2/6 | 15 + 5 min |
+     | Simplex | 4/12 | 1/6 | 3/6 | 15 + 4 min |
+     | Two-population | 4/12 | 2/6 | 2/6 | 45 + 12 min |
+
+     - Only two cases miss a dwell: cylinder worm ring 0.1 (46.6%) and Hopfield shared-solvable 0.1 (22.1%). The
+       other worst dwell errors are all ≤ 3.1%; the other failures are branch or half-step checks.
+     - The top five mostly fail a single check, which fits the chance rate in §5.
+     - Simplex, cylinder and two-population often fail two or three checks on one case (5/8, 6/7, 6/8), so a
+       consistent branch error.
+   - **Labels (user's choice, 2026-11-14).**
+     - Stable: synchrony (default seed), Hopfield, CTRNN design, Horchler.
+     - Experimental: the synchrony race seed, cylinder, simplex, two-population.
+     - They go in the docstrings and the README status table (steps 5–6).
 5. **Docs.**
    - Theory page per backend (equations, design, what fails and why), the acceptance rule and the
      held-out protocol.

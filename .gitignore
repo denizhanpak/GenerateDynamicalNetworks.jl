@@ -14,3 +14,6 @@ research/benchmarks/phase5/results/worm_data.csv
 research/benchmarks/phase5/worm_data.jl
 # The user's own fits from other projects, read by a few research scripts; not included (research/DATA.md)
 research/data/
+
+# benchmarks/: checkpoints of fits that stopped at a batch deadline
+benchmarks/results/checkpoints/
