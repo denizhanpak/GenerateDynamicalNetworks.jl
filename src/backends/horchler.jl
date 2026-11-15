@@ -28,7 +28,7 @@ function branch_equations(P)
             foreach(k -> equation!(s[1], k, 0.0), s[2:end])
         end
     end
-    return isempty(rows) ? (zeros(0, n), Float64[]) : (reduce(vcat, r' for r in rows), b)
+    return isempty(rows) ? (zeros(0, n), Float64[]) : (permutedims(reduce(hcat, rows)), b)
 end
 
 """How far the branches are from sharing one noise value per node (0: they can; Inf: no formula)."""
