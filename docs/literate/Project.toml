@@ -1,0 +1,9 @@
+[deps]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+GenerateDynamicalNetworks = "676d4f7f-27ac-43c2-8176-bb54d175033a"
+Literate = "98b081ad-f1c9-55d3-8b20-4c87d4299306"
+SciMLBase = "0bca4576-84f4-4d90-8ffe-ffa030f20462"
+StochasticDiffEqLowOrder = "d15fe365-ce7f-450a-828a-7985bd5b681b"
+
+[sources]
+GenerateDynamicalNetworks = {path = "../.."}

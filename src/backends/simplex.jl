@@ -45,6 +45,9 @@ stopped at 420 s by default.) A binding time limit makes the result depend on th
 `seconds=Inf` limits the search by `budget` alone.
 
     fit(spec, Simplex(); verbose=false) -> LVModel
+
+!!! warning "Status: experimental"
+    Fails the acceptance protocol on half or more of the benchmark cases; see the Results page of the documentation.
 """
 struct Simplex <: AbstractBackend
     passes::Int

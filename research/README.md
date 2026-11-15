@@ -9,6 +9,7 @@ package in `../src` supersedes it as backends are ported.
 - `notebooks/phase<k>_*.jl`: one Pluto notebook per phase. Each reads its results from
   `benchmarks/phase<k>/results/`. They are built from `notebooks/tools/phase<k>_cells.jl` by
   `tools/build_notebook.jl`.
+- `notebooks/html/`: phases 0–4 exported as static HTML by `notebooks/tools/export_html.jl`.
 - `benchmarks/phase<k>/`: the code and scripts for each phase. Later phases `include` earlier ones, in a
   chain from phase 2 to phase 7.
 - `benchmarks/phase<k>/results/`: result CSVs and logs. Serialized checkpoints (`.jls`) aren't kept.

@@ -281,6 +281,9 @@ rate and contraction are 4× the largest rule-of-thumb rate. If a pass's rates h
 the fit warns and returns the last pass that had one.
 
     fit(spec, Hopfield(); checkpoint=nothing, deadline=Inf, verbose=false) -> HopModel
+
+!!! note "Status: stable"
+    Passes the acceptance protocol on most of the benchmark cases; see the Results page of the documentation.
 """
 struct Hopfield <: AbstractBackend
     passes::Int

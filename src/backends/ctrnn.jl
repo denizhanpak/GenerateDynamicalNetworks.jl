@@ -251,6 +251,9 @@ edge's weight solved from a 1-D first-passage time, then correction passes from 
 `base`, so different `base`s give independent fits.
 
     fit(spec, CTRNNDesign(); checkpoint=nothing, deadline=Inf, verbose=false) -> CTRNNModel
+
+!!! note "Status: stable"
+    Passes the acceptance protocol on most of the benchmark cases; see the Results page of the documentation.
 """
 struct CTRNNDesign <: AbstractBackend
     by_state::Bool

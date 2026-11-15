@@ -1,6 +1,9 @@
 [deps]
+DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
 Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+DocumenterCitations = "daee34ce-89f3-4625-b898-19384cb65244"
 GenerateDynamicalNetworks = "676d4f7f-27ac-43c2-8176-bb54d175033a"
+Graphs = "86223c79-3864-5bf0-83f7-82e725a168b6"
 
 [sources]
 GenerateDynamicalNetworks = {path = ".."}

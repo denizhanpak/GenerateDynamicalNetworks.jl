@@ -1,4 +1,4 @@
-# Horchler backend (Horchler, Daltorio, Chiel & Thomas 2015; SHCTools.jl): a Lotka–Volterra network with one
+# Horchler backend (Horchler, Daltorio, Chiel & Quinn 2015; SHCTools.jl): a Lotka–Volterra network with one
 # node per state, designed in closed form from the dwell times. Graphs the design can't take directly (2-cycles,
 # Δ-cliques, branches whose noise ratios conflict) are repaired with hidden states. Then correction passes on the
 # requested dwells, and if those fail a held-out check, CMA-ES on the raw rates and a short polish.
@@ -253,6 +253,9 @@ time limit makes the result depend on the machine's speed; `seconds=Inf` limits 
 
 Throws an `ArgumentError` if the graph can't be repaired, or if no dwell request has a design (the noise is too
 large for the dwells: the `:x` form needs far less noise than the `:u` form).
+
+!!! note "Status: stable"
+    Passes the acceptance protocol on most of the benchmark cases; see the Results page of the documentation.
 """
 struct Horchler <: AbstractBackend
     form::Symbol

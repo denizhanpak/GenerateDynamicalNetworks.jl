@@ -8,7 +8,7 @@
 # in the frame rotating with the common frequency, where a_σ, b_σ are multilinear in cos ψ_τ of the other
 # pairs: nonpairwise coupling, in the spirit of Bick (2018, 2019). Then ψ̇_σ = sin ψ_σ (g_σ + k_σ cos ψ_σ)
 # with g = −2a, k = −4b, so the S and D sets of every pair are exactly invariant and the 2^M S/D patterns,
-# the corners of a cube, are equilibria. At corner v the rate in direction σ is λ_σ(v) = g_σ + k_σ x_σ
+# the corners of a cube, are equilibria. At corner v the rate in direction σ is λ_σ(v) = k_σ + g_σ x_σ
 # (x = +1 for S, −1 for D). Choosing g_σ and k_σ at every pattern of the other pairs sets every λ_σ(v)
 # independently, and a cube edge whose two ends have opposite signs carries a one-dimensional connection.
 #
@@ -248,6 +248,10 @@ for its dwell and shares, which also gives the starting response (`seed=:race`).
 passes ([`correct_rates`](@ref)); the transit rate and contraction are 4× the largest rule-of-thumb rate.
 
     fit(spec, Synchrony(); checkpoint=nothing, deadline=Inf, verbose=false) -> SyncModel
+
+!!! note "Status: stable with `seed=:rough`, experimental with `seed=:race`"
+    With the default seed it passes the acceptance protocol on most of the benchmark cases; with the race seed it
+    fails half of them. See the Results page of the documentation.
 """
 struct Synchrony <: AbstractBackend
     seed::Symbol

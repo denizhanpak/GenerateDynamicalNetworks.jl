@@ -253,8 +253,10 @@ Each step ends with a checkpoint for you. Runs over 10 minutes are asked about f
      | Simplex | 4/12 | 1/6 | 3/6 | 15 + 4 min |
      | Two-population | 4/12 | 2/6 | 2/6 | 45 + 12 min |
 
-     - Only two cases miss a dwell: cylinder worm ring 0.1 (46.6%) and Hopfield shared-solvable 0.1 (22.1%). The
-       other worst dwell errors are all ≤ 3.1%; the other failures are branch or half-step checks.
+     - Two cases miss a dwell on set 1: cylinder worm ring 0.1 (46.6%) and Hopfield shared-solvable 0.1 (22.1%).
+       The other worst set-1 dwell errors are all ≤ 3.1%; the other failures are branch or half-step checks.
+       Counting all three checks there is a third (found while writing the docs): simplex Δ-clique 0.001, where
+       state 2 is 6.4% short on set 2 alone. Not looked into.
      - The top five mostly fail a single check, which fits the chance rate in §5.
      - Simplex, cylinder and two-population often fail two or three checks on one case (5/8, 6/7, 6/8), so a
        consistent branch error.
@@ -262,12 +264,44 @@ Each step ends with a checkpoint for you. Runs over 10 minutes are asked about f
      - Stable: synchrony (default seed), Hopfield, CTRNN design, Horchler.
      - Experimental: the synchrony race seed, cylinder, simplex, two-population.
      - They go in the docstrings and the README status table (steps 5–6).
-5. **Docs.**
-   - Theory page per backend (equations, design, what fails and why), the acceptance rule and the
-     held-out protocol.
-   - Tutorials: 3-ring, a branching graph, a two-way graph with relays.
-   - Results tables from the CSVs; API reference built from the docstrings, which mostly exist already.
-   - The research notebooks as static HTML.
+5. **Docs.** Plan agreed 2026-11-14.
+   - **Site layout.**
+     - Home: what the package does, install, a short example, the backend status table.
+     - Tutorials: 3-ring; a branching graph (foraging); a two-way graph with relays (flip-flop, CTRNN design).
+     - Concepts: the specification and its checks; simulation and frame decoding; the acceptance rule and the
+       held-out seeds; dynamical classes.
+     - Backends: one page each (Horchler, simplex, cylinder, two-population, CTRNN design, synchrony with the race
+       seed as a section, Hopfield): equations, how the design is made, options, what fails and why, the label and
+       the results row.
+     - Results: suite and reproduction tables generated from `benchmarks/results/*.csv` at build time.
+     - Reference: API, internals and the backend interface.
+     - Research record: links to the exported notebooks.
+   - **Decisions (user's choice).**
+     - Tutorials are run locally with Literate.jl; the generated pages and figures are committed, and the CI docs
+       build only renders them.
+     - Figures use CairoMakie, in the docs environment only.
+     - Notebooks: phases 0–4 are exported to static HTML as they are. Phases 5–7 read the worm data, so they are
+       asked about again once it is clear what they display.
+     - The HTML goes in `research/notebooks/html/`, committed and linked from the docs if the files are small;
+       sizes are reported before committing.
+     - References on the backend pages use DocumenterCitations.jl, taken from the docstrings and notebooks.
+   - **Order.** Plumbing (page tree, table generator, labels in the docstrings, home page); concepts pages; the
+     Horchler page as a template, checked by the user before the other six; the remaining backend pages; tutorials;
+     results page; notebook export; a final build with warnings as errors and doctests.
+   - **Written, 2026-11-14 (not committed).**
+     - Plumbing (`docs/results_tables.jl`, status notes in the seven backend docstrings, home page), the four
+       concepts pages, all seven backend pages (the user approved the Horchler page as the template), the results
+       page, the three tutorials (`docs/literate/`, own environment), phases 0–4 exported (2.7 MB in all, local
+       paths stripped), the research-record page. The build has no warnings.
+     - Still open: phases 5–7 of the notebooks (they read the worm data); a commit.
+     - Found on the way:
+       - The Horchler paper's fourth author is Quinn, not Thomas (source comment corrected).
+       - The synchrony source comment gave the corner rate as g + k·x; the code and the algebra give k + g·x
+         (comment corrected).
+       - The synchrony fit of the foraging network at noise 0.1 passes the protocol, but over twelve sets of runs
+         its 2 → 3 share averages 0.7048 ± 0.0009, and four of ten further sets fail the branch rule. So §5's
+         "fails exact models by chance" is not the whole story: half-point branch errors are there too.
+       - The third dwell miss noted under step 4.
 6. **Release.**
    - Aqua and JET clean; `[compat]` bounds taken from the working Manifest.
    - README with a minimal example and a backend-status table; CITATION.cff if wanted.

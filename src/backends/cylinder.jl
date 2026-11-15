@@ -106,6 +106,9 @@ binding time limit makes the result depend on the machine's speed; `seconds=Inf`
 `budget` alone.
 
     fit(spec, Cylinder(); verbose=false) -> CylinderModel
+
+!!! warning "Status: experimental"
+    Fails the acceptance protocol on half or more of the benchmark cases; see the Results page of the documentation.
 """
 struct Cylinder <: AbstractBackend
     k::Float64

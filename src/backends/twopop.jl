@@ -76,6 +76,9 @@ is still negative. (The prototype stopped at 120 s.) A binding time limit makes 
 the machine's speed; `seconds=Inf` limits the search by `budget` alone.
 
     fit(spec, TwoPopulation(); verbose=false) -> TwoPopModel
+
+!!! warning "Status: experimental"
+    Fails the acceptance protocol on half or more of the benchmark cases; see the Results page of the documentation.
 """
 struct TwoPopulation <: AbstractBackend
     passes::Int

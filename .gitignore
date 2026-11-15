@@ -1,6 +1,7 @@
 /Manifest*.toml
 /docs/Manifest*.toml
 /docs/build/
+/docs/src/notebooks/
 /test/Manifest*.toml
 
 # research/: the frozen prototype. Serialized checkpoints and run stores are not kept (Serialization is
